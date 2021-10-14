@@ -1,3 +1,4 @@
+code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension Angular.ng-template
@@ -7,8 +8,10 @@ code --install-extension christian-kohler.npm-intellisense
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
 code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension foxundermoon.shell-format
 code --install-extension GabrielBB.vscode-lombok
@@ -36,13 +39,8 @@ code --install-extension ms-vscode.azure-account
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension ms-vsliveshare.vsliveshare-pack
-code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msjsdiag.debugger-for-edge
 code --install-extension nrwl.angular-console
-code --install-extension Pivotal.vscode-boot-dev-pack
-code --install-extension Pivotal.vscode-concourse
-code --install-extension Pivotal.vscode-manifest-yaml
-code --install-extension Pivotal.vscode-spring-boot
 code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
 code --install-extension pranaygp.vscode-css-peek
@@ -62,9 +60,8 @@ code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-maven
-code --install-extension vscjava.vscode-spring-boot-dashboard
-code --install-extension vscjava.vscode-spring-initializr
 code --install-extension vscode-icons-team.vscode-icons
+code --install-extension WallabyJs.quokka-vscode
 code --install-extension william-voyek.vscode-nginx
 code --install-extension yzane.markdown-pdf
 code --install-extension yzhang.markdown-all-in-one
