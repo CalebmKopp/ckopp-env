@@ -1,3 +1,4 @@
+
 code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
 code --install-extension alexcvzz.vscode-sqlite
@@ -21,6 +22,7 @@ code --install-extension hashicorp.terraform
 code --install-extension henoc.svgeditor
 code --install-extension jock.svg
 code --install-extension johnpapa.Angular2
+code --install-extension KnisterPeter.vscode-github
 code --install-extension manuth.markdown-converter
 code --install-extension mikestead.dotenv
 code --install-extension mindaro-dev.file-downloader
@@ -54,6 +56,8 @@ code --install-extension scala-lang.scala
 code --install-extension shakram02.bash-beautify
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension steoates.autoimport
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension timonwong.shellcheck
 code --install-extension tomoki1207.pdf
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
@@ -65,3 +69,4 @@ code --install-extension WallabyJs.quokka-vscode
 code --install-extension william-voyek.vscode-nginx
 code --install-extension yzane.markdown-pdf
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension zhuangtongfa.material-theme
