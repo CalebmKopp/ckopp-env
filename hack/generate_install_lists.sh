@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [ -f "./lists/vsc_install.sh" ] ; then
-    rm "./lists/vsc_install.sh"
+if [ -f "./lists/vsc_install_list.sh" ] ; then
+    rm "./lists/vsc_install_list.sh"
 fi
 
 code --list-extensions | xargs -L 1 echo code --install-extension >> ./lists/vsc_install_list.sh
