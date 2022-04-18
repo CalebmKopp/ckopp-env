@@ -1,6 +1,5 @@
 code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
-code --install-extension alexcvzz.vscode-sqlite
 code --install-extension Angular.ng-template
 code --install-extension bar9.stories
 code --install-extension bierner.markdown-mermaid
