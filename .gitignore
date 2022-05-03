@@ -115,3 +115,7 @@ dmypy.json
 
 # .lock.json
 *.lock.json
+
+# IDE/OS things
+.DS_STORE
+**/.IDEA
