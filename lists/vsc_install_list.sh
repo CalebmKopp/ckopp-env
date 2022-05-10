@@ -48,6 +48,7 @@ code --install-extension redhat.vscode-commons
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension rogalmic.bash-debug
+code --install-extension rvest.vs-code-prettier-eslint
 code --install-extension scala-lang.scala
 code --install-extension shakram02.bash-beautify
 code --install-extension shd101wyy.markdown-preview-enhanced
