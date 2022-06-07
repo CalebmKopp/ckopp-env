@@ -1,3 +1,4 @@
+code --install-extension 2gua.rainbow-brackets
 code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
 code --install-extension Angular.ng-template
@@ -52,6 +53,7 @@ code --install-extension rvest.vs-code-prettier-eslint
 code --install-extension scala-lang.scala
 code --install-extension shakram02.bash-beautify
 code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension silvenon.mdx
 code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
@@ -64,6 +66,7 @@ code --install-extension vscjava.vscode-maven
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension WallabyJs.quokka-vscode
 code --install-extension william-voyek.vscode-nginx
+code --install-extension xyc.vscode-mdx-preview
 code --install-extension yzane.markdown-pdf
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zhuangtongfa.material-theme
