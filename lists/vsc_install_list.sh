@@ -6,14 +6,13 @@ code --install-extension bar9.stories
 code --install-extension bierner.markdown-mermaid
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
-code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension foxundermoon.shell-format
 code --install-extension GabrielBB.vscode-lombok
+code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension GrapeCity.gc-excelviewer
 code --install-extension hashicorp.terraform
@@ -21,7 +20,6 @@ code --install-extension henoc.svgeditor
 code --install-extension HungVo.htext
 code --install-extension jock.svg
 code --install-extension johnpapa.Angular2
-code --install-extension KnisterPeter.vscode-github
 code --install-extension manuth.markdown-converter
 code --install-extension mikestead.dotenv
 code --install-extension mindaro-dev.file-downloader
@@ -29,10 +27,12 @@ code --install-extension mohsen1.prettify-json
 code --install-extension ms-azuretools.vscode-azureterraform
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension ms-mssql.data-workspace-vscode
 code --install-extension ms-mssql.mssql
+code --install-extension ms-mssql.sql-bindings-vscode
+code --install-extension ms-mssql.sql-database-projects-vscode
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
-code --install-extension ms-toolsai.jupyter
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.azure-account
 code --install-extension ms-vsliveshare.vsliveshare
