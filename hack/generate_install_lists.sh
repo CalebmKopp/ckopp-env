@@ -17,5 +17,6 @@ fi
 cd ./lists || exit
 
 # Generate a Brewfile
+brew update
 brew upgrade
 brew bundle dump

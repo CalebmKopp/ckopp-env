@@ -4,6 +4,7 @@ code --install-extension albert.TabOut
 code --install-extension Angular.ng-template
 code --install-extension bar9.stories
 code --install-extension bierner.markdown-mermaid
+code --install-extension burkeholland.simple-react-snippets
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
