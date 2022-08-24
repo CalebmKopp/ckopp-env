@@ -11,7 +11,7 @@
 
 #### `Makefile`
 - Defines commands to automate the install and package processes
-- `make sync` - generate new Brewfile and vsc_install_list with most up to date packages
+- `make sync` - generate new Brewfile and vsc_install_list with most up to date packages -- also `brew update && brew upgrade` all packages
 - `make fresh` - freshly install all the Brew packages and vscode extensions inside the `lists` directory
 
 #### `./hack/`
