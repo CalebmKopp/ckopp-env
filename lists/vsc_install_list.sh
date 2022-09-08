@@ -19,6 +19,7 @@ code --install-extension GrapeCity.gc-excelviewer
 code --install-extension hashicorp.terraform
 code --install-extension henoc.svgeditor
 code --install-extension HungVo.htext
+code --install-extension janisdd.vscode-edit-csv
 code --install-extension jock.svg
 code --install-extension johnpapa.Angular2
 code --install-extension manuth.markdown-converter
