@@ -12,7 +12,6 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension foxundermoon.shell-format
-code --install-extension GabrielBB.vscode-lombok
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension GrapeCity.gc-excelviewer
@@ -37,6 +36,7 @@ code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.azure-account
+code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension ms-vsliveshare.vsliveshare-pack
@@ -60,10 +60,12 @@ code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
 code --install-extension tomoki1207.pdf
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-lombok
 code --install-extension vscjava.vscode-maven
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension WallabyJs.quokka-vscode
