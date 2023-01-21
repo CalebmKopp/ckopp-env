@@ -16,6 +16,15 @@
 
 #### `./hack/`
 - Contains bash scripts that correspond to the `Makefile` commands
+
+### Setup
+#### Mac OS / WSL
+- clone the repo using `git` or `gh` cli
+- open `ckopp-env` directory
+- run `make fresh`
+  - if `make` is not recognized, then run `./hack/fresh_install.sh`
+  - or, install `make` via options presented in the terminal
+
 ### TODO
 - make windows compatible scripts/package fetcher
 - decide whether to use chocolatey, winget, or something else
