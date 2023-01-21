@@ -20,8 +20,8 @@
 ### Setup
 #### Mac OS / WSL
 - clone the repo using `git` or `gh` cli
-- open `ckopp-env` directory
-- run `make fresh`
+- `cd` to the `ckopp-env` directory
+- type `make fresh`
   - if `make` is not recognized, then run `./hack/fresh_install.sh`
   - or, install `make` via options presented in the terminal
 
