@@ -6,6 +6,7 @@ if [ -f "./lists/vsc_install_list.sh" ] ; then
 fi
 
 # Get all current VSCode extensions and dump them to file
+echo "#!/bin/bash" >> ./lists/vsc_install_list.sh
 code --list-extensions | xargs -L 1 echo code --install-extension >> ./lists/vsc_install_list.sh
 
 # If Brewfile exists, remove it

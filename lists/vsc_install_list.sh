@@ -1,3 +1,4 @@
+#!/bin/bash
 code --install-extension 2gua.rainbow-brackets
 code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
@@ -34,6 +35,7 @@ code --install-extension ms-mssql.data-workspace-vscode
 code --install-extension ms-mssql.mssql
 code --install-extension ms-mssql.sql-bindings-vscode
 code --install-extension ms-mssql.sql-database-projects-vscode
+code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode-remote.remote-containers
@@ -63,6 +65,7 @@ code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
 code --install-extension tomoki1207.pdf
+code --install-extension unifiedjs.vscode-mdx
 code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
