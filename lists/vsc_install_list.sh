@@ -1,3 +1,4 @@
+#!/bin/bash
 code --install-extension 2gua.rainbow-brackets
 code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
