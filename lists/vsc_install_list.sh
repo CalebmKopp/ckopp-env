@@ -38,14 +38,17 @@ code --install-extension ms-mssql.sql-database-projects-vscode
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-audio
-code --install-extension ms-vsliveshare.vsliveshare-pack
-code --install-extension msjsdiag.debugger-for-edge
 code --install-extension nrwl.angular-console
 code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
@@ -71,6 +74,7 @@ code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-lombok
 code --install-extension vscjava.vscode-maven
 code --install-extension vscode-icons-team.vscode-icons
