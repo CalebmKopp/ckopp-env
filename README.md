@@ -27,7 +27,7 @@
 
 ### TODO
 - add a pause in the script to run the `BREW` setup commands
-```
+```sh
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/<MY-USER>/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
