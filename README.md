@@ -26,5 +26,10 @@
   - or, install `make` via options presented in the terminal
 
 ### TODO
+- add a pause in the script to run the `BREW` setup commands
+```
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/<MY-USER>/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 - make windows compatible scripts/package fetcher
 - decide whether to use chocolatey, winget, or something else
