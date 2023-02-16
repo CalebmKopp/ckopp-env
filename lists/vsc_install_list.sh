@@ -1,9 +1,7 @@
 #!/bin/bash
-code --install-extension 2gua.rainbow-brackets
 code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
 code --install-extension Angular.ng-template
-code --install-extension bar9.stories
 code --install-extension bierner.markdown-mermaid
 code --install-extension burkeholland.simple-react-snippets
 code --install-extension christian-kohler.npm-intellisense
@@ -48,7 +46,6 @@ code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension nrwl.angular-console
 code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
@@ -78,7 +75,6 @@ code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-lombok
 code --install-extension vscjava.vscode-maven
 code --install-extension vscode-icons-team.vscode-icons
-code --install-extension WallabyJs.quokka-vscode
 code --install-extension william-voyek.vscode-nginx
 code --install-extension xyc.vscode-mdx-preview
 code --install-extension yzane.markdown-pdf
