@@ -33,3 +33,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 - make windows compatible scripts/package fetcher
 - decide whether to use chocolatey, winget, or something else
+- sync up "current job" specific `.zshrc` file, kubeconfigs, probably encrypt this in the repo and decrypt it locally
