@@ -42,9 +42,12 @@ code --install-extension ms-toolsai.jupyter-renderers
 code --install-extension ms-toolsai.vscode-jupyter-cell-tags
 code --install-extension ms-toolsai.vscode-jupyter-slideshow
 code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vscode.makefile-tools
+code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension nrwl.angular-console
 code --install-extension PKief.material-icon-theme
@@ -61,6 +64,7 @@ code --install-extension scala-lang.scala
 code --install-extension shakram02.bash-beautify
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension silvenon.mdx
+code --install-extension SimonSiefke.svg-preview
 code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
@@ -68,6 +72,7 @@ code --install-extension tomoki1207.pdf
 code --install-extension unifiedjs.vscode-mdx
 code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
 code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vitaliymaz.vscode-svg-previewer
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
