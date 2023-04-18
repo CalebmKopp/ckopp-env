@@ -64,7 +64,6 @@ code --install-extension scala-lang.scala
 code --install-extension shakram02.bash-beautify
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension silvenon.mdx
-code --install-extension SimonSiefke.svg-preview
 code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
