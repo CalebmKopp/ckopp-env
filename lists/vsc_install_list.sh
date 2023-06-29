@@ -3,9 +3,11 @@ code --install-extension aaron-bond.better-comments
 code --install-extension albert.TabOut
 code --install-extension Angular.ng-template
 code --install-extension bierner.markdown-mermaid
+code --install-extension bradlc.vscode-tailwindcss
 code --install-extension burkeholland.simple-react-snippets
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension esbenp.prettier-vscode
@@ -33,6 +35,7 @@ code --install-extension ms-mssql.data-workspace-vscode
 code --install-extension ms-mssql.mssql
 code --install-extension ms-mssql.sql-bindings-vscode
 code --install-extension ms-mssql.sql-database-projects-vscode
+code --install-extension ms-python.black-formatter
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
@@ -54,6 +57,8 @@ code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
 code --install-extension pranaygp.vscode-css-peek
 code --install-extension pucelle.vscode-css-navigation
+code --install-extension quicktype.quicktype
+code --install-extension recoiljs-snippets.recoiljs-snippets
 code --install-extension redhat.java
 code --install-extension redhat.vscode-commons
 code --install-extension redhat.vscode-xml
@@ -63,7 +68,6 @@ code --install-extension rvest.vs-code-prettier-eslint
 code --install-extension scala-lang.scala
 code --install-extension shakram02.bash-beautify
 code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension silvenon.mdx
 code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
