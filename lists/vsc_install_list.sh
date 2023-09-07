@@ -25,6 +25,7 @@ code --install-extension jock.svg
 code --install-extension johnpapa.Angular2
 code --install-extension manuth.markdown-converter
 code --install-extension marp-team.marp-vscode
+code --install-extension mattlott.copy-github-url
 code --install-extension mikestead.dotenv
 code --install-extension mindaro-dev.file-downloader
 code --install-extension mohsen1.prettify-json
