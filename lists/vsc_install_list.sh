@@ -8,6 +8,7 @@ code --install-extension burkeholland.simple-react-snippets
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension confluentinc.vscode-confluent
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension denoland.vscode-deno
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
@@ -28,6 +29,7 @@ code --install-extension janisdd.vscode-edit-csv
 code --install-extension jeff-hykin.polacode-2019
 code --install-extension jock.svg
 code --install-extension johnpapa.angular2
+code --install-extension laurencebahiirwa.deno-std-lib-snippets
 code --install-extension manuth.markdown-converter
 code --install-extension marp-team.marp-vscode
 code --install-extension mattlott.copy-github-url
