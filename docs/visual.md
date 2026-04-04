@@ -1,4 +1,3 @@
-Caleb_Kopp_Resume.md
 # Caleb Kopp
 **Staff Platform Engineer &middot; Kafka & Kubernetes Infrastructure**
 
