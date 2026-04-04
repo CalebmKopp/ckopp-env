@@ -11,18 +11,17 @@ code --install-extension confluentinc.vscode-confluent
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension denoland.vscode-deno
 code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension foxundermoon.shell-format
-code --install-extension github.copilot
 code --install-extension github.copilot-chat
 code --install-extension github.vscode-github-actions
 code --install-extension github.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension grapecity.gc-excelviewer
+code --install-extension hediet.vscode-drawio
 code --install-extension henoc.svgeditor
 code --install-extension hungvo.htext
 code --install-extension janisdd.vscode-edit-csv
@@ -60,6 +59,7 @@ code --install-extension ms-vscode.live-server
 code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension neonxp.gotools
 code --install-extension pkief.material-icon-theme
 code --install-extension pollywoggames.pico8-ls
 code --install-extension pranaygp.vscode-css-peek
@@ -79,7 +79,6 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
 code --install-extension tomoki1207.pdf
 code --install-extension unifiedjs.vscode-mdx
-code --install-extension visualstudioexptteam.intellicode-api-usage-examples
 code --install-extension visualstudioexptteam.vscodeintellicode
 code --install-extension vitaliymaz.vscode-svg-previewer
 code --install-extension vscjava.migrate-java-to-azure
@@ -88,6 +87,7 @@ code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-java-upgrade
 code --install-extension vscjava.vscode-lombok
 code --install-extension vscjava.vscode-maven
 code --install-extension william-voyek.vscode-nginx
