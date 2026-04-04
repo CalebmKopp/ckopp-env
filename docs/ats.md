@@ -1,4 +1,3 @@
-Caleb_Kopp_Resume_ATS.md
 # Caleb Kopp
 
 Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | Open to remote
