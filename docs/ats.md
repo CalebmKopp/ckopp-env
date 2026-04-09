@@ -1,6 +1,6 @@
 # Caleb Kopp
 
-Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | linkedin.com/in/calebmkopp | Open to remote
+Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | [linkedin.com/in/calebmkopp](linkedin.com/in/calebmkopp) | Open to remote
 
 ---
 
