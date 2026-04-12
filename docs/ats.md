@@ -109,7 +109,8 @@ Optum | Saint Paul, MN | Jun 2019 - Aug 2019
 ### Student Software Developer
 Sogeti USA | Jan 2019 - May 2019
 
-- Co-built a full-stack serverless web application for managing client success stories; served as agile team lead running ceremonies and interfacing with product owners.
+- Co-built a full-stack serverless web application for managing client success stories.
+- Served as agile team lead running ceremonies and interfacing with product stakeholders.
 
 ---
 
