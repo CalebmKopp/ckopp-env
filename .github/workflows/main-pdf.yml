@@ -33,7 +33,6 @@ jobs:
         with:
           commit_message: "ci: regenerate resume PDF"
           file_pattern: docs/pdf/*.pdf
-          token: ${{ secrets.RESUME_PAT }}
 
       - name: Generate release tag
         id: tag
@@ -46,7 +45,7 @@ jobs:
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: ${{ steps.tag.outputs.tag }}
-          files: docs/pdf/*.pdf
+          files: ${{ github.workspace }}/docs/pdf/*.pdf
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.RESUME_PAT }}
