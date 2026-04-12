@@ -6,7 +6,7 @@ Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | [linkedin.com/in/cale
 
 ## Summary
 
-Platform engineer with 5+ years building and operating large-scale distributed systems at production scale at Optum, the technology arm of UnitedHealth Group. I am one of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system (PRM/KRM), and a NextJS micro-frontend embedded in HCP Console. I support a fleet of 1,000+ nodes, 750+ high-throughput Kafka clusters, and 5,500+ clients served at five-nines. Most recently I co-led the full-stack delivery of WarpStream-based cluster provisioning automation, projected to reduce annual Kafka infrastructure costs by approximately 80% for our largest GCP customers. Seeking to apply my this intersection of streaming engineering, k8s native system design, and full stack product delivery to enterprise challenges at scale.
+Platform engineer with 5+ years building and operating large-scale distributed systems at production scale at Optum, the technology arm of UnitedHealth Group. I am one of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system (PRM/KRM), and a NextJS micro-frontend embedded in HCP Console. I support a fleet of 1,000+ nodes and 750+ high-throughput Kafka clusters at five nines. Most recently I co-led the full-stack delivery of WarpStream-based cluster provisioning automation, projected to reduce annual Kafka infrastructure costs by approximately 80% for our largest GCP customers. Seeking to apply my this intersection of streaming engineering, k8s native system design, and full stack product delivery to enterprise challenges at scale.
 
 ---
 
@@ -30,18 +30,18 @@ Platform engineer with 5+ years building and operating large-scale distributed s
 
 ## Experience
 
-### Staff Platform Engineer
+### Senior Software Engineer
 Optum, UnitedHealth Group | Saint Paul, MN | Sep 2022 - Present
 
 **Kafka and Infrastructure Platform, HCP Console**
 
-- **Kafka Resource Manager (KRM) SME:** Serve as one of the primary technical owners and deepest SMEs of KRM, a federated network of Kubernetes operators written in Go forming a two-tier control plane for automated deployment and configuration of streaming infrastructure at production scale. The upper control layer connects to and interfaces with external APIs, CSP provisioning hooks, and Optum-internal resource registration and billing services. A secondary operator layer, running in a separate Kubernetes cluster, generates and owns all concrete Kubernetes resources and links them back to the meta-resources established above. The PRM agent layer and KRM operators share a common Elasticsearch cluster as a single source of truth, ensuring full state recovery and resource utilization visibility if either system becomes unavailable. The platform manages 500+ individual Kafka clusters across multi-tenant, multi-cloud environments, handling high-throughput, low-latency data ingestion workloads at enterprise production scale.
+- **Kubernetes Resource Manager (KRM) SME:** Serve as one of the primary technical owners and deepest SMEs of KRM, a federated network of Kubernetes operators written in Go forming a two-tier control plane for automated deployment and configuration of streaming infrastructure at production scale. The upper control layer connects to and interfaces with external APIs, CSP provisioning hooks, and Optum-internal resource registration and billing services. A secondary operator layer, running in a separate Kubernetes cluster, generates and owns all concrete Kubernetes resources and links them back to the meta-resources established above. The PRM agent layer and KRM operators share a common Elasticsearch cluster as a single source of truth, ensuring full state recovery and resource utilization visibility if either system becomes unavailable. The platform manages 500+ individual Kafka clusters across multi-tenant, multi-cloud environments, handling high-throughput, low-latency data ingestion workloads at enterprise production scale.
 
 - **Platform Resource Manager (PRM):** Contribute to the PRM agent layer, an internal self-service developer platform and framework analogous to Spotify Backstage, through which all data orchestration and provisioning workflows are expressed as typed API contracts (Kinds and Objects) that decouple the product experience from operator implementation details. Enable self-service cloud deployment of streaming infrastructure across Google Cloud Platform and Azure.
 
 - **Confluent Schema Registry as a Service:** Connect producers and consumers to managed Confluent Schema Registry endpoints, providing certificate/ACL governed schema management, compatibility enforcement, and data governance capabilities on top of the Kafka clusters the platform provisions.
 
-- **Secure and Robust Client Infrastructure:** Maintain the platform's certificate authority and distribution pipeline: generate, distribute, and rotate 5,500+ client certificates with end-to-end encryption, each representing at least one producer and consumer served at five nines reliability. Manage VPC-scoped network security and DNS configuration for broker endpoints across all cloud environments.
+- **Secure and Robust Client Infrastructure:** Maintain the platform's certificate authority and distribution pipeline: generate, distribute, and rotate thousands of client certificates with end-to-end encryption, each representing at least one producer and consumer served at five nines reliability. Manage VPC-scoped network security and DNS configuration for broker endpoints across all cloud environments.
 
 - **Frontend Product Lead:** Serve as lead engineer and product owner of the Kafka Clusters on the Cloud self-service micro-frontend (TypeScript, React, NextJS) embedded in HCP Console; captain a team of 6 engineers, write user stories, conduct code reviews, and ship features against product, security, and compliance requirements. Produce technical documentation for onboarding engineers and platform partners.
 
@@ -89,7 +89,7 @@ Optum, UnitedHealth Group | Saint Paul, MN | Jun 2020 - Aug 2022
 
 Kafka as a Service Platform
 
-- Contributed to provisioning pipelines and day-to-day operations supporting 1,000+ Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform and Azure.
+- Contributed to provisioning pipelines and day-to-day operations supporting thousands of Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform and Azure.
 
 - Implemented novel features in custom Kubernetes operator frameworks in Go for automated deployment and configuration of Kafka resources at production scale; participated in early architecture discussions for KRM during its design phase.
 
@@ -109,8 +109,8 @@ Optum | Saint Paul, MN | Jun 2019 - Aug 2019
 ### Student Software Developer
 Sogeti USA | Jan 2019 - May 2019
 
-- Co-built a full-stack serverless web application for managing client success stories.
-- Served as agile team lead running ceremonies and interfacing with product stakeholders.
+- Co-built a full-stack serverless web application for managing software consulting client success stories.
+- Served as team lead running ceremonies, aligning work stories with product owner vision, and interfacing with stakeholders.
 
 ---
 
