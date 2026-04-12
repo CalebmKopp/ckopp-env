@@ -115,9 +115,6 @@ Sogeti USA | Jan 2019 - May 2019
 ---
 
 ## Education
-
-Bachelor of Science in Software Engineering, 
-
-St. Cloud State University | Aug 2016 - May 2020 | GPA 3.79
-
-President, Student Organization of Software Engineers (SOSE)
+- Bachelor of Science in Software Engineering, 
+- St. Cloud State University | Aug 2016 - May 2020 | GPA 3.79
+- President, Student Organization of Software Engineers (SOSE)
