@@ -1,4 +1,4 @@
-name: Docs to PDF
+name: Generate PDFs and release
 
 on:
   push:
