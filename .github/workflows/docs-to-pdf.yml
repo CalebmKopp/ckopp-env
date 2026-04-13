@@ -51,7 +51,7 @@ jobs:
       - name: Generate release tag
         id: tag
         run: |
-          TAG="pdf-$(TZ="America/Chicago" date +"%y.%m.%d.%H%M")"
+          TAG="$(TZ="America/Chicago" date +"%y.%m.%d.%H%M")-pdf"
           echo "tag=$TAG" >> $GITHUB_OUTPUT
 
       - name: Create release and upload PDFs
