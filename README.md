@@ -3,7 +3,8 @@
 - Resume files
 
 ---
-[![Docs to PDF](https://github.com/CalebmKopp/ckopp-env/actions/workflows/docs-to-pdf.yml/badge.svg)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/docs-to-pdf.yml)
+[![Resume to PDF Release](https://github.com/CalebmKopp/ckopp-env/actions/workflows/docs-to-pdf.yml/badge.svg)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/docs-to-pdf.yml)
+[![Brewfile/VSCode Extension Bundle and Release](https://github.com/CalebmKopp/ckopp-env/actions/workflows/main-to-release.yml/badge.svg)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/main-to-release.yml)
 ---
 
 
