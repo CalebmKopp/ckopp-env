@@ -1,3 +1,5 @@
+[![Docs to PDF](https://github.com/CalebmKopp/ckopp-env/actions/workflows/main-pdf.yml/badge.svg?branch=main)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/main-pdf.yml)
+
 # ckopp-env
 - Set up for MacOS machine
 
