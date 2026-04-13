@@ -81,7 +81,6 @@ code --install-extension tomoki1207.pdf
 code --install-extension unifiedjs.vscode-mdx
 code --install-extension visualstudioexptteam.vscodeintellicode
 code --install-extension vitaliymaz.vscode-svg-previewer
-code --install-extension vscjava.migrate-java-to-azure
 code --install-extension vscjava.vscode-gradle
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
