@@ -5,6 +5,7 @@
 ---
 [![Resume to PDF Release](https://github.com/CalebmKopp/ckopp-env/actions/workflows/docs-to-pdf.yml/badge.svg)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/docs-to-pdf.yml)
 [![Brewfile/VSCode Extension Bundle and Release](https://github.com/CalebmKopp/ckopp-env/actions/workflows/bundle-to-release.yml/badge.svg)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/bundle-to-release.yml)
+[![GitHub Actions Security Analysis with zizmor 🌈](https://github.com/CalebmKopp/ckopp-env/actions/workflows/zizmor.yml/badge.svg)](https://github.com/CalebmKopp/ckopp-env/actions/workflows/zizmor.yml)
 ---
 
 
