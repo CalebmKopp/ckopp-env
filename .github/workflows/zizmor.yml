@@ -1,30 +1,25 @@
-name: zizmor
+name: GitHub Actions Security Analysis with zizmor 🌈
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/**'
+    branches: ["main"]
   pull_request:
-    paths:
-      - '.github/workflows/**'
-  workflow_dispatch:
+    branches: ["**"]
+
+permissions: {}
 
 jobs:
   zizmor:
-    name: Scan workflows
     runs-on: ubuntu-latest
     permissions:
       security-events: write
-      contents: read
-      actions: read
-
+      contents: read # only needed for private or internal repos
+      actions: read # only needed for private or internal repos
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
 
-      - uses: zizmorcore/zizmor-action@v1
-        with:
-          advanced-security: true
+      - name: Run zizmor 🌈
+        uses: zizmorcore/zizmor-action@71321a20a9ded102f6e9ce5718a2fcec2c4f70d8 # v0.5.2
