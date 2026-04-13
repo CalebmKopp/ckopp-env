@@ -1,4 +1,4 @@
-name: Bundle and Release
+name: Bundle Lists and Release
 
 on:
   push:
