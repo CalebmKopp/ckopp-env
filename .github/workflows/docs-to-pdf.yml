@@ -1,0 +1,64 @@
+name: Docs to PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/*.md'
+  workflow_dispatch:
+
+jobs:
+  convert-to-pdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.RESUME_PAT }}
+
+      - name: Pull latest changes
+        run: git pull --rebase
+
+      - name: Convert markdown to PDF
+        run: |
+          mkdir -p docs/pdf
+          for f in docs/*.md; do
+            base=$(basename "$f" .md)
+            npx --yes md-to-pdf "$f"
+            mv "${f%.md}.pdf" "docs/pdf/${base}.pdf"
+          done
+          echo "Generated PDFs:"
+          ls -lah docs/pdf/
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+          PUPPETEER_EXECUTABLE_PATH: "/usr/bin/google-chrome-stable"
+
+      - name: Commit and push PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/pdf/*.pdf
+          git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "ci: regenerate resume PDF [skip ci]"
+          git push
+        env:
+          GH_TOKEN: ${{ secrets.RESUME_PAT }}
+
+      - name: Generate release tag
+        id: tag
+        run: |
+          TAG="pdf-$(TZ="America/Chicago" date +"%y.%m.%d.%H%M")"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      - name: Create release and upload PDFs
+        run: |
+          gh release create "${{ steps.tag.outputs.tag }}" \
+            --title "${{ steps.tag.outputs.tag }}" \
+            --latest \
+            docs/pdf/*.pdf
+        env:
+          GH_TOKEN: ${{ secrets.RESUME_PAT }}
