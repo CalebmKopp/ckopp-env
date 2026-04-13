@@ -1,0 +1,38 @@
+name: Bundle and Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Brewfile'
+      - 'extensions.txt'
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release Bundle
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.RESUME_PAT }}
+
+      - name: Generate release tag
+        id: tag
+        run: |
+          TAG=$(TZ="America/Chicago" date +"%y.%m.%d.%H%M")
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      - name: Create release and upload files
+        run: |
+          gh release create "${{ steps.tag.outputs.tag }}" \
+            --title "${{ steps.tag.outputs.tag }}" \
+            --latest \
+            Brewfile \
+            extensions.txt
+        env:
+          GH_TOKEN: ${{ secrets.RESUME_PAT }}
