@@ -23,11 +23,14 @@ jobs:
           mkdir -p docs/pdf
           for f in docs/*.md; do
             base=$(basename "$f" .md)
-            npx --yes md-to-pdf "$f" --chromium-path "$(which google-chrome-stable)"
+            npx --yes md-to-pdf "$f"
             mv "${f%.md}.pdf" "docs/pdf/${base}.pdf"
           done
           echo "Generated PDFs:"
           ls -lah docs/pdf/
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+          PUPPETEER_EXECUTABLE_PATH: "/usr/bin/google-chrome-stable"
 
       - name: Commit and push PDFs
         run: |
