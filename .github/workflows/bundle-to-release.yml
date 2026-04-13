@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'lists/Brewfile'
+      - 'lists/vsc_install_list.sh'
   workflow_dispatch:
 
 jobs:
@@ -18,6 +21,9 @@ jobs:
         with:
           token: ${{ secrets.RESUME_PAT }}
 
+      - name: Pull latest changes
+        run: git pull --rebase
+
       - name: Generate release tag
         id: tag
         run: |
@@ -26,7 +32,6 @@ jobs:
 
       - name: Create release and upload files
         run: |
-          git pull --rebase
           gh release create "${{ steps.tag.outputs.tag }}" \
             --title "${{ steps.tag.outputs.tag }}" \
             --latest \
