@@ -109,5 +109,5 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ## Education
 
 - B.S. in Software Engineering
-- St. Cloud State University &nbsp;|&nbsp; Aug 2016 – May 2020 &nbsp;|&nbsp; GPA 3.79
+- St. Cloud State University &nbsp;|&nbsp; Aug 2016-May 2020 &nbsp;|&nbsp; GPA 3.79
 - President, Student Organization of Software Engineers (SOSE)
