@@ -14,7 +14,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 **Languages and Runtimes:** Golang, Python, Bash, scripting, TypeScript, JavaScript, Java
 
-**Infrastructure and Orchestration:** Kubernetes, Kubernetes CRDs, custom Kubernetes operator framework development, Helm, Terraform, infrastructure as code, GitHub Actions, CI/CD, GCP, Google Cloud Platform, Azure, GKE, Docker, VPC, DNS, automated deployment, configuration management, cloud infrastructure, DevOps
+**Infrastructure and Orchestration:** Kubernetes, Kubernetes CRDs, custom Kubernetes operator framework development, Helm, Terraform, infrastructure as code, GitHub Actions, Azure DevOps, CI/CD, GCP, Google Cloud Platform, Azure, GKE, Docker, VPC, DNS, automated deployment, configuration management, cloud infrastructure, DevOps
 
 **Data and Streaming:** Apache Kafka, WarpStream, Confluent, Confluent Schema Registry, Elasticsearch, ELK, stream processing, data ingestion, high throughput, low latency, compaction, data orchestration, data engineering
 
@@ -125,7 +125,7 @@ Sogeti USA | Jan 2019 - May 2019
 ### Online Social Network Interactions (OSNI)
 Lead Developer and Scrum Master | Senior Year - Post-Graduation | IEEE Publication: https://ieeexplore.ieee.org/document/9659615
 
-- Designed and built OSNI, a novel online reputation management solution that applies natural language processing and sentiment analysis to assess, monitor, and visualize social media content at scale using Python.
+- Designed and built OSNI, a novel online reputation management solution that applies natural language processing and sentiment analysis to assess, monitor, and visualize social media content at scale using Python. Managed CI/CD pipelines via Azure DevOps.
 
 - Architected a data pipeline to collect and analyze public social network discourse, producing interactive reputation dashboards from live data across multiple platforms.
 
