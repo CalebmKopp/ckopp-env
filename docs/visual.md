@@ -1,3 +1,12 @@
+---
+pdf_options:
+  margin:
+    top: 10mm
+    bottom: 10mm
+    left: 15mm
+    right: 15mm
+---
+
 # Caleb Kopp
 **Senior Software Engineer &middot; Kafka & Kubernetes Infrastructure**
 
