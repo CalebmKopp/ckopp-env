@@ -6,7 +6,7 @@ Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | [linkedin.com/in/cale
 
 ## Summary
 
-Platform engineer with 5+ years building and operating large-scale distributed systems at production scale at Optum, the technology arm of UnitedHealth Group. I am one of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system (PRM/KRM), and a NextJS micro-frontend embedded in HCP Console. I support a fleet of 1,000+ nodes and 750+ high-throughput Kafka clusters at five nines. Most recently I co-led the full-stack delivery of WarpStream-based cluster provisioning automation, projected to reduce annual Kafka infrastructure costs by approximately 80% for our largest GCP customers. Seeking to apply my experience at this intersection of streaming engineering, k8s native system design, and full stack product delivery to enterprise challenges at scale.
+I build platforms that make streaming infrastructure disappear behind a self-service button. At Optum I'm one of the deepest technical owners of a Kafka-as-a-Service platform - custom Kubernetes operators in Go, Terraform-driven cloud infra on GCP and Azure, and a React/NextJS frontend used by thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. I like working across the full stack and across the full org - whatever it takes to ship. Always seeking the next challenge that makes technology work better for everyone.
 
 ---
 
