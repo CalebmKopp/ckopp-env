@@ -1,5 +1,5 @@
 # LinkedIn Profile
-
+## Caleb Kopp
 ---
 
 ## Headline
@@ -75,22 +75,24 @@ SRE & Mentorship: Zero customer data loss in production. On-call across 1,000+ n
 
 **Optum, UnitedHealth Group** | Saint Paul, MN | Jun 2020 - Aug 2022
 
-#### Description (1967 / 2000 chars)
+#### Description (1932 / 2000 chars)
 
 ```
-Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP and Azure.
+Technology Development Program: First rotation in Enterprise Infrastructure Security (EIS). Built a full-stack web app (React, TypeScript, Express, MSSQL) replacing a spreadsheet-based datacenter server inventory with a standardized naming and tracking system. Demoed and adopted by the team.
+
+Kafka Platform (Jan 2021 - Aug 2022): Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP and Azure.
 
 Developed features in custom Kubernetes operators (Go) for automated Kafka resource deployment at production scale; shaped early architecture decisions for KRM during its design phase.
 
-Azure Infrastructure: Managed 120 VM ScaleSets - image versioning, rolling updates, monitoring, alerting, and tagging - via Terraform modules and GitOps pull request workflows using Atlantis. Built Bash utilities for broker operations and debugging.
+Azure Infrastructure: Managed 120 VM ScaleSets - image versioning, rolling updates, monitoring, alerting, and tagging - via Terraform modules and GitOps workflows using Atlantis. Built Bash utilities for broker operations and debugging.
 
-Customer Migrations: Moved 87 customer repositories from on-prem GitHub Enterprise to cloud-based GitHub Enterprise. Transitioned 300 customer namespaces from the legacy GitOps-based Kafka resource management system to a new CRD-backed provisioning model on HCP Console with minimal downtime by running parallel workloads before decommissioning the old environment.
+Customer Migrations: Moved 87 customer repos from on-prem GitHub Enterprise to cloud. Transitioned 300 customer namespaces from legacy GitOps-based Kafka resource management to a CRD-backed provisioning model on HCP Console with minimal downtime by running parallel workloads before decommissioning the old environment.
 
-Platform Migrations: Migrated 50 automated Terraform/Helm deployments from RedHat OpenShift to Google Anthos Kubernetes with minimal downtime. Moved observability from self-hosted Grafana pods to Optum's enterprise monitoring solution. Replaced Jenkins, Drone, Ansible, and Atlantis pipelines with GitHub Actions.
+Platform Migrations: Migrated 50 Terraform/Helm deployments from RedHat OpenShift to Google Anthos Kubernetes. Moved observability from self-hosted Grafana to Optum's enterprise monitoring. Replaced Jenkins, Drone, Ansible, and Atlantis pipelines with GitHub Actions.
 
-Frontend Launch: Coordinated across 20+ engineers - 6 direct reports, 4 HCP Console Design/Product leads, 2 onboarding engineers, 4 PRM API engineers, 3 Beam team engineers, and 3 Enterprise Pipelines engineers - to plan, design, and ship the Kafka managed service micro-frontend (TypeScript, React, NextJS) on HCP Console. Integrated Apache Beam & CDC partnership into the UI, enabling customers to configure cross-team capabilities for their Kafka data.
+Frontend Launch: Coordinated 20+ engineers to plan, design, and ship the Kafka managed service micro-frontend (TypeScript, React, NextJS) on HCP Console. Integrated Apache Beam & CDC partnership into the UI.
 
-Took on SRE responsibilities beginning Aug 2021 - stabilized production high-throughput Kafka services, established performance and utilization thresholds aligned to SLAs, and ran on-call shifts responding to production incidents.
+Took on SRE responsibilities Aug 2021 - stabilized production high-throughput Kafka services, established performance thresholds aligned to SLAs, and ran on-call shifts responding to production incidents.
 ```
 
 #### Skills (18 - first 5 shown on profile)
@@ -115,6 +117,8 @@ Took on SRE responsibilities beginning Aug 2021 - stabilized production high-thr
 | 16 | Atlantis | GitOps Terraform workflow |
 | 17 | Monitoring & Alerting | SRE threshold work |
 | 18 | Cross-functional Team Leadership | HCP Console Design/Product/QA collaboration |
+| 19 | Microsoft SQL Server | EIS rotation full-stack app |
+| 20 | Express.js | EIS rotation API layer |
 
 ---
 
@@ -144,10 +148,10 @@ Collaborated with product owners and engineers to document 6 asynchronous micros
 
 **Sogeti USA** | Jan 2019 - May 2019
 
-#### Description (229 / 2000 chars)
+#### Description (378 / 2000 chars)
 
 ```
-Co-built a full-stack serverless web application for managing software consulting client success stories. Served as team lead running ceremonies, aligning work stories with product owner vision, and interfacing with stakeholders.
+Partnered in building a full-stack serverless web application for managing client success stories and demonstrating value delivered to the company. Led a small team of fellow student developers as agile team lead - writing user stories, running ceremonies, and interfacing with product owners from the company.
 ```
 
 #### Skills (5)
@@ -156,8 +160,8 @@ Co-built a full-stack serverless web application for managing software consultin
 |---|-------|
 | **1** | **Full-Stack Development** |
 | **2** | **Serverless Architecture** |
-| **3** | **Team Leadership** |
-| **4** | **Agile Methodologies** |
+| **3** | **Agile Methodologies** |
+| **4** | **Scrum** |
 | **5** | **Stakeholder Management** |
 
 ---
@@ -191,3 +195,10 @@ Served as developer and scrum master through senior year and continued contribut
 | **5** | **Software Architecture** |
 
 ---
+
+## Skill Optimization Notes
+
+- **Top 5 in Senior role** are chosen for maximum recruiter search hit rate and technical weight: Kubernetes, Kafka, Go, Terraform, GCP are all high-demand, concrete, and searchable terms.
+- **Shared skills across Sr. Eng and Eng roles** (Kubernetes, Kafka, Go, GCP, Distributed Systems, Python, Docker, CI/CD, IaC) reinforce depth when viewers see them endorsed in multiple positions.
+- **SRE appears in the Eng role top 5** rather than the Senior role because the Senior role's top 5 already carry more specialized platform signals; SRE is implicit in the Senior description's "zero data loss" and "1,000+ node fleet" language.
+- Skills are named to match LinkedIn's canonical skill taxonomy for maximum discoverability (e.g., "Go (Programming Language)" not "Golang", "React.js" not "React").
