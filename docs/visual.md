@@ -18,6 +18,7 @@ Platform engineer with 5+ years building and operating large-scale distributed s
 | **Languages & Runtimes** | Golang, Python, Bash, scripting, TypeScript, JavaScript, Java |
 | **Infrastructure & Orchestration** | Kubernetes (CRDs, custom operator frameworks), Helm, Terraform, infrastructure as code, GitHub Actions, CI/CD, Google Cloud Platform, Azure, GKE, Docker, VPC, DNS, automated deployment, configuration management, cloud infrastructure, DevOps |
 | **Data & Streaming** | Apache Kafka, WarpStream, Confluent, Confluent Schema Registry, Elasticsearch, ELK, stream processing, data ingestion, data orchestration, data engineering |
+| **AI & Data Science** | Natural language processing, NLP, sentiment analysis, machine learning, data visualization, social media analytics, text classification |
 | **Observability** | Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow, cloud monitoring |
 | **Security & Auth** | mTLS / PKI, encryption, network security, HashiCorp Vault, Chainguard hardened images, IAM |
 | **Frontend** | React, NextJS, micro-frontend architecture, self-service provisioning UI |
@@ -28,7 +29,7 @@ Platform engineer with 5+ years building and operating large-scale distributed s
 ## Experience
 
 ### Senior Software Engineer at Optum (UnitedHealth Group)
-**Kafka & Infrastructure Platform &middot; HCP Console** &nbsp;&nbsp;&nbsp;&nbsp; *Sep 2022 – Present*
+**Kafka & Infrastructure Platform &middot; HCP Console** &nbsp;&nbsp;&nbsp;&nbsp; *Sep 2022 - Present*
 
 - **Kubernetes Resource Manager (KRM) SME:** Serve as one of the primary technical owners and deepest SMEs of KRM, a federated network of Kubernetes operators written in Go forming a two-tier control plane for automated deployment and configuration of streaming infrastructure at production scale. The upper control layer connects to and interfaces with external APIs, CSP provisioning hooks, and Optum-internal resource registration and billing services. A secondary operator layer, running in a separate Kubernetes cluster, generates and owns all concrete Kubernetes resources and links them back to the meta-resources established above. The PRM agent layer and KRM operators share a common **Elasticsearch cluster as a single source of truth**, ensuring full state recovery and resource utilization visibility if either system becomes unavailable. The platform manages **500+ individual Kafka clusters** across multi-tenant, multi-cloud environments, handling high-throughput, low-latency data ingestion workloads at enterprise production scale.
 
@@ -56,7 +57,7 @@ Platform engineer with 5+ years building and operating large-scale distributed s
 
 ---
 
-#### Featured Project: WarpStream Cluster Provisioning Platform (Q4 2024 – Q1 2025)
+#### Featured Project: WarpStream Cluster Provisioning Platform (Q4 2024 - Q1 2025)
 
 > **Impact:** ~80% cost reduction projected &nbsp;|&nbsp; Net-new Go operator authored &nbsp;|&nbsp; 8-week delivery &nbsp;|&nbsp; Full stack: infra to operator to observability
 
@@ -82,7 +83,7 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ---
 
 ### Software Engineer at Optum (UnitedHealth Group)
-**Kafka as a Service Platform** &nbsp;&nbsp;&nbsp;&nbsp; *Jun 2020 – Aug 2022*
+**Kafka as a Service Platform** &nbsp;&nbsp;&nbsp;&nbsp; *Jun 2020 - Aug 2022*
 
 - Contributed to provisioning pipelines and day-to-day operations supporting thousands of Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform and Azure.
 - Implemented novel features in custom Kubernetes operator frameworks in Go for automated deployment and configuration of Kafka resources at production scale; participated in early architecture discussions for KRM during its design phase.
@@ -91,7 +92,7 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ---
 
 ### Software Development Intern at Optum
-*Jun – Aug 2019*
+*Jun - Aug 2019*
 
 - Documented microservices leveraging master data integrity capabilities to maintain a unified golden record view of individuals and HCOs across multiple data sources.
 - Improved quality of an Angular web application through UI testing, defect identification, and increased code coverage.
@@ -99,10 +100,21 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ---
 
 ### Student Software Developer at Sogeti USA
-*Jan – May 2019*
+*Jan - May 2019*
 
 - Co-built a full-stack serverless web application for managing software consulting client success stories.
 - Served as team lead running ceremonies, aligning work stories with product owner vision, and interfacing with stakeholders.
+
+---
+
+## Projects
+
+### Online Social Network Interactions (OSNI)
+**Lead Developer & Scrum Master** &nbsp;&nbsp;|&nbsp;&nbsp; Senior Year - Post-Graduation &nbsp;&nbsp;|&nbsp;&nbsp; [IEEE Publication](https://ieeexplore.ieee.org/document/9659615)
+
+- Designed and built OSNI, a novel online reputation management solution that applies **natural language processing** and **sentiment analysis** to assess, monitor, and visualize social media content at scale using Python.
+- Architected a data pipeline to collect and analyze public social network discourse, producing interactive reputation dashboards from live data across multiple platforms.
+- System validated through a peer-reviewed **IEEE case study** analyzing public sentiment toward three COVID-19 vaccines (Pfizer-BioNTech, Oxford-AstraZeneca, Johnson & Johnson), demonstrating practical application of NLP, text classification, and machine learning techniques to real-world online reputation management.
 
 ---
 
