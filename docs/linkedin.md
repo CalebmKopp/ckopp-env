@@ -75,11 +75,9 @@ SRE & Mentorship: Zero customer data loss in production. On-call across 1,000+ n
 
 **Optum, UnitedHealth Group** | Saint Paul, MN | Jun 2020 - Aug 2022
 
-#### Description (1932 / 2000 chars)
+#### Description (1905 / 2000 chars)
 
 ```
-Technology Development Program: First rotation in Enterprise Security Resiliency Office (ESRO). Built a full-stack web app (React, TypeScript, Express, MSSQL) replacing a spreadsheet-based datacenter server inventory with a standardized naming and tracking system.
-
 Kafka Platform (Jan 2021 - Aug 2022): Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP and Azure.
 
 Developed features in custom Kubernetes operators (Go) for automated Kafka resource deployment at production scale; shaped early architecture decisions for KRM during its design phase.
@@ -93,6 +91,8 @@ Platform Migrations: Migrated 50 Terraform/Helm deployments from RedHat OpenShif
 Frontend Launch: Coordinated 20+ engineers to plan, design, and ship the Kafka managed service micro-frontend (TypeScript, React, NextJS) on HCP Console. Integrated Apache Beam & CDC partnership into the UI.
 
 Took on SRE responsibilities Aug 2021 - stabilized production high-throughput Kafka services, established performance thresholds aligned to SLAs, and ran on-call shifts responding to production incidents.
+
+Technology Development Program - ESRO Rotation (Jun - Dec 2020): Built a full-stack web app (React, TypeScript, Express, MSSQL) replacing a spreadsheet-based datacenter server inventory with a standardized naming and tracking system. Demoed and adopted by the team.
 ```
 
 #### Skills (18 - first 5 shown on profile)
@@ -117,8 +117,8 @@ Took on SRE responsibilities Aug 2021 - stabilized production high-throughput Ka
 | 16 | Atlantis | GitOps Terraform workflow |
 | 17 | Monitoring & Alerting | SRE threshold work |
 | 18 | Cross-functional Team Leadership | HCP Console Design/Product/QA collaboration |
-| 19 | Microsoft SQL Server | EIS rotation full-stack app |
-| 20 | Express.js | EIS rotation API layer |
+| 19 | Microsoft SQL Server | ESRO rotation full-stack app |
+| 20 | Express.js | ESRO rotation API layer |
 
 ---
 
