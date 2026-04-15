@@ -89,7 +89,11 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ### Software Engineer
 Optum, UnitedHealth Group | Saint Paul, MN | Jun 2020 - Aug 2022
 
-Kafka as a Service Platform
+**Technology Development Program - Enterprise Infrastructure Security (EIS) Rotation (Jun - Dec 2020)**
+
+- Designed and built a full-stack web application (React, TypeScript, Express, TypeORM, MSSQL) to replace a spreadsheet-based datacenter server inventory management process. Implemented a standardized server naming scheme encoding datacenter location, team ownership, and function metadata. Demoed to EIS stakeholders and adopted by the team.
+
+**Kafka as a Service Platform (Jan 2021 - Aug 2022)**
 
 - Contributed to provisioning pipelines and day-to-day operations supporting thousands of Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform and Azure.
 
@@ -111,8 +115,8 @@ Optum | Saint Paul, MN | Jun 2019 - Aug 2019
 ### Student Software Developer
 Sogeti USA | Jan 2019 - May 2019
 
-- Co-built a full-stack serverless web application for managing software consulting client success stories.
-- Served as team lead running ceremonies, aligning work stories with product owner vision, and interfacing with stakeholders.
+- Partnered in building a full-stack serverless web application for managing client success stories and demonstrating value delivered to the company.
+- Led a small team of fellow student developers as agile team lead - writing user stories, running ceremonies, and interfacing with product owners from the company.
 
 ---
 
