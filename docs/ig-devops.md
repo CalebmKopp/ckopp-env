@@ -15,7 +15,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 #### Experience
 
-##### Senior Software Engineer, Optum, UnitedHealth Group
+##### Senior Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
 - Own and maintain CI/CD pipeline configuration for platform services using GitHub Actions, Docker-based build pipelines, JFrog Artifactory, and HashiCorp Vault secret injection; enforce DevOps best practices across the team for container image management, deployment automation, and environment promotion workflows.
@@ -28,14 +28,14 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Serve on-call across 1,000+ production nodes with zero customer data loss; mentor junior engineers on DevOps practices, distributed systems, and Go. Captain a team of 6 engineers, write user stories, conduct code reviews, and coordinate across engineering, product, and security stakeholders.
 
-##### Software Engineer, Optum, UnitedHealth Group
+##### Software Engineer - Optum, UnitedHealth Group
 *Jun 2020 - Aug 2022* &nbsp;|&nbsp; Saint Paul, MN
 
 - Contributed to provisioning pipelines and day-to-day operations supporting thousands of streaming infrastructure clients across multi-tenant deployments on GCP and Azure.
 
 - Designed and built a full-stack web application (React, TypeScript, Express, MSSQL) to replace a spreadsheet-based datacenter server inventory management process for the Enterprise Security Resiliency Office. Adopted by the team.
 
-##### Software Development Intern, Optum
+##### Software Development Intern - Optum
 *Jun - Aug 2019* &nbsp;|&nbsp; Saint Paul, MN
 
 - Documented microservices and improved quality of an Angular web application through UI testing, defect identification, and increased code coverage.
