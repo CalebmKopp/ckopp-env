@@ -195,10 +195,3 @@ Served as developer and scrum master through senior year and continued contribut
 | **5** | **Software Architecture** |
 
 ---
-
-## Skill Optimization Notes
-
-- **Top 5 in Senior role** are chosen for maximum recruiter search hit rate and technical weight: Kubernetes, Kafka, Go, Terraform, GCP are all high-demand, concrete, and searchable terms.
-- **Shared skills across Sr. Eng and Eng roles** (Kubernetes, Kafka, Go, GCP, Distributed Systems, Python, Docker, CI/CD, IaC) reinforce depth when viewers see them endorsed in multiple positions.
-- **SRE appears in the Eng role top 5** rather than the Senior role because the Senior role's top 5 already carry more specialized platform signals; SRE is implicit in the Senior description's "zero data loss" and "1,000+ node fleet" language.
-- Skills are named to match LinkedIn's canonical skill taxonomy for maximum discoverability (e.g., "Go (Programming Language)" not "Golang", "React.js" not "React").
