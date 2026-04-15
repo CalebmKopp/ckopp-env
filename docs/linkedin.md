@@ -78,7 +78,7 @@ SRE & Mentorship: Zero customer data loss in production. On-call across 1,000+ n
 #### Description (1932 / 2000 chars)
 
 ```
-Technology Development Program: First rotation in Enterprise Infrastructure Security (EIS). Built a full-stack web app (React, TypeScript, Express, MSSQL) replacing a spreadsheet-based datacenter server inventory with a standardized naming and tracking system. Demoed and adopted by the team.
+Technology Development Program: First rotation in Enterprise Security Resiliency Office (ESRO). Built a full-stack web app (React, TypeScript, Express, MSSQL) replacing a spreadsheet-based datacenter server inventory with a standardized naming and tracking system.
 
 Kafka Platform (Jan 2021 - Aug 2022): Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP and Azure.
 
