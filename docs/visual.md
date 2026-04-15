@@ -83,11 +83,17 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ---
 
 ### Software Engineer at Optum (UnitedHealth Group)
-**Kafka as a Service Platform** &nbsp;&nbsp;&nbsp;&nbsp; *Jun 2020 - Aug 2022*
+*Jun 2020 - Aug 2022*
+
+**Kafka as a Service Platform** &nbsp;&nbsp;&nbsp;&nbsp; *Jan 2021 - Aug 2022*
 
 - Contributed to provisioning pipelines and day-to-day operations supporting thousands of Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform and Azure.
 - Implemented novel features in custom Kubernetes operator frameworks in Go for automated deployment and configuration of Kafka resources at production scale; participated in early architecture discussions for KRM during its design phase.
 - Assumed SRE responsibilities beginning Aug 2021, stabilizing production high-throughput Kafka services, establishing performance and utilization thresholds aligned to SLAs, and running on-call shifts responding to production incidents.
+
+**Technology Development Program - ESRO Rotation** &nbsp;&nbsp;&nbsp;&nbsp; *Jun - Dec 2020*
+
+- Designed and built a full-stack web application (React, TypeScript, Express, TypeORM, MSSQL) to replace a spreadsheet-based datacenter server inventory management process. Implemented a standardized server naming scheme encoding datacenter location, team ownership, and function metadata. Demoed to ESRO stakeholders and adopted by the team.
 
 ---
 
@@ -102,8 +108,8 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ### Student Software Developer at Sogeti USA
 *Jan - May 2019*
 
-- Co-built a full-stack serverless web application for managing software consulting client success stories.
-- Served as team lead running ceremonies, aligning work stories with product owner vision, and interfacing with stakeholders.
+- Partnered in building a full-stack serverless web application for managing client success stories and demonstrating value delivered to the company.
+- Led a small team of fellow student developers as agile team lead - writing user stories, running ceremonies, and interfacing with product owners from the company.
 
 ---
 
