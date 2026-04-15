@@ -13,6 +13,17 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 ---
 
+#### Skills
+
+- **CI/CD & DevOps:** Azure DevOps, GitHub Actions, Docker, JFrog Artifactory, CI/CD pipeline design, environment promotion, container image management, deployment automation, build pipelines
+- **Infrastructure as Code:** Terraform, Helm, Kubernetes, Cloud Infrastructure Provisioning - GKE, VPCs, DNS, IAM
+- **Security:** HashiCorp Vault, Chainguard hardened images, vulnerability remediation, network security, encryption, IAM
+- **Cloud Platforms:** Azure, Google Cloud Platform, Cloud Storage, Artifact Registry
+- **Scripting & Languages:** Python, Bash, Go, TypeScript
+- **Observability:** Prometheus, Grafana, PromQL, PagerDuty, ServiceNow
+
+---
+
 #### Experience
 
 ##### Senior Software Engineer - Optum, UnitedHealth Group
@@ -36,17 +47,6 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 - Contributed to provisioning pipelines and day-to-day operations supporting thousands of streaming infrastructure clients across multi-tenant deployments on GCP and Azure.
 
 - Designed and built a full-stack web application (React, TypeScript, Express, MSSQL) to replace a spreadsheet-based datacenter server inventory management process for the Enterprise Security Resiliency Office. Adopted by the team.
-
----
-
-#### Skills
-
-- **CI/CD & DevOps:** Azure DevOps, GitHub Actions, Docker, JFrog Artifactory, CI/CD pipeline design, environment promotion, container image management, deployment automation, build pipelines
-- **Infrastructure as Code:** Terraform, Helm, Kubernetes, Cloud Infrastructure Provisioning - GKE, VPCs, DNS, IAM
-- **Security:** HashiCorp Vault, Chainguard hardened images, vulnerability remediation, network security, encryption, IAM
-- **Cloud Platforms:** Azure, Google Cloud Platform, Cloud Storage, Artifact Registry
-- **Scripting & Languages:** Python, Bash, Go, TypeScript
-- **Observability:** Prometheus, Grafana, PromQL, PagerDuty, ServiceNow
 
 ---
 
