@@ -1,3 +1,12 @@
+---
+pdf_options:
+  margin:
+    top: 10mm
+    bottom: 10mm
+    left: 15mm
+    right: 15mm
+---
+
 # Caleb Kopp
 **Senior Software Engineer &middot; Kafka & Kubernetes Infrastructure**
 
@@ -16,7 +25,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 | Category | Skills |
 |---|---|
 | **Languages & Runtimes** | Golang, Python, Bash, scripting, TypeScript, JavaScript, Java |
-| **Infrastructure & Orchestration** | Kubernetes (CRDs, custom operator frameworks), Helm, Terraform, infrastructure as code, GitHub Actions, CI/CD, Google Cloud Platform, Azure, GKE, Docker, VPC, DNS, automated deployment, configuration management, cloud infrastructure, DevOps |
+| **Infrastructure & Orchestration** | Kubernetes (CRDs, custom operator frameworks), Helm, Terraform, infrastructure as code, GitHub Actions, Azure DevOps, CI/CD, Google Cloud Platform, Azure, GKE, Docker, VPC, DNS, automated deployment, configuration management, cloud infrastructure, DevOps |
 | **Data & Streaming** | Apache Kafka, WarpStream, Confluent, Confluent Schema Registry, Elasticsearch, ELK, stream processing, data ingestion, data orchestration, data engineering |
 | **AI & Data Science** | Natural language processing, NLP, sentiment analysis, machine learning, data visualization, social media analytics, text classification |
 | **Observability** | Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow, cloud monitoring |
@@ -118,7 +127,7 @@ Consistent first-responder when company-wide mandates land before any golden pat
 ### Online Social Network Interactions (OSNI)
 **Lead Developer & Scrum Master** &nbsp;&nbsp;|&nbsp;&nbsp; Senior Year - Post-Graduation &nbsp;&nbsp;|&nbsp;&nbsp; [IEEE Publication](https://ieeexplore.ieee.org/document/9659615)
 
-- Designed and built OSNI, a novel online reputation management solution that applies **natural language processing** and **sentiment analysis** to assess, monitor, and visualize social media content at scale using Python.
+- Designed and built OSNI, a novel online reputation management solution that applies **natural language processing** and **sentiment analysis** to assess, monitor, and visualize social media content at scale using Python. Managed CI/CD pipelines via Azure DevOps.
 - Architected a data pipeline to collect and analyze public social network discourse, producing interactive reputation dashboards from live data across multiple platforms.
 - System validated through a peer-reviewed **IEEE case study** analyzing public sentiment toward three COVID-19 vaccines (Pfizer-BioNTech, Oxford-AstraZeneca, Johnson & Johnson), demonstrating practical application of NLP, text classification, and machine learning techniques to real-world online reputation management.
 

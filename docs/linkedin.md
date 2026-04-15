@@ -1,3 +1,12 @@
+---
+pdf_options:
+  margin:
+    top: 10mm
+    bottom: 10mm
+    left: 15mm
+    right: 15mm
+---
+
 # LinkedIn Profile
 ## Caleb Kopp
 ---
@@ -179,7 +188,7 @@ Partnered in building a full-stack serverless web application for managing clien
 ```
 https://ieeexplore.ieee.org/document/9659615
 
-Designed and built OSNI, a novel online reputation management solution that uses sentiment analysis to assess, monitor, and visualize social media content. The system collected and analyzed public discourse around real-world subjects, producing reputation dashboards from live social network data.
+Designed and built OSNI, a novel online reputation management solution that uses sentiment analysis to assess, monitor, and visualize social media content. Managed CI/CD pipelines via Azure DevOps. The system collected and analyzed public discourse around real-world subjects, producing reputation dashboards from live social network data.
 
 Served as developer and scrum master through senior year and continued contributing after graduation while onboarding into a full-time engineering role. A peer-reviewed paper was published based on the system's design, architecture, and a COVID-19 vaccine reputation case study (Pfizer-BioNTech, Oxford-AstraZeneca, Johnson & Johnson).
 ```
@@ -192,6 +201,6 @@ Served as developer and scrum master through senior year and continued contribut
 | **2** | **Natural Language Processing (NLP)** |
 | **3** | **Python** |
 | **4** | **Data Visualization** |
-| **5** | **Software Architecture** |
+| **5** | **Azure DevOps** |
 
 ---
