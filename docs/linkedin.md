@@ -10,7 +10,7 @@ Platform Engineer | Kafka-as-a-Service | Kubernetes | Go | Terraform | Full-Stac
 
 ## About
 
-I build platforms that make streaming infrastructure disappear behind a self-service button. At Optum I'm one of the deepest technical owners of a Kafka-as-a-Service platform - custom Kubernetes operators in Go, Terraform-driven cloud infra on GCP and Azure, and a React/NextJS frontend used by thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. I like working across the full stack and across the full org - whatever it takes to ship. Always seeking the next challenge that makes technology work better for everyone.
+I build platforms where streaming infrastructure disappears behind a self-service button. I'm one of the deepest technical owners of our Kafka platform; custom k8s operators, Terraformed GCP, and a NextJS frontend serving thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. Shipped WarpStream @ Optum for ~80% infra cost reduction. Always willing to work with anyone to make technology work better for everyone!
 
 ---
 
