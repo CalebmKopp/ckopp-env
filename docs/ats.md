@@ -6,7 +6,7 @@ Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | [linkedin.com/in/cale
 
 ## Summary
 
-I build platforms that make streaming infrastructure disappear behind a self-service button. At Optum I'm one of the deepest technical owners of a Kafka-as-a-Service platform - custom Kubernetes operators in Go, Terraform-driven cloud infra on GCP and Azure, and a React/NextJS frontend used by thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. I like working across the full stack and across the full org - whatever it takes to ship. Always seeking the next challenge that makes technology work better for everyone.
+I build platforms where streaming infrastructure disappears behind a self-service button. At Optum, the technology arm of UnitedHealth Group, I'm one of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system (PRM/KRM), Terraformed GCP cloud infrastructure, and a NextJS micro-frontend embedded in HCP Console. 1,000+ nodes, 750+ high-throughput clusters, five nines, zero data loss. Through resilient data pipelines, clean self-service UI, or robust SRE - I'm always seeking a challenge. Most recently I co-led the full-stack delivery of WarpStream-based cluster provisioning, projected to reduce annual Kafka infrastructure costs by approximately 80% for our largest GCP customers. Always willing to work with anyone to make technology work better for everyone!
 
 ---
 
