@@ -10,7 +10,7 @@ Platform Engineer | Kafka-as-a-Service | Kubernetes | Go | Terraform | Full-Stac
 
 ## About
 
-Platform engineer with 5+ years building and operating large-scale distributed systems at Optum, the technology arm of UnitedHealth Group. One of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system, and a NextJS micro-frontend. I support a fleet of 1,000+ nodes and 750+ high-throughput Kafka clusters at five nines. Most recently co-led full-stack delivery of WarpStream-based cluster provisioning, projected to reduce annual Kafka infrastructure costs by ~80% for our largest GCP customers.
+I build platforms that make streaming infrastructure disappear behind a self-service button. At Optum I'm one of the deepest technical owners of a Kafka-as-a-Service platform - custom Kubernetes operators in Go, Terraform-driven cloud infra on GCP and Azure, and a React/NextJS frontend used by thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. I like working across the full stack and across the full org - whatever it takes to ship. Always seeking the next challenge that makes technology work better for everyone.
 
 ---
 
