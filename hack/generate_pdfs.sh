@@ -6,7 +6,7 @@ if [[ -n "$1" ]]; then
   f="docs/${1}.md"
   if [[ ! -f "$f" ]]; then
     echo "Error: $f not found. Available:"
-    ls docs/*.md | sed 's|docs/||;s|\.md||'
+    ls docs/*.md 2>/dev/null | sed 's|docs/||;s|\.md||'
     exit 1
   fi
   files=("$f")

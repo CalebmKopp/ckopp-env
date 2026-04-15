@@ -29,17 +29,17 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 ##### Senior Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
-- Serve as one of the deepest technical owners of a Kafka-as-a-Service platform supporting 1,000+ nodes and 750+ clusters across multi-tenant, multi-cloud environments on GCP and Azure, built on custom Kubernetes operators in Go and a CRD-driven internal provisioning system.
+- Serve as one of the deepest technical owners of a Kafka-as-a-Service platform supporting 1,000+ nodes and 750+ clusters across multi-tenant, multi-cloud environments on GCP and Azure, built on custom Kubernetes operators in Go and a CRD-driven internal provisioning system. Zero customer data loss in production.
 
 - Own and maintain CI/CD pipeline configuration for platform services using GitHub Actions, Docker-based build pipelines, JFrog Artifactory, and HashiCorp Vault secret injection; enforce DevOps best practices across the team for container image management, deployment automation, and environment promotion workflows.
 
-- Contribute deep SME expertise to infrastructure-as-code provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on GCP and Azure using Terraform; co-designed all Terraform for a net-new WarpStream Clusters-as-a-Service product from scratch.
+- Contribute deep SME expertise to infrastructure-as-code provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on GCP and Azure using Terraform; co-designed all Terraform for an innovative WarpStream Clusters-as-a-Service product from scratch.
 
-- Led Chainguard hardened image adoption early, rebuilding the platform's Docker container supply chain and encryption baseline before a formal golden path existed. Triaged and resolved hundreds of cloud security findings and network misconfigurations in days, unblocking the broader platform organization.
+- Drove continuous improvement in platform safety and quality by leading Chainguard hardened image adoption early, rebuilding the platform's Docker container supply chain and encryption baseline before a formal golden path existed. Triaged and resolved hundreds of cloud security findings and network misconfigurations in days, unblocking the broader platform organization.
 
 - Manage team secrets and encryption keys in HashiCorp Vault; co-maintain a proprietary CLI tool for time-boxed privileged break-glass access workflows.
 
-- Serve on-call across 1,000+ production nodes with zero customer data loss; mentor junior engineers on DevOps practices, distributed systems, and Go. Captain a team of 6 engineers, write user stories, conduct code reviews, and coordinate across engineering, product, and security stakeholders.
+- Serve on-call across 1,000+ production nodes with zero customer data loss; mentor junior engineers on DevOps practices, distributed systems, and Go. Captain a team of 6 engineers, write user stories, conduct code reviews, and collaborate across engineering, product, and security stakeholders.
 
 ##### Software Engineer - Optum, UnitedHealth Group
 *Jun 2020 - Aug 2022* &nbsp;|&nbsp; Saint Paul, MN
