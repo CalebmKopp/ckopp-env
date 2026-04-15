@@ -1,3 +1,12 @@
+---
+pdf_options:
+  margin:
+    top: 10mm
+    bottom: 10mm
+    left: 15mm
+    right: 15mm
+---
+
 # Caleb Kopp
 
 Saint Paul, MN | 507-299-0445 | caleb.m.kopp@outlook.com | [linkedin.com/in/calebmkopp](linkedin.com/in/calebmkopp)
