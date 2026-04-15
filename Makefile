@@ -9,5 +9,5 @@ sync:  ## update Brewfile and ./vsc_install_list.sh
 fresh:  ## do fresh install of brew, vsc, and all related extensions/applications
 	./hack/fresh_install.sh
 
-docs:  ## convert docs/*.md to PDF in docs/pdf/
-	./hack/generate_pdfs.sh
+docs:  ## convert docs/*.md to PDF in docs/pdf/ (usage: make docs [FILE=name])
+	./hack/generate_pdfs.sh $(FILE)
