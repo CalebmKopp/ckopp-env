@@ -28,9 +28,9 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 ##### Senior Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
-- Serve as one of the deepest technical owners of a high-volume platform-as-a-service supporting 1,000+ production nodes and 750+ clusters across multi-tenant, multi-cloud environments on GCP and Azure, built on custom Kubernetes operators and a CRD-driven provisioning system. Five-nines reliability with zero customer data loss.
+- Serve as one of the deepest technical owners of a high-volume platform-as-a-service supporting 1,000+ production nodes and 750+ clusters across multi-tenant, multi-cloud environments on GCP and Azure. Five-nines reliability with zero customer data loss.
 
-- Co-designed and maintain all Terraform cloud infrastructure across GCP and Azure, structured into isolated lab/dev/stg/prd environments with consistent IAM policies, resource tagging, and reusable module patterns across providers and regions.
+- Co-designed and maintain all Terraform cloud infrastructure across GCP and Azure with consistent IAM policies, resource tagging, and reusable module patterns across providers and regions.
 
 - Own DevSecOps pipeline configuration using GitHub Actions, Docker, JFrog Artifactory, and HashiCorp Vault secret injection; enforce best practices for container image security, deployment automation, and environment promotion.
 
@@ -38,7 +38,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Manage team secrets and encryption keys in HashiCorp Vault; maintain the platform's certificate authority, rotating thousands of client certificates with end-to-end mTLS encryption. Ensure secure transport (SSL/TLS) and storage (GCP KMS encryption at rest) of PHI/PII data streams; maintain active DR options and participate in regular DR exercises.
 
-- Captain a team of 6 engineers, conduct code reviews, and coordinate across engineering, product, and security stakeholders. Mentor junior engineers on distributed systems, DevSecOps, and cloud-native architecture. Serve on-call across 1,000+ production nodes.
+- Lead engineer and product owner of the Kafka Clusters on Cloud micro-frontend (TypeScript, React, NextJS) in HCP Console. Captain a team of 6 engineers, conduct code reviews, and coordinate across engineering, product, and security stakeholders. Mentor junior engineers on distributed systems and cloud-native architecture. Serve on-call across 1,000+ production nodes.
 
 ##### Software Engineer - Optum, UnitedHealth Group
 *Jun 2020 - Aug 2022* &nbsp;|&nbsp; Saint Paul, MN

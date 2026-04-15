@@ -31,7 +31,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 **Observability:** Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow, cloud monitoring
 
-**Security and Auth:** mTLS, PKI, encryption, network security, HashiCorp Vault, Chainguard hardened images, IAM
+**Security and Auth:** mTLS, PKI, encryption, network security, HashiCorp Vault, Chainguard hardened images, IAM, GCP KMS, data compliance, PHI/PII, disaster recovery
 
 **Frontend:** React, NextJS, micro-frontend architecture, TypeScript, self-service provisioning UI
 
@@ -54,7 +54,9 @@ Optum, UnitedHealth Group | Saint Paul, MN | Sep 2022 - Present
 
 - **Secure and Robust Client Infrastructure:** Maintain the platform's certificate authority and distribution pipeline: generate, distribute, and rotate thousands of client certificates with end-to-end encryption, each representing at least one producer and consumer served at five nines reliability. Manage VPC-scoped network security and DNS configuration for broker endpoints across all cloud environments.
 
-- **Frontend Product Lead:** Serve as lead engineer and product owner of the Kafka Clusters on the Cloud self-service micro-frontend (TypeScript, React, NextJS) embedded in HCP Console; captain a team of 6 engineers, write user stories, conduct code reviews, and ship features against product, security, and compliance requirements. Produce technical documentation for onboarding engineers and platform partners.
+- **Data Compliance and Disaster Recovery:** Ensure secure transport (SSL/TLS) and storage (GCP KMS encryption at rest) of PHI/PII data streams flowing through the platform in compliance with healthcare data governance requirements. Coordinate with a sister data governance team that connects data owners to data consumers through secure, legally-approved access workflows. Maintain active disaster recovery options for customers and participate in regular DR exercises across the platform.
+
+- **Self-Service Frontend and Team Leadership:** Serve as lead engineer and product owner of the Kafka Clusters on the Cloud self-service micro-frontend (TypeScript, React, NextJS) embedded in HCP Console; captain a team of 6 engineers, write user stories, conduct code reviews, and ship features against product, security, and compliance requirements. Produce technical documentation for onboarding engineers and platform partners.
 
 - **Terraform and Cloud Infrastructure Engineering:** Contribute deep SME expertise to infrastructure-as-code and cloud infrastructure provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on Google Cloud Platform and Azure; co-design and deliver all Terraform backing the net-new WarpStream Clusters-as-a-Service product including Cloud Storage bucket provisioning and cloud deployment automation.
 
