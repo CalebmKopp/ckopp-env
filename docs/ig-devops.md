@@ -18,6 +18,8 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 ##### Senior Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
+- Serve as one of the deepest technical owners of a Kafka-as-a-Service platform supporting 1,000+ nodes and 750+ clusters across multi-tenant, multi-cloud environments on GCP and Azure, built on custom Kubernetes operators in Go and a CRD-driven internal provisioning system.
+
 - Own and maintain CI/CD pipeline configuration for platform services using GitHub Actions, Docker-based build pipelines, JFrog Artifactory, and HashiCorp Vault secret injection; enforce DevOps best practices across the team for container image management, deployment automation, and environment promotion workflows.
 
 - Contribute deep SME expertise to infrastructure-as-code provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on GCP and Azure using Terraform; co-designed all Terraform for a net-new WarpStream Clusters-as-a-Service product from scratch.
@@ -34,11 +36,6 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 - Contributed to provisioning pipelines and day-to-day operations supporting thousands of streaming infrastructure clients across multi-tenant deployments on GCP and Azure.
 
 - Designed and built a full-stack web application (React, TypeScript, Express, MSSQL) to replace a spreadsheet-based datacenter server inventory management process for the Enterprise Security Resiliency Office. Adopted by the team.
-
-##### Software Development Intern - Optum
-*Jun - Aug 2019* &nbsp;|&nbsp; Saint Paul, MN
-
-- Documented microservices and improved quality of an Angular web application through UI testing, defect identification, and increased code coverage.
 
 ---
 
