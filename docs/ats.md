@@ -18,6 +18,8 @@ Platform engineer with 5+ years building and operating large-scale distributed s
 
 **Data and Streaming:** Apache Kafka, WarpStream, Confluent, Confluent Schema Registry, Elasticsearch, ELK, stream processing, data ingestion, high throughput, low latency, compaction, data orchestration, data engineering
 
+**AI and Data Science:** natural language processing, NLP, sentiment analysis, machine learning, data visualization, social media analytics, text classification, online reputation management
+
 **Observability:** Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow, cloud monitoring
 
 **Security and Auth:** mTLS, PKI, encryption, network security, HashiCorp Vault, Chainguard hardened images, IAM
@@ -114,10 +116,22 @@ Sogeti USA | Jan 2019 - May 2019
 
 ---
 
+## Projects
+
+### Online Social Network Interactions (OSNI)
+Lead Developer and Scrum Master | Senior Year - Post-Graduation | IEEE Publication: https://ieeexplore.ieee.org/document/9659615
+
+- Designed and built OSNI, a novel online reputation management solution that applies natural language processing and sentiment analysis to assess, monitor, and visualize social media content at scale using Python.
+
+- Architected a data pipeline to collect and analyze public social network discourse, producing interactive reputation dashboards from live data across multiple platforms.
+
+- System validated through a peer-reviewed IEEE case study analyzing public sentiment toward three COVID-19 vaccines (Pfizer-BioNTech, Oxford-AstraZeneca, Johnson & Johnson), demonstrating practical application of NLP, text classification, and machine learning techniques to real-world online reputation management.
+
+---
+
 ## Education
 - Bachelor of Science in Software Engineering
 
 - St. Cloud State University | Aug 2016-May 2020 | GPA 3.79
 
 - President, Student Organization of Software Engineers (SOSE)
-
