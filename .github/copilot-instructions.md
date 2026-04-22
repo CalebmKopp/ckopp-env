@@ -15,7 +15,7 @@ This repo has two primary responsibilities:
 
 ## Working Rules
 - Prefer make targets over calling scripts directly.
-	- Use `make fresh`, `make sync`, `make docs`, and `make docs FILE=<name>`.
+	- Use `make fresh`, `make sync`, `make docs`, and `make docs FILE=<path>` where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/nintendo`).
 - Keep changes minimal and scoped to the requested task.
 - Do not rewrite large resume sections unless requested.
 - Preserve established wording and quantified claims unless asked to update them.
@@ -138,7 +138,7 @@ Caleb Kopp
 2. Read docs/masters/ats.md and docs/masters/linkedin.md as source material.
 3. Generate a tailored resume markdown file applying the content rules below.
 4. Write the file to docs/prospectives/ (or docs/submitted/ if applying).
-5. Run `make docs FILE=<name>` to produce the PDF.
+5. Run `make docs FILE=<path>` to produce the PDF, where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/*newresume*`).
 6. Check the PDF page count. If it exceeds one page, apply the One-Page Compression Priority in order, regenerate, and recheck until it fits.
 
 ### Content Rules
