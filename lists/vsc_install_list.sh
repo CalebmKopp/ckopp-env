@@ -53,6 +53,7 @@ code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension rogalmic.bash-debug
 code --install-extension shakram02.bash-beautify
+code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck

@@ -12,14 +12,25 @@ A portable toolkit for **macOS machine setup** and **resume automation**. Fork i
 
 ## Table of Contents
 
-- [Quick Start](#quick-start)
-- [Repository Structure](#repository-structure)
-- [Machine Setup (Brewfile)](#machine-setup-brewfile)
-- [Resume Automation](#resume-automation)
-- [Makefile Targets](#makefile-targets)
-- [CI/CD Workflows](#cicd-workflows)
-- [Forking This Repo for Your Own Use](#forking-this-repo-for-your-own-use)
-- [TODO](#todo)
+- [ckopp-env](#ckopp-env)
+  - [Table of Contents](#table-of-contents)
+  - [Quick Start](#quick-start)
+  - [Repository Structure](#repository-structure)
+  - [Machine Setup (Brewfile)](#machine-setup-brewfile)
+    - [Fresh Install (new machine)](#fresh-install-new-machine)
+    - [Syncing Your Current Machine State](#syncing-your-current-machine-state)
+  - [Resume Automation](#resume-automation)
+    - [Resume Document Hierarchy](#resume-document-hierarchy)
+    - [Generating PDFs Locally](#generating-pdfs-locally)
+    - [Customizing PDF Output](#customizing-pdf-output)
+  - [Makefile Targets](#makefile-targets)
+  - [CI/CD Workflows](#cicd-workflows)
+  - [Windows Support](#windows-support)
+    - [Setup](#setup)
+    - [Usage](#usage)
+  - [Forking This Repo for Your Own Use](#forking-this-repo-for-your-own-use)
+    - [Tips for Colleagues](#tips-for-colleagues)
+  - [TODO](#todo)
 
 ## Quick Start
 
@@ -56,7 +67,8 @@ ckopp-env/
 ├── hack/                     # Shell scripts backing the Makefile
 │   ├── fresh_install.sh      # Full machine bootstrap
 │   ├── generate_install_lists.sh  # Dump current brew/vscode state
-│   └── generate_pdfs.sh      # Markdown -> PDF conversion
+│   ├── generate_pdfs.sh      # Markdown -> PDF conversion (Bash)
+│   └── generate_pdfs.ps1     # Markdown -> PDF conversion (PowerShell/Windows)
 ├── lists/                    # Declarative install manifests
 │   ├── Brewfile              # Homebrew bundle (taps, formulae, casks, vscode extensions)
 │   └── vsc_install_list.sh   # VSCode extension install script
@@ -143,8 +155,10 @@ See the [md-to-pdf docs](https://github.com/simonhaenisch/md-to-pdf#readme) for 
 | `help` | `make help` | Print all available targets with descriptions |
 | `fresh` | `make fresh` | Bootstrap a new machine: install Homebrew, brew packages, and VSCode extensions |
 | `sync` | `make sync` | Capture current machine state into `lists/`, update and upgrade all packages |
-| `docs` | `make docs` | Convert all `docs/*.md` to PDF |
-| `docs` | `make docs FILE=visual` | Convert a single file to PDF |
+| `docs` | `make docs` | Convert all `docs/*.md` to PDF (macOS/Linux) |
+| `docs` | `make docs FILE=visual` | Convert a single file to PDF (macOS/Linux) |
+| `windocs` | `make windocs` | Convert all `docs/*.md` to PDF (Windows/PowerShell) |
+| `windocs` | `make windocs FILE=visual` | Convert a single file to PDF (Windows/PowerShell) |
 
 ## CI/CD Workflows
 
@@ -159,6 +173,37 @@ All workflows trigger on pushes to `main` and can also be run manually via `work
 **Note:** The PDF workflow only processes `docs/*.md` at the top level (currently just `visual.md`). Subdirectory files (`masters/`, `submitted/`, `prospectives/`) are only built locally via `make docs`.
 
 Both release workflows require a `RESUME_PAT` repository secret with permission to create releases.
+
+## Windows Support
+
+The machine bootstrap scripts (`make fresh`, `make sync`) are macOS-only (Homebrew, zsh). However, the resume PDF pipeline works on Windows via `make windocs`.
+
+### Setup
+
+```powershell
+winget upgrade -r
+winget install -e --id CoreyButler.NVMforWindows
+winget install -e --id GnuWin32.Make
+```
+
+After installation, open a new terminal and install Node.js via nvm:
+
+```powershell
+nvm install lts
+nvm use lts
+```
+
+### Usage
+
+```powershell
+# Generate PDFs for all docs/*.md files
+make windocs
+
+# Generate a PDF for a specific file
+make windocs FILE=prospectives/<company>
+```
+
+The `windocs` target calls `hack/generate_pdfs.ps1`, which verifies that `nvm` and `npx` are available before running. If a prerequisite is missing, it prints the install command needed.
 
 ## Forking This Repo for Your Own Use
 
@@ -187,5 +232,5 @@ Both release workflows require a `RESUME_PAT` repository secret with permission 
   (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/<MY-USER>/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
   ```
-- Make Windows-compatible scripts/package fetcher (chocolatey, winget, or similar)
+- Make Windows-compatible scripts/package fetcher (chocolatey, winget, or similar) for `make fresh` and `make sync`
 - Sync up job-specific `.zshrc` and kubeconfigs (encrypted in repo, decrypted locally)
