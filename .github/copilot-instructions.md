@@ -163,7 +163,7 @@ Apply these in order. Exhaust each tactic before moving to the next:
 	- Files under docs/masters/, docs/submitted/, and docs/prospectives/ are local-build only.
 
 ## Known Resume Constraints
-- Huntingtonbank and Confluent resumes should remain one page after edits.
+- All resumes for roles should fit on one page. If content exceeds one page, apply the compression tactics in the specified order. The Masters can exceed one page, but all submitted/prospective resumes should be one page.
 - When page count matters, prefer reliable local verification methods over Spotlight metadata.
 
 ## Environment Manifest Rules
