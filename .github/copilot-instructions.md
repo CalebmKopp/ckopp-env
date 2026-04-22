@@ -132,18 +132,30 @@ Caleb Kopp
 ```
 
 ## Resume Tailoring Workflow
-When creating a new submitted/prospective resume from masters:
+
+### End-to-End Flow
+1. User provides the full text of a job description.
+2. Read docs/masters/ats.md and docs/masters/linkedin.md as source material.
+3. Generate a tailored resume markdown file applying the content rules below.
+4. Write the file to docs/prospectives/ (or docs/submitted/ if applying).
+5. Run `make docs FILE=<name>` to produce the PDF.
+6. Check the PDF page count. If it exceeds one page, apply the One-Page Compression Priority in order, regenerate, and recheck until it fits.
+
+### Content Rules
+When generating the tailored resume from masters:
 1. Shift heading hierarchy down two levels (h1->h3, h2->h4, h3->h5).
 2. Embed title in name heading: `### Caleb Kopp - Senior Software Engineer`.
 3. Drop Summary unless the JD emphasizes a holistic profile.
-4. Rename, reorder, and prune Skills categories to mirror the job posting.
-5. Reduce Senior role from 12+ bullets to 5-7. Drop bold lead-in labels and inline bold metrics.
-6. Fold WarpStream featured section into a single compound bullet.
-7. Drop Org Initiative Leadership as a standalone section; fold key initiatives into regular bullets if relevant.
-8. Compress SE role to 1-2 bullets by merging related content.
-9. Drop Intern and Sogeti roles entirely.
-10. Compress Projects to 1 bullet or drop entirely (roll IEEE into Education line).
-11. Compress Education to a single inline line.
+4. Rename, reorder, and prune Skills categories to mirror the job posting. Front-load the most relevant terms within each category.
+5. Reword bullets for culture fit - echo the JD's language and priorities while preserving factual accuracy.
+6. Highlight experience that directly maps to JD requirements; de-emphasize or drop bullets with no JD relevance.
+7. Reduce Senior role from 12+ bullets to 5-7. Drop bold lead-in labels and inline bold metrics.
+8. Fold WarpStream featured section into a single compound bullet.
+9. Drop Org Initiative Leadership as a standalone section; fold key initiatives into regular bullets if relevant.
+10. Compress SE role to 1-2 bullets by merging related content.
+11. Drop Intern and Sogeti roles entirely.
+12. Compress Projects to 1 bullet or drop entirely (roll IEEE into Education line).
+13. Compress Education to a single inline line.
 
 ### One-Page Compression Priority
 Apply these in order. Exhaust each tactic before moving to the next:
@@ -188,4 +200,3 @@ Apply these in order. Exhaust each tactic before moving to the next:
 2. If lists changed, ensure generated scripts/manifests are syntactically valid.
 3. If workflows changed, verify YAML syntax and trigger scope.
 4. Confirm no accidental renames or output path changes.
-
