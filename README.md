@@ -65,13 +65,16 @@ ckopp-env/
 │   ├── prospectives/         # Draft resumes for prospective applications
 │   └── pdf/                  # Generated PDFs (gitignored, built locally or via CI)
 ├── hack/                     # Shell scripts backing the Makefile
-│   ├── fresh_install.sh      # Full machine bootstrap
-│   ├── generate_install_lists.sh  # Dump current brew/vscode state
+│   ├── fresh_install.sh      # Full machine bootstrap (macOS)
+│   ├── generate_install_lists.sh  # Dump current brew/vscode state (macOS)
 │   ├── generate_pdfs.sh      # Markdown -> PDF conversion (Bash)
-│   └── generate_pdfs.ps1     # Markdown -> PDF conversion (PowerShell/Windows)
+│   ├── win_generate_pdfs.ps1 # Markdown -> PDF conversion (PowerShell/Windows)
+│   ├── win_fresh_install.ps1 # VSCode extension install (Windows)
+│   └── win_generate_install_lists.ps1  # Regenerate VSCode extension lists (Windows)
 ├── lists/                    # Declarative install manifests
 │   ├── Brewfile              # Homebrew bundle (taps, formulae, casks, vscode extensions)
-│   └── vsc_install_list.sh   # VSCode extension install script
+│   ├── vsc_install_list.sh   # VSCode extension install script (Bash)
+│   └── vsc_install_list.ps1  # VSCode extension install script (PowerShell/Windows)
 ├── Makefile                  # Automation entry point
 └── README.md
 ```
@@ -159,6 +162,8 @@ See the [md-to-pdf docs](https://github.com/simonhaenisch/md-to-pdf#readme) for 
 | `docs` | `make docs FILE=visual` | Convert a single file to PDF (macOS/Linux) |
 | `windocs` | `make windocs` | Convert all `docs/*.md` to PDF (Windows/PowerShell) |
 | `windocs` | `make windocs FILE=visual` | Convert a single file to PDF (Windows/PowerShell) |
+| `winfresh` | `make winfresh` | Install VSCode extensions on Windows |
+| `winsync` | `make winsync` | Regenerate VSCode extension install lists on Windows |
 
 ## CI/CD Workflows
 
@@ -203,7 +208,21 @@ make windocs
 make windocs FILE=prospectives/<company>
 ```
 
-The `windocs` target calls `hack/generate_pdfs.ps1`, which verifies that `nvm` and `npx` are available before running. If a prerequisite is missing, it prints the install command needed.
+The `windocs` target calls `hack/win_generate_pdfs.ps1`, which verifies that `nvm` and `npx` are available before running. If a prerequisite is missing, it prints the install command needed.
+
+### VSCode Extensions
+
+```powershell
+# Install all tracked VSCode extensions
+make winfresh
+
+# Regenerate extension lists from current machine state
+make winsync
+```
+
+`winfresh` installs all VSCode extensions from `lists/vsc_install_list.ps1`. `winsync` regenerates both the `.sh` and `.ps1` extension lists from your currently installed extensions.
+
+**Note:** Chocolatey/winget package list automation is not yet implemented. System packages (Node.js, Make, etc.) must be installed manually via the setup steps above. Only VSCode extension management is automated on Windows at this time.
 
 ## Forking This Repo for Your Own Use
 
@@ -232,5 +251,5 @@ The `windocs` target calls `hack/generate_pdfs.ps1`, which verifies that `nvm` a
   (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/<MY-USER>/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
   ```
-- Make Windows-compatible scripts/package fetcher (chocolatey, winget, or similar) for `make fresh` and `make sync`
+- Add Windows-compatible package list automation (chocolatey, winget, or similar) for system packages in `make winfresh` and `make winsync`
 - Sync up job-specific `.zshrc` and kubeconfigs (encrypted in repo, decrypted locally)
