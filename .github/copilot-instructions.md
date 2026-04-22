@@ -1,5 +1,45 @@
 # Copilot Instructions for ckopp-env
 
+## About Caleb Kopp
+
+### Who I Am
+Senior Software Engineer at Optum, the technology arm of UnitedHealth Group. Six years at UHG (two as SE, four as Senior). Based in Saint Paul, MN. B.S. Software Engineering from St. Cloud State University, GPA 3.79. IEEE-published researcher in NLP/sentiment analysis. Former president of the Student Organization of Software Engineers (SOSE).
+
+### What I Work On
+I am one of the deepest technical owners of Optum's Kafka-as-a-Service platform: 1,000+ production nodes, 750+ high-throughput clusters across GCP and Azure, five-nines reliability, zero customer data loss. The platform is built on custom Kubernetes operators in Go (KRM - Kubernetes Resource Manager) forming a two-tier distributed control plane, a CRD-driven internal provisioning framework (PRM - Platform Resource Manager, analogous to Spotify Backstage), Terraformed cloud infrastructure, and a self-service developer portal micro-frontend embedded in HCP Console.
+
+### Developer Portal Expertise
+I own the full-stack self-service developer portal for Kafka Clusters as a Service, embedded in Optum's enterprise-wide HCP Console. I lead every layer:
+- **UI/UX:** TypeScript, React, NextJS micro-frontend; responsive, informative, intuitive interface
+- **API layer:** Provisioning pipeline bridging the portal to real Kubernetes StatefulSet infrastructure
+- **Portal integration:** Meeting UX, accessibility, and security standards of the central developer portal team
+- **Infrastructure security:** Enforcing security posture on every cluster the portal provisions (mTLS, Vault, KMS)
+
+The product is one of the highest-regarded developer experience offerings at Optum due to the quality of its automation, ease of self-service, and responsiveness of its UI. Developers across the enterprise can provision production-grade streaming infrastructure in minutes.
+
+### Key Value Created
+- **WarpStream delivery (Q4 2024 - Q1 2025):** Co-led an 8-week sprint delivering full-stack WarpStream-based cluster provisioning: custom Go operator, all Terraform cloud infrastructure from scratch (GCS, VPC, DNS, IAM), portal integration, and observability. Shipped to Optum's two largest GCP Kafka customers. Cloud Storage-backed diskless architecture reduces annual infrastructure costs by approximately 80%.
+- **Platform scale:** 1,000+ nodes, 750+ clusters, five-nines reliability, zero customer data loss across the platform's history.
+- **Organizational first-responder:** Consistently first to absorb company-wide mandates before golden paths exist: Chainguard hardened image adoption, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, Grafana consolidation, Vault and break-glass CLI.
+- **Confluent Schema Registry as a Service:** Certificate/ACL-governed schema management and data governance on top of provisioned Kafka clusters.
+- **Full-stack web app (SE role):** Built a React/TypeScript/Express/MSSQL app replacing spreadsheet-based datacenter inventory management. Adopted by the team.
+
+### Technical Identity
+- **Primary languages:** Go, TypeScript, Python, Java, Bash
+- **Infrastructure:** Kubernetes (CRDs, custom operators, Helm), Terraform (GCP, Azure), Docker, GKE, VPC, DNS, IAM
+- **Data streaming:** Apache Kafka, WarpStream, Confluent, Schema Registry, Elasticsearch
+- **Frontend:** React, NextJS, micro-frontend architecture, self-service provisioning UI
+- **CI/CD:** GitHub Actions, Jenkins, JFrog Artifactory, Azure DevOps, HashiCorp Vault secret injection
+- **Security:** mTLS, PKI, certificate authority management, GCP KMS, encryption at rest, PHI/PII data compliance, Chainguard hardened images, disaster recovery
+- **Observability:** Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow
+- **Databases:** Elasticsearch (shared state store), MSSQL, TypeORM
+
+### Professional Intersection
+I sit at the intersection of: Healthcare (regulated, PHI/PII workloads), Data Streaming (Kafka at enterprise scale), Developer Experience Portals (full-stack self-service for internal developers), Platform Engineering (Kubernetes operators, IaC, cloud infrastructure), Security (mTLS, Vault, compliance, certificate management), and Go/TypeScript full-stack development. I captain a team of 6 engineers, mentor through Optum Early Careers, and lead through technical depth, not title.
+
+### Leadership Style
+Lead engineer and product owner. Captain a team of 6. Write user stories, conduct code reviews, mentor junior engineers on distributed systems, Go, and secure development. Coordinate across engineering, product, security, and compliance stakeholders. Volunteer for Optum Early Careers each year (technical bootcamp lectures, candidate interviews). Serve on-call across the full production fleet.
+
 ## Repository Purpose
 This repo has two primary responsibilities:
 1. macOS environment bootstrap and package tracking via Homebrew + VS Code extension manifests.
@@ -200,3 +240,4 @@ Apply these in order. Exhaust each tactic before moving to the next:
 2. If lists changed, ensure generated scripts/manifests are syntactically valid.
 3. If workflows changed, verify YAML syntax and trigger scope.
 4. Confirm no accidental renames or output path changes.
+
