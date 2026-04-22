@@ -29,7 +29,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 ##### Senior Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
-- Own the full-stack self-service Kafka Clusters as a Service product, embedded in Optum's enterprise developer provisioning portal HealthCarePlatform Console. Lead the UI/UX layer (TypeScript, React, NextJS), the API and provisioning pipeline bridging the portal to real Kubernetes/GCP infrastructure, and integration with the central developer portal team to meet their UX, accessibility, and security standards. The product is one of the highest-regarded developer experience offerings at Optum due to its automation quality, ease of self-service, and responsive, informative, intuitive interface.
+- Own the full-stack self-service developer portal for Kafka Clusters as a Service, embedded in Optum's enterprise-wide HCP Console. Lead the UI/UX layer (TypeScript, React, NextJS), the API and provisioning pipeline bridging the portal to real Kubernetes StatefulSet infrastructure, and integration with the central developer portal team to meet their UX, accessibility, and security standards. The product is one of the highest-regarded developer experience offerings at Optum due to its automation quality, ease of self-service, and responsive, informative, intuitive interface.
 
 - Serve as one of the primary technical owners of the underlying platform: 1,000+ production nodes, 750+ high-throughput clusters, five-nines reliability, zero customer data loss. Develop and maintain custom Kubernetes operators in Go across a two-tier control plane, addressing functional, performance, security, and operational requirements across multi-tenant, multi-cloud environments.
 
