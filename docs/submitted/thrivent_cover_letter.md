@@ -1,10 +1,10 @@
 ---
 pdf_options:
   margin:
-    top: 10mm
-    bottom: 10mm
-    left: 15mm
-    right: 15mm
+    top: 15mm
+    bottom: 15mm
+    left: 20mm
+    right: 20mm
 ---
 
 **Caleb Kopp**
@@ -27,7 +27,7 @@ My strongest recent example is WarpStream. I co-led an 8-week sprint and persona
 
 A critical part of my daily work is protecting sensitive data. Our platform carries PHI/PII healthcare data streams for one of the largest healthcare organizations in the world, requiring end-to-end SSL/TLS transport, GCP KMS encryption at rest, mTLS certificate management, and strict IAM controls. I implement these security patterns directly in the code I write, coordinate with data governance teams on legally-approved access workflows, and maintain our platform's certificate authority that generates and rotates thousands of client certificates. That experience with regulated data handling, auditability, and compliance maps directly to the sensitivity financial services demands.
 
-While my primary backend language has been Go, I bring strong Java fundamentals and have worked extensively building RESTful service architectures, service-to-service integrations, validation, error handling, and resiliency patterns that translate directly to Spring Boot. On the frontend, React and TypeScript are my daily tools. I have deep experience with automated testing, CI/CD pipelines (GitHub Actions, Jenkins), structured logging, metrics, and observability.
+While my primary backend language has been Go, I bring strong engineering fundamentals that apply to any tech stack and language. I have worked extensively building RESTful service architectures, service-to-service integrations, validation, error handling, and resiliency patterns that translate directly to Spring Boot. On the frontend, React and TypeScript are my daily tools. I have deep experience with automated testing, CI/CD pipelines (GitHub Actions, Jenkins), structured logging, metrics, and observability.
 
 I am a pragmatic engineer who writes code, balances speed with quality, communicates clearly, surfaces risks early, and ships. I would welcome the opportunity to bring that energy to Thrivent's Force team and help deliver real results this summer.
 

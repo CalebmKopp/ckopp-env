@@ -72,13 +72,13 @@ Lead engineer and product owner. Captain a team of 6. Write user stories, conduc
 - Keep role-specific tailoring targeted to the company/job without changing core chronology.
 
 ### Margins (pdf_options)
-Three margin tiers exist. Only `pdf_options.margin` is set; no other pdf_options are used.
+Three margin tiers exist (small, medium, large). Only `pdf_options.margin` is set; no other pdf_options are used. Always start with Large. Step down only when content exceeds one page.
 
 | Tier | top/bottom | left/right | When to use |
 |---|---|---|---|
-| Standard | 10mm | 15mm | Default for all resumes and cover letters |
-| Tight | 6mm | 12mm | Last resort when content still exceeds one page after all other compression |
-| Wide | 15mm | 20mm | Cover letters with shorter content (more whitespace = more professional letter) |
+| Large | 15mm | 20mm | Default starting point for all resumes and cover letters |
+| Medium | 10mm | 15mm | First step down when Large does not fit one page |
+| Small | 6mm | 12mm | Last resort when Medium still exceeds one page |
 
 ### Heading Hierarchy
 Master resumes (visual.md, ats.md) use h1 for the name and h2 for section titles.
@@ -199,14 +199,15 @@ When generating the tailored resume from masters:
 13. Compress Education to a single inline line.
 
 #### One-Page Compression Priority
-Apply these in order. Exhaust each tactic before moving to the next:
-1. Drop Summary section.
-2. Drop Intern + Sogeti roles.
-3. Compress SE role bullets.
-4. Fold WarpStream into a single bullet.
-5. Drop Org Initiative Leadership section.
-6. Drop Projects section (move IEEE to Education line).
-7. Tighten margins to 6mm/12mm (last resort).
+Always start at Large margins (15mm/20mm). Apply these steps in order, regenerating and rechecking after each:
+1. Reduce margins from Large to Medium (10mm/15mm).
+2. If a cover letter is also being generated, drop Summary section. If no cover letter, keep Summary and continue to step 3.
+3. Drop Intern + Sogeti roles.
+4. Compress SE role bullets.
+5. Fold WarpStream into a single bullet.
+6. Drop Org Initiative Leadership section.
+7. Drop Projects section (move IEEE to Education line).
+8. Reduce margins from Medium to Small (6mm/12mm) (last resort).
 
 ### PDF Generation and Naming
 - Local PDF output path is docs/pdf/.
