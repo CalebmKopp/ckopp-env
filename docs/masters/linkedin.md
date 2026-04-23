@@ -31,12 +31,12 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 **Optum, UnitedHealth Group** | Saint Paul, MN | Sep 2022 - Present
 
-#### Description (1980 / 2000 chars)
+#### Description (~1975 / 2000 chars)
 
 ```
 One of the deepest technical owners of Optum's Kafka-as-a-Service platform: 750+ high-throughput clusters, 1,000+ nodes, five nines reliability.
 
-KRM/PRM Technical Lead: Primary SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infrastructure deployment at production scale across GCP and Azure. Manages 500+ Kafka clusters in multi-tenant, multi-cloud environments.
+KRM/PRM Technical Lead: Primary SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infrastructure deployment at scale across GCP and Azure. 500+ Kafka clusters in multi-tenant, multi-cloud environments.
 
 WarpStream Delivery Lead: Co-led full-stack delivery of WarpStream cluster provisioning - PRM agents, KRM operator extensions, a net-new Go operator built from upstream Helm charts, and all Terraform cloud infrastructure from scratch (GCS, VPC, DNS, IAM). Shipped to two largest GCP customers; projected ~80% annual cost reduction.
 
@@ -44,11 +44,13 @@ Frontend Product Lead: Lead engineer and product owner of the Kafka Clusters on 
 
 Infrastructure & Security: Terraform/IaC across GKE, VPC, DNS, IAM, Vault, and CI/CD. Own the platform's mTLS certificate authority - generate, distribute, and rotate thousands of client certificates with end-to-end encryption.
 
-Observability: Extend Prometheus/Thanos/Grafana stack with PromQL queries, Go monitoring controllers, and Terraform-managed dashboards with PagerDuty/ServiceNow alert routing.
+Data Compliance & DR: Ensure secure transport (SSL/TLS) and storage (GCP KMS encryption at rest) of PHI/PII data streams in compliance with healthcare data governance requirements. Coordinate with a sister data governance team connecting data owners to consumers through secure, legally-approved access workflows. Maintain active DR options and participate in regular DR exercises.
+
+Observability: Extend Prometheus/Thanos/Grafana stack with PromQL, Go monitoring controllers, and dashboards surfaced to on-call engineers and customers. PagerDuty/ServiceNow alert routing. Author alert playbooks and war room runbooks.
 
 Organizational Leadership: First-responder for company-wide mandates - Chainguard hardened image adoption, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, and Grafana consolidation.
 
-Kafka Operations: Day-to-day ops of production clusters - topic compaction, rolling restarts, partition reassignment, consumer lag monitoring, and broker certificate rotation.
+Kafka Operations: Day-to-day production ops - compaction, rolling restarts, partition reassignment, lag monitoring, broker cert rotation.
 
 SRE & Mentorship: Zero customer data loss in production. On-call across 1,000+ node fleet. Mentor junior engineers on distributed systems, Go, and operator patterns. Optum Early Careers volunteer.
 ```

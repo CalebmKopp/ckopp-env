@@ -28,6 +28,7 @@ A portable toolkit for **macOS machine setup** and **resume automation**. Fork i
   - [Windows Support](#windows-support)
     - [Setup](#setup)
     - [Usage](#usage)
+    - [VSCode Extensions](#vscode-extensions)
   - [Forking This Repo for Your Own Use](#forking-this-repo-for-your-own-use)
     - [Tips for Colleagues](#tips-for-colleagues)
   - [TODO](#todo)
@@ -144,12 +145,15 @@ Each markdown file can include YAML frontmatter to control PDF options:
 ```yaml
 ---
 pdf_options:
-  margin: 10mm 15mm
-  format: Letter
+  margin:
+    top: 15mm
+    bottom: 15mm
+    left: 20mm
+    right: 20mm
 ---
 ```
 
-See the [md-to-pdf docs](https://github.com/simonhaenisch/md-to-pdf#readme) for all available options.
+Only `pdf_options.margin` is used. Three margin tiers exist: Large (15mm/20mm, default), Medium (10mm/15mm), and Small (6mm/12mm). See the [md-to-pdf docs](https://github.com/simonhaenisch/md-to-pdf#readme) for all available options.
 
 ## Makefile Targets
 
