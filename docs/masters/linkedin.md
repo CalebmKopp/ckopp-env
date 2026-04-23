@@ -31,28 +31,28 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 **Optum, UnitedHealth Group** | Saint Paul, MN | Sep 2022 - Present
 
-#### Description (~1975 / 2000 chars)
+#### Description (1994 / 2000 chars)
 
 ```
 One of the deepest technical owners of Optum's Kafka-as-a-Service platform: 750+ high-throughput clusters, 1,000+ nodes, five nines reliability.
 
-KRM/PRM Technical Lead: Primary SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infrastructure deployment at scale across GCP and Azure. 500+ Kafka clusters in multi-tenant, multi-cloud environments.
+KRM/PRM Technical Lead: SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infra deployment across GCP and Azure. 500+ clusters in multi-tenant, multi-cloud environments.
 
-WarpStream Delivery Lead: Co-led full-stack delivery of WarpStream cluster provisioning - PRM agents, KRM operator extensions, a net-new Go operator built from upstream Helm charts, and all Terraform cloud infrastructure from scratch (GCS, VPC, DNS, IAM). Shipped to two largest GCP customers; projected ~80% annual cost reduction.
+WarpStream Delivery Lead: Co-led WarpStream cluster provisioning - PRM agents, KRM operator extensions, a net-new Go operator from upstream Helm charts, all Terraform infra from scratch (GCS, VPC, DNS, IAM). Shipped to two largest GCP customers; projected ~80% annual cost reduction.
 
-Frontend Product Lead: Lead engineer and product owner of the Kafka Clusters on Cloud micro-frontend (TypeScript, React, NextJS) in HCP Console. Captain a team of 6 engineers, write user stories, and conduct code reviews.
+Frontend Product Lead: Lead engineer and product owner of the Kafka on Cloud micro-frontend (TypeScript, React, NextJS) in HCP Console. Captain a team of 6; write stories and conduct code reviews.
 
-Infrastructure & Security: Terraform/IaC across GKE, VPC, DNS, IAM, Vault, and CI/CD. Own the platform's mTLS certificate authority - generate, distribute, and rotate thousands of client certificates with end-to-end encryption.
+Infrastructure & Security: Terraform/IaC across GKE, VPC, DNS, IAM, Vault, and CI/CD. Own the platform's mTLS CA - generate, distribute, and rotate thousands of client certificates.
 
-Data Compliance & DR: Ensure secure transport (SSL/TLS) and storage (GCP KMS encryption at rest) of PHI/PII data streams in compliance with healthcare data governance requirements. Coordinate with a sister data governance team connecting data owners to consumers through secure, legally-approved access workflows. Maintain active DR options and participate in regular DR exercises.
+Data Compliance & DR: Ensure secure transport (SSL/TLS) and storage (GCP KMS encryption at rest) of PHI/PII data streams. Coordinate with data governance connecting owners to consumers through legally-approved workflows. Maintain DR options; participate in regular exercises.
 
-Observability: Extend Prometheus/Thanos/Grafana stack with PromQL, Go monitoring controllers, and dashboards surfaced to on-call engineers and customers. PagerDuty/ServiceNow alert routing. Author alert playbooks and war room runbooks.
+Observability: Extend Prometheus/Thanos/Grafana with PromQL, Go controllers, and dashboards for on-call engineers and customers. PagerDuty/ServiceNow routing. Author playbooks and runbooks.
 
-Organizational Leadership: First-responder for company-wide mandates - Chainguard hardened image adoption, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, and Grafana consolidation.
+Organizational Leadership: First-responder for company-wide mandates - Chainguard hardened images, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, Grafana consolidation.
 
-Kafka Operations: Day-to-day production ops - compaction, rolling restarts, partition reassignment, lag monitoring, broker cert rotation.
+Kafka Operations: Production ops - compaction, restarts, partition reassignment, lag monitoring, cert rotation.
 
-SRE & Mentorship: Zero customer data loss in production. On-call across 1,000+ node fleet. Mentor junior engineers on distributed systems, Go, and operator patterns. Optum Early Careers volunteer.
+SRE & Mentorship: Zero customer data loss. On-call across 1,000+ node fleet. Mentor juniors on distributed systems, Go, and operator patterns. Early Careers volunteer.
 ```
 
 #### Skills (20 - first 5 shown on profile)
@@ -86,7 +86,7 @@ SRE & Mentorship: Zero customer data loss in production. On-call across 1,000+ n
 
 **Optum, UnitedHealth Group** | Saint Paul, MN | Jun 2020 - Aug 2022
 
-#### Description (1905 / 2000 chars)
+#### Description (1904 / 2000 chars)
 
 ```
 Kafka Platform (Jan 2021 - Aug 2022): Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP and Azure.
@@ -137,7 +137,7 @@ Technology Development Program - ESRO Rotation (Jun - Dec 2020): Built a full-st
 
 **Optum** | Saint Paul, MN | Jun 2019 - Aug 2019
 
-#### Description (371 / 2000 chars)
+#### Description (385 / 2000 chars)
 
 ```
 Collaborated with product owners and engineers to document 6 asynchronous microservices leveraging master data integrity capabilities to maintain a unified golden record view of individuals and HCOs across government, public, and licensed data sources. Improved quality of an Angular web application through UI testing, defect identification, and increased code coverage via SonarQube.
@@ -159,7 +159,7 @@ Collaborated with product owners and engineers to document 6 asynchronous micros
 
 **Sogeti USA** | Jan 2019 - May 2019
 
-#### Description (378 / 2000 chars)
+#### Description (310 / 2000 chars)
 
 ```
 Partnered in building a full-stack serverless web application for managing client success stories and demonstrating value delivered to the company. Led a small team of fellow student developers as agile team lead - writing user stories, running ceremonies, and interfacing with product owners from the company.
