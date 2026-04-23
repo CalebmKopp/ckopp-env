@@ -8,12 +8,13 @@ Senior Software Engineer at Optum, the technology arm of UnitedHealth Group. Six
 ### What I Work On
 I am one of the deepest technical owners of Optum's Kafka-as-a-Service platform: 1,000+ production nodes, 750+ high-throughput clusters across GCP and Azure, five-nines reliability, zero customer data loss. The platform is built on custom Kubernetes operators in Go (KRM - Kubernetes Resource Manager) forming a two-tier distributed control plane, a CRD-driven internal provisioning framework (PRM - Platform Resource Manager, analogous to Spotify Backstage), Terraformed cloud infrastructure, and a self-service developer portal micro-frontend embedded in HCP Console.
 
-### Developer Portal Expertise
-I own the full-stack self-service developer portal for Kafka Clusters as a Service, embedded in Optum's enterprise-wide HCP Console. I lead every layer:
+### Full-Stack Platform Engineering
+I own the full-stack self-service developer portal experience for Kafka Clusters as a Service, embedded in Optum's enterprise-wide HCP Console. I lead every layer:
 - **UI/UX:** TypeScript, React, NextJS micro-frontend; responsive, informative, intuitive interface
 - **API layer:** Provisioning pipeline bridging the portal to real Kubernetes StatefulSet infrastructure
 - **Portal integration:** Meeting UX, accessibility, and security standards of the central developer portal team
 - **Infrastructure security:** Enforcing security posture on every cluster the portal provisions (mTLS, Vault, KMS)
+- **Observability & alerting:** Ensure platform metrics are exposed and surfaced in Grafana dashboards used by both on-call engineers and customers. Write runbooks and alert playbooks for platform-specific alerts and customer engagement procedures during war rooms and incident response.
 
 The product is one of the highest-regarded developer experience offerings at Optum due to the quality of its automation, ease of self-service, and responsiveness of its UI. Developers across the enterprise can provision production-grade streaming infrastructure in minutes.
 
@@ -37,32 +38,32 @@ The product is one of the highest-regarded developer experience offerings at Opt
 ### Professional Intersection
 I sit at the intersection of: Healthcare (regulated, PHI/PII workloads), Data Streaming (Kafka at enterprise scale), Developer Experience Portals (full-stack self-service for internal developers), Platform Engineering (Kubernetes operators, IaC, cloud infrastructure), Security (mTLS, Vault, compliance, certificate management), and Go/TypeScript full-stack development. I captain a team of 6 engineers, mentor through Optum Early Careers, and lead through technical depth, not title.
 
+### Hands-On Coding Identity
+I am a senior engineer who still writes production code every day. I personally implement React UI components, API integrations, and backend service logic - I am in the codebase daily writing features, fixing bugs, and reviewing pull requests. I also co-design and author all of the platform's Terraform infrastructure across GCP and Azure, from VPC and IAM to Cloud Storage and DNS - not delegating IaC to a separate infrastructure team but writing and maintaining it myself alongside application code. When tailoring for roles that emphasize hands-on engineering over pure architecture/oversight, lead with language like "write and ship production code daily," "personally wrote," "implement directly," and "stay hands-on." Avoid framing that sounds like pure management ("own," "serve as," "lead") without pairing it with concrete coding activity.
+
+### Regulated Data Handling
+My platform carries PHI/PII healthcare data streams requiring end-to-end SSL/TLS transport, GCP KMS encryption at rest, mTLS certificate management, strict IAM controls, and legally-approved data governance workflows. I implement these security patterns directly in the code I write and maintain the platform's certificate authority that generates and rotates thousands of client certificates. When tailoring for regulated industries (financial services, insurance, government), emphasize: PHI/PII handling, encryption at rest and in transit, certificate management, IAM, auditability, compliance workflows, and coordination with data governance teams. Frame healthcare compliance as directly transferable to financial data sensitivity.
+
 ### Leadership Style
 Lead engineer and product owner. Captain a team of 6. Write user stories, conduct code reviews, mentor junior engineers on distributed systems, Go, and secure development. Coordinate across engineering, product, security, and compliance stakeholders. Volunteer for Optum Early Careers each year (technical bootcamp lectures, candidate interviews). Serve on-call across the full production fleet.
 
-## Repository Purpose
-This repo has two primary responsibilities:
-1. macOS environment bootstrap and package tracking via Homebrew + VS Code extension manifests.
-2. Resume and cover letter authoring in Markdown, with local and CI PDF generation.
+---
 
-## Source of Truth by Area
-- Environment setup and project usage: README.md and Makefile.
-- Machine bootstrap scripts: hack/fresh_install.sh and hack/generate_install_lists.sh.
-- PDF generation script: hack/generate_pdfs.sh.
-- Package manifests: lists/Brewfile and lists/vsc_install_list.sh.
-- Resume content: docs/ (top-level plus masters/, submitted/, prospectives/).
-- CI workflows: .github/workflows/*.yml.
+## Resume and Cover Letter Rules
 
-## Working Rules
+### Working Rules
 - Prefer make targets over calling scripts directly.
 	- Use `make fresh`, `make sync`, `make docs`, and `make docs FILE=<path>` where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/nintendo`).
 - Keep changes minimal and scoped to the requested task.
 - Do not rewrite large resume sections unless requested.
 - Preserve established wording and quantified claims unless asked to update them.
 
-## Resume and Cover Letter Editing Rules
+### Source of Truth
+- Resume content: docs/ (top-level plus masters/, submitted/, prospectives/).
+- PDF generation script: hack/generate_pdfs.sh.
+- CI workflows: .github/workflows/*.yml.
 
-### General
+### General Editing Rules
 - Preserve YAML frontmatter and `pdf_options` blocks in Markdown files.
 - Keep punctuation plain ASCII. Do not introduce em dashes or en dashes.
 - Avoid fabrication:
@@ -136,9 +137,9 @@ When tailoring, skills categories are renamed, reordered, and pruned to mirror t
 - LinkedIn is a markdown link only in ats.md. All other files use plain text.
 - Cover letters contain zero links.
 
-## Cover Letter Structure
+### Cover Letter Structure
 
-### Header Block
+#### Header Block
 ```
 **Caleb Kopp**
 Saint Paul, MN &nbsp;|&nbsp; [contact info]
@@ -151,11 +152,11 @@ Saint Paul, MN &nbsp;|&nbsp; [contact info]
 ---
 ```
 
-### Greeting
+#### Greeting
 - Personal name when known: `To [Name] at [Company],`
 - Generic when not: `To the [Company] hiring team,`
 
-### Paragraph Structure (5-6 paragraphs)
+#### Paragraph Structure (5-6 paragraphs)
 1. **Mission hook:** Open with the company's mission/values, state personal connection, declare interest.
 2. **Platform credibility:** Stats-heavy paragraph establishing technical depth (1,000+ nodes, five nines, zero data loss).
 3. **Featured differentiator:** Deep-dive into the most relevant experience for this specific role.
@@ -163,7 +164,7 @@ Saint Paul, MN &nbsp;|&nbsp; [contact info]
 5. **Team leadership + culture:** Leadership, mentoring, and values alignment.
 6. **Culture fit** (sometimes merged with para 5): Direct reference to company values.
 
-### Sign-off
+#### Sign-off
 Always the same two lines, no variation:
 ```
 Thank you for your time and consideration.
@@ -171,9 +172,9 @@ Thank you for your time and consideration.
 Caleb Kopp
 ```
 
-## Resume Tailoring Workflow
+### Resume Tailoring Workflow
 
-### End-to-End Flow
+#### End-to-End Flow
 1. User provides the full text of a job description.
 2. Read docs/masters/ats.md and docs/masters/linkedin.md as source material.
 3. Generate a tailored resume markdown file applying the content rules below.
@@ -181,7 +182,7 @@ Caleb Kopp
 5. Run `make docs FILE=<path>` to produce the PDF, where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/*newresume*`).
 6. Check the PDF page count. If it exceeds one page, apply the One-Page Compression Priority in order, regenerate, and recheck until it fits.
 
-### Content Rules
+#### Content Rules
 When generating the tailored resume from masters:
 1. Shift heading hierarchy down two levels (h1->h3, h2->h4, h3->h5).
 2. Embed title in name heading: `### Caleb Kopp - Senior Software Engineer`.
@@ -197,7 +198,7 @@ When generating the tailored resume from masters:
 12. Compress Projects to 1 bullet or drop entirely (roll IEEE into Education line).
 13. Compress Education to a single inline line.
 
-### One-Page Compression Priority
+#### One-Page Compression Priority
 Apply these in order. Exhaust each tactic before moving to the next:
 1. Drop Summary section.
 2. Drop Intern + Sogeti roles.
@@ -207,37 +208,50 @@ Apply these in order. Exhaust each tactic before moving to the next:
 6. Drop Projects section (move IEEE to Education line).
 7. Tighten margins to 6mm/12mm (last resort).
 
-## PDF Generation and Naming Constraints
+### PDF Generation and Naming
 - Local PDF output path is docs/pdf/.
 - File naming convention is hardcoded in scripts/workflows as:
 	- `caleb-kopp-resume-<name>.pdf`
 - CI currently converts only top-level docs/*.md files.
 	- Files under docs/masters/, docs/submitted/, and docs/prospectives/ are local-build only.
 
-## Known Resume Constraints
+### Known Resume Constraints
 - All resumes for roles should fit on one page. If content exceeds one page, apply the compression tactics in the specified order. The Masters can exceed one page, but all submitted/prospective resumes should be one page.
 - When page count matters, prefer reliable local verification methods over Spotlight metadata.
 
-## Environment Manifest Rules
+### Validation Checklist
+1. If docs changed, run the relevant docs build command.
+2. If workflows changed, verify YAML syntax and trigger scope.
+3. Confirm no accidental renames or output path changes.
+
+---
+
+## Environment and Machine Setup
+
+### Source of Truth
+- Environment setup and project usage: README.md and Makefile.
+- Machine bootstrap scripts: hack/fresh_install.sh and hack/generate_install_lists.sh.
+- Package manifests: lists/Brewfile and lists/vsc_install_list.sh.
+
+### Environment Manifest Rules
 - Treat lists/Brewfile and lists/vsc_install_list.sh as generated artifacts.
 - When updating machine state manifests, prefer `make sync` to regenerate them.
 - If editing lists manually is requested, preserve current format and ordering style as much as possible.
 
-## Workflow Safety Rules
+### Workflow Safety Rules
 - Keep release tag formats unchanged unless explicitly requested:
 	- `YY.MM.DD.HHMM-pdf`
 	- `YY.MM.DD.HHMM-bundle`
 - Keep use of `RESUME_PAT` and release upload behavior intact unless asked to change CI auth/release strategy.
 - Do not broaden workflow trigger paths unless requested.
 
-## Shell Script Conventions
+### Shell Script Conventions
 - Use Bash-compatible syntax.
 - Preserve script portability assumptions already in repo.
 - Keep shebang style consistent with each file.
 
-## Validation Checklist Before Finishing
-1. If docs changed, run the relevant docs build command.
-2. If lists changed, ensure generated scripts/manifests are syntactically valid.
-3. If workflows changed, verify YAML syntax and trigger scope.
-4. Confirm no accidental renames or output path changes.
+### Validation Checklist
+1. If lists changed, ensure generated scripts/manifests are syntactically valid.
+2. If workflows changed, verify YAML syntax and trigger scope.
+3. Confirm no accidental renames or output path changes.
 
