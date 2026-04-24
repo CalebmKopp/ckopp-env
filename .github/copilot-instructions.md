@@ -57,9 +57,15 @@ My platform carries PHI/PII healthcare data streams requiring end-to-end SSL/TLS
 ### Leadership Style
 Lead engineer and product owner. Captain a team of 6. Write user stories, conduct code reviews, mentor junior engineers on distributed systems, Go, and secure development. Coordinate across engineering, product, security, and compliance stakeholders. Volunteer for Optum Early Careers each year (technical bootcamp lectures, candidate interviews). Serve on-call across the full production fleet.
 
+### Certifications
+- **Google Cloud Certified - Cloud Digital Leader** (Mar 2025 - Mar 2028): Validates foundational knowledge across six GCP domains: (1) Digital Transformation with Google Cloud (cloud adoption frameworks, lift-and-shift, brownfield/greenfield strategies, TCO analysis, hybrid/multi-cloud), (2) Exploring Data Transformation, (3) Innovating with Google Cloud AI, (4) Modernizing Infrastructure and Applications (VMs vs. containers vs. serverless, monolith-to-microservice decomposition, GKE, Anthos, Google Compute Engine, App Engine, Cloud Run, rehosting legacy apps, APIs/Apigee), (5) Trust and Security, (6) Scaling with Google Cloud Operations. The digital transformation and infrastructure modernization domains are directly relevant when tailoring for roles involving cloud migration, monolith-to-microservice initiatives, or GCP hosting strategy decisions.
+
 ---
 
 ## Resume and Cover Letter Rules
+
+### Terminology
+- When Caleb says "add to the masters," this means docs/masters/ats.md and docs/visual.md. If the content is also relevant as initial context for future resume/cover letter generation (e.g., narratives, facts, identity details), also update .github/copilot-instructions.md.
 
 ### Working Rules
 - Prefer make targets over calling scripts directly.
@@ -265,3 +271,4 @@ Always start at Large margins (15mm/20mm). Apply these steps in order, regenerat
 1. If lists changed, ensure generated scripts/manifests are syntactically valid.
 2. If workflows changed, verify YAML syntax and trigger scope.
 3. Confirm no accidental renames or output path changes.
+

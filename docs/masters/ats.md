@@ -152,3 +152,8 @@ Lead Developer and Scrum Master | Senior Year - Post-Graduation | IEEE Publicati
 - St. Cloud State University | Aug 2016-May 2020 | GPA 3.79
 
 - President, Student Organization of Software Engineers (SOSE)
+
+---
+
+## Certifications
+- Google Cloud Certified - Cloud Digital Leader | Mar 2025 - Mar 2028
