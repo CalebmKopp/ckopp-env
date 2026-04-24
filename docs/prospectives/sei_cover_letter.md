@@ -1,10 +1,10 @@
 ---
 pdf_options:
   margin:
-    top: 15mm
-    bottom: 15mm
-    left: 20mm
-    right: 20mm
+    top: 10mm
+    bottom: 10mm
+    left: 15mm
+    right: 15mm
 ---
 
 **Caleb Kopp**
