@@ -19,11 +19,21 @@ I own the full-stack self-service developer portal experience for Kafka Clusters
 The product is one of the highest-regarded developer experience offerings at Optum due to the quality of its automation, ease of self-service, and responsiveness of its UI. Developers across the enterprise can provision production-grade streaming infrastructure in minutes.
 
 ### Key Value Created
-- **WarpStream delivery (Q4 2024 - Q1 2025):** Co-led an 8-week sprint delivering full-stack WarpStream-based cluster provisioning: custom Go operator, all Terraform cloud infrastructure from scratch (GCS, VPC, DNS, IAM), portal integration, and observability. Shipped to Optum's two largest GCP Kafka customers. Cloud Storage-backed diskless architecture reduces annual infrastructure costs by approximately 80%.
+- **On-prem to cloud migration and GCP advocacy (SE role, 2021-2022):** See detailed narrative below. This work directly led to my promotion to Senior.
+- **WarpStream delivery (Q4 2024 - Q1 2025):** See detailed narrative below. Projected ~80% annual Kafka infrastructure cost reduction.
 - **Platform scale:** 1,000+ nodes, 750+ clusters, five-nines reliability, zero customer data loss across the platform's history.
 - **Organizational first-responder:** Consistently first to absorb company-wide mandates before golden paths exist: Chainguard hardened image adoption, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, Grafana consolidation, Vault and break-glass CLI.
 - **Confluent Schema Registry as a Service:** Certificate/ACL-governed schema management and data governance on top of provisioned Kafka clusters.
 - **Full-stack web app (SE role):** Built a React/TypeScript/Express/MSSQL app replacing spreadsheet-based datacenter inventory management. Adopted by the team.
+
+### Key Narratives for Resume Tailoring
+These are detailed stories to draw from when generating tailored resumes and cover letters. Condense, reword, and adapt them to the target role; do not copy verbatim into tailored documents.
+
+#### On-Prem to Cloud Migration and GCP Advocacy (SE role, 2021-2022)
+The KaaS platform initially only offered Kafka clusters in Optum's own datacenter. The first cloud venture was a pilot program using GitOps automation to generate customer Terraform and create Azure VM ScaleSets. This proved operationally unfeasible for two reasons: (1) GCP offered dramatically lower compute pricing for equivalent storage/memory/CPU specs, and (2) Azure imposed undocumented per-3-minute and per-30-minute API call rate limits on large-scale Terraform operations, with no documentation, no usage dashboard, and no forewarning in official engagements. I discovered these rate limits by personally digging into network traffic and request/response headers to the Azure API. This investigation, combined with cost analysis, led the team to adopt GCP as the primary KaaS cloud host. The decision cascaded across all of Optum's data platforms through "Data Gravity" - where Kafka streams land, producers and consumers follow with their compute and services. The push for GCP over Azure has saved the company millions of dollars in comparable infrastructure costs. I owned the UI/UX of the KaaS GCP self-service portal throughout, accelerating customer adoption. The following year was spent migrating customers off on-prem shared-tenant clusters, bespoke MSK instances, and self-hosted Kafka deployments onto the automated self-service GCP product. This body of work directly led to my promotion to Senior Software Engineer.
+
+#### WarpStream Delivery (Senior role, Q4 2024 - Q1 2025)
+Co-led an 8-week sprint delivering full-stack WarpStream-based cluster provisioning. Built a net-new Go operator (WarpStream DME), authored all Terraform cloud infrastructure from scratch (GCS, VPC, DNS, IAM), integrated into the self-service portal, and delivered full observability. Shipped to Optum's two largest GCP Kafka customers as beta. WarpStream's diskless, Cloud Storage-backed architecture eliminates local disk I/O from the streaming data path, projected to reduce annual Kafka infrastructure costs by approximately 80%. This was the platform's most impactful cost-reduction initiative and demonstrated the team's ability to deliver net-new infrastructure products end-to-end in compressed timelines.
 
 ### Technical Identity
 - **Primary languages:** Go, TypeScript, Python, Java, Bash
@@ -47,9 +57,15 @@ My platform carries PHI/PII healthcare data streams requiring end-to-end SSL/TLS
 ### Leadership Style
 Lead engineer and product owner. Captain a team of 6. Write user stories, conduct code reviews, mentor junior engineers on distributed systems, Go, and secure development. Coordinate across engineering, product, security, and compliance stakeholders. Volunteer for Optum Early Careers each year (technical bootcamp lectures, candidate interviews). Serve on-call across the full production fleet.
 
+### Certifications
+- **Google Cloud Certified - Cloud Digital Leader** (Mar 2025 - Mar 2028): Validates foundational knowledge across six GCP domains: (1) Digital Transformation with Google Cloud (cloud adoption frameworks, lift-and-shift, brownfield/greenfield strategies, TCO analysis, hybrid/multi-cloud), (2) Exploring Data Transformation, (3) Innovating with Google Cloud AI, (4) Modernizing Infrastructure and Applications (VMs vs. containers vs. serverless, monolith-to-microservice decomposition, GKE, Anthos, Google Compute Engine, App Engine, Cloud Run, rehosting legacy apps, APIs/Apigee), (5) Trust and Security, (6) Scaling with Google Cloud Operations. The digital transformation and infrastructure modernization domains are directly relevant when tailoring for roles involving cloud migration, monolith-to-microservice initiatives, or GCP hosting strategy decisions.
+
 ---
 
 ## Resume and Cover Letter Rules
+
+### Terminology
+- When Caleb says "add to the masters," this means docs/masters/ats.md and docs/visual.md. If the content is also relevant as initial context for future resume/cover letter generation (e.g., narratives, facts, identity details), also update .github/copilot-instructions.md.
 
 ### Working Rules
 - Prefer make targets over calling scripts directly.

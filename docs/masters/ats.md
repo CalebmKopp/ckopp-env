@@ -106,6 +106,8 @@ Optum, UnitedHealth Group | Saint Paul, MN | Jun 2020 - Aug 2022
 
 - Implemented novel features in custom Kubernetes operator frameworks in Go for automated deployment and configuration of Kafka resources at production scale; participated in early architecture discussions for KRM during its design phase.
 
+- **On-Prem to Cloud Migration and GCP Advocacy:** Helped lead the platform's first venture from on-prem-only Kafka clusters to the cloud. Piloted a GitOps-driven automation pipeline generating customer Terraform to provision Azure VM ScaleSets for KaaS cloud clusters. Through hands-on investigation of Azure API network traffic and request/response headers, discovered undocumented per-3-minute and per-30-minute API call rate limits that made large-scale Terraform management operationally unfeasible; Azure provided no documentation, no usage dashboard, and no forewarning in official engagements. Combined this finding with a cost analysis showing significantly lower compute pricing in GCP for equivalent VM specs (storage, memory, CPU), and presented findings to platform leadership and Azure/Google engineering contacts. This investigation directly steered the team's decision to adopt GCP as the primary KaaS cloud host, a decision that cascaded across Optum's data platforms: as Kafka streams moved to GCP, producers and consumers followed (a pattern Optum calls "Data Gravity"), driving millions of dollars in cumulative infrastructure savings company-wide. Owned the UI/UX of the KaaS GCP self-service portal throughout this migration, enabling customers to provision cloud Kafka clusters through the developer portal and accelerating adoption. The following year was spent migrating customers off on-prem shared-tenant clusters, bespoke MSK instances, and self-hosted Kafka deployments onto the automated self-service GCP product.
+
 - Assumed SRE responsibilities beginning Aug 2021, stabilizing production high-throughput Kafka services, establishing performance and utilization thresholds aligned to SLAs, and running on-call shifts responding to production incidents.
 
 **Technology Development Program - Enterprise Security Resiliency Office (ESRO) Rotation (Jun - Dec 2020)**
@@ -150,3 +152,8 @@ Lead Developer and Scrum Master | Senior Year - Post-Graduation | IEEE Publicati
 - St. Cloud State University | Aug 2016-May 2020 | GPA 3.79
 
 - President, Student Organization of Software Engineers (SOSE)
+
+---
+
+## Certifications
+- Google Cloud Certified - Cloud Digital Leader | Mar 2025 - Mar 2028
