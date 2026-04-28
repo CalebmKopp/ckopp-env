@@ -235,6 +235,7 @@ Always start at Large margins (15mm/20mm). Apply these steps in order, regenerat
 ### Known Resume Constraints
 - All resumes for roles should fit on one page. If content exceeds one page, apply the compression tactics in the specified order. The Masters can exceed one page, but all submitted/prospective resumes should be one page.
 - When page count matters, prefer reliable local verification methods over Spotlight metadata.
+- Page count verification: after generating a PDF, run `strings <pdf> | grep '/Type /Page'`. Each `/Type /Page` line (excluding `/Type /Pages`) represents one page. This is fast and reliable for the simple PDFs md-to-pdf produces. Use `grep -c` for a numeric count.
 
 ### Validation Checklist
 1. If docs changed, run the relevant docs build command.
@@ -271,4 +272,3 @@ Always start at Large margins (15mm/20mm). Apply these steps in order, regenerat
 1. If lists changed, ensure generated scripts/manifests are syntactically valid.
 2. If workflows changed, verify YAML syntax and trigger scope.
 3. Confirm no accidental renames or output path changes.
-
