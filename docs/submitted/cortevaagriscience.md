@@ -45,7 +45,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Led the platform's on-prem to cloud migration via Azure VM ScaleSets and Terraform/Atlantis GitOps. Discovered undocumented Azure API rate limits, steered adoption of GCP as primary cloud host - cascading across Optum's data platforms and driving millions in infrastructure savings.
 
-- Executed parallel migrations at scale: 50 Terraform/Helm deployments (OpenShift to Anthos), 300 customer namespaces (legacy GitOps to CRD-backed provisioning), 87 repos (on-prem to cloud), and CI/CD pipeline replacement (Jenkins/Ansible/Atlantis to GitHub Actions). Assumed SRE responsibilities and on-call.
+- Executed parallel migrations at scale: 50 Terraform/Helm deployments (OpenShift to Anthos), 300 customer namespaces (legacy GitOps to CRD backed provisioning), 87 repos (on-prem to cloud), and CI/CD pipeline replacement (Jenkins/Ansible/Atlantis to GitHub Actions). Assumed SRE responsibilities and on-call.
 
 - Built a full-stack application (React, TypeScript, Express, TypeORM, MSSQL) with database schema design, data modeling, and migrations for datacenter inventory management.
 
