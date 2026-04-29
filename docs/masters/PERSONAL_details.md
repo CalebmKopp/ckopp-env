@@ -39,6 +39,7 @@ The product is one of the highest-regarded developer experience offerings at Opt
 - **Organizational first-responder:** Consistently first to absorb company-wide mandates before golden paths exist: Chainguard hardened image adoption, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, Grafana consolidation, Vault and break-glass CLI.
 - **Confluent Schema Registry as a Service:** Certificate/ACL-governed schema management and data governance on top of provisioned Kafka clusters.
 - **Full-stack web app (SE role):** Built a React/TypeScript/Express/MSSQL app replacing spreadsheet-based datacenter inventory management. Adopted by the team.
+- **Cassandra/Elasticsearch On-Prem Operations:** Early in my tenure, supported on-prem Cassandra and Elasticsearch clusters as a service, including on-call troubleshooting and learning the operational quirks of running these systems at scale. The Elasticsearch product was later transitioned to a dedicated team, and all Cassandra clusters were decommissioned as the platform evolved.
 
 ## Key Narratives for Resume Tailoring
 These are detailed stories to draw from when generating tailored resumes and cover letters. Condense, reword, and adapt them to the target role; do not copy verbatim into tailored documents.
@@ -56,7 +57,7 @@ Solely owned the design and execution of a head-to-head performance comparison b
 - **Primary languages:** Go, TypeScript, Python, Java, Bash
 - **Infrastructure:** Kubernetes (CRDs, custom operators, Helm), Terraform (GCP, Azure), Docker, GKE, VPC, DNS, IAM
 - **Data streaming:** Apache Kafka, Warpstream, Confluent, Schema Registry, Elasticsearch
-- **Frontend:** React, NextJS, micro-frontend architecture, self-service provisioning UI
+- **Frontend:** React, NextJS, Redux, Context API, Recoil, micro-frontend architecture, self-service provisioning UI
 - **CI/CD:** GitHub Actions, Jenkins, JFrog Artifactory, Azure DevOps, HashiCorp Vault secret injection
 - **Security:** mTLS, PKI, certificate authority management, GCP KMS, encryption at rest, PHI/PII data compliance, Chainguard hardened images, disaster recovery
 - **Observability:** Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow
@@ -76,3 +77,15 @@ Lead engineer and product owner. Captain a team of 6. Write user stories, conduc
 
 ## Certifications
 - **Google Cloud Certified - Cloud Digital Leader** (Mar 2025 - Mar 2028): Validates foundational knowledge across six GCP domains: (1) Digital Transformation with Google Cloud (cloud adoption frameworks, lift-and-shift, brownfield/greenfield strategies, TCO analysis, hybrid/multi-cloud), (2) Exploring Data Transformation, (3) Innovating with Google Cloud AI, (4) Modernizing Infrastructure and Applications (VMs vs. containers vs. serverless, monolith-to-microservice decomposition, GKE, Anthos, Google Compute Engine, App Engine, Cloud Run, rehosting legacy apps, APIs/Apigee), (5) Trust and Security, (6) Scaling with Google Cloud Operations. The digital transformation and infrastructure modernization domains are directly relevant when tailoring for roles involving cloud migration, monolith-to-microservice initiatives, or GCP hosting strategy decisions.
+- **Optum AI Dojo Certificate** (internal, 2025): Internal certification covering Generative AI fundamentals, reasoning models, GCP AI offerings, and Azure Databricks/Jupyter notebook workflows. Final project: built a RAG (Retrieval-Augmented Generation) system from scratch using Python and a CSV dataset. This is an internal Optum credential, not a vendor certification. When tailoring for roles emphasizing GenAI proficiency, reference the hands-on RAG build, familiarity with reasoning models, and practical GenAI application to development workflows.
+
+## Honest Gaps and Depth Calibration
+These are areas where the resume lists experience but actual depth is limited, or where target roles commonly require knowledge Caleb has not yet built. Use this section when generating gap analyses (see copilot-instructions.md "Gap Analysis" rule) and when calibrating how confidently to present a skill in tailored documents. Detailed study items live in docs/writings/to-learn.md.
+
+- **Confluent Schema Registry:** Owns the infrastructure (Terraform, Helm, certificates, ACLs) but has not worked deeply with the Schema Registry REST API, compatibility mode selection, schema evolution strategies across Avro/Protobuf/JSON Schema, or the _schemas topic internals. Frame as "set up and operate" rather than "designed schema governance workflows."
+- **Databases (SQL and NoSQL):** Production experience limited to MSSQL (ESRO rotation app) and Elasticsearch (shared state store). No production PostgreSQL, MongoDB, Redis, DynamoDB, or Cassandra beyond early-career on-prem Cassandra troubleshooting. Weak on query optimization, indexing strategies, and data modeling for scale. Do not present database skills as a strength; list them factually and do not over-claim.
+- **Java:** Listed on resume and used academically but not a daily production language. Confluent's core platform is Java/Scala. JVM tuning, concurrency primitives, and modern Java features are gaps. Present as "proficient" not "deep."
+- **Distributed Systems Theory:** Strong operational intuition from running distributed systems at scale, but formal CS theory (CAP/PACELC proofs, consensus protocol mechanics, linearizability definitions, vector clocks) is weaker. Present distributed systems experience through concrete outcomes, not theoretical framing.
+- **Kafka Internals:** Deep operational knowledge (compaction, restarts, partitions, lag, certs) but less depth on controller internals, KRaft consensus, replication protocol mechanics, exactly-once semantics, and consumer rebalancing protocols.
+- **Stream Processing Patterns:** Operates Kafka at scale but limited hands-on with Kafka Streams, ksqlDB, Flink, CDC/Debezium, or windowing patterns beyond basic consumer group consumption.
+- **Confluent Platform Products:** Uses Confluent Schema Registry and has coordinated with Confluent engineering, but has not used ksqlDB, Kafka Connect at depth, or Confluent Cloud as a customer. CFK operator experience is from the outside (building a parallel custom operator framework), not from deploying CFK itself.
