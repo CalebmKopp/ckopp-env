@@ -72,7 +72,7 @@ Optum, UnitedHealth Group | Saint Paul, MN | Sep 2022 - Present
 
 - **Early Careers:** Volunteer for Optum Early Careers, running technical bootcamp lectures and labs each summer and conducting candidate interviews each fall and spring. 
 
-**Featured Project: WarpStream Cluster Provisioning Platform (Q4 2024 - Q1 2025)**
+**Featured Project: WarpStream Cluster Provisioning Platform (Q4 2025 - Q1 2026)**
 
 - Co-led an 8-week sprint to deliver end-to-end WarpStream-based Kafka cluster provisioning across the full stack: PRM agent changes, KRM operator extensions for net-new resource kinds, and a net-new WarpStream DME operator (Go) that generates all required Kubernetes resources and connects them into Cloud Storage buckets, WarpStream API registrations, and agent configs.
 
@@ -81,6 +81,8 @@ Optum, UnitedHealth Group | Saint Paul, MN | Sep 2022 - Present
 - Delivered WarpStream cloud monitoring integration, extending Go monitoring controllers and PromQL dashboards and onboarding into existing PagerDuty and ServiceNow alert routing.
 
 - Shipped to two of Optum's largest Apache Kafka on GCP customers as beta; WarpStream's diskless, Cloud Storage-based architecture eliminates local disk I/O from the stream processing data path, projected to reduce their annual Kafka infrastructure spend by approximately 80%.
+
+- **WarpStream vs Apache Kafka Performance Testing (Mar 2025):** Solely owned the design and execution of a head-to-head performance comparison between WarpStream and Apache Kafka in GCP, coordinating on dual timelines with Confluent (external vendor) and Optum leadership. Stood up a bespoke WarpStream environment from scratch in GKE, navigating corporate image pull restrictions by mirroring and scanning public images through internal registries. First iteration of the test plan (producer-only, sequential runs) produced results that both Confluent and Optum questioned; redesigned the entire methodology over the following week, adding consumer workloads, end-to-end latency tests, continuous 30-minute runs with 10-minute interval metrics, and updated producer/consumer properties per WarpStream benchmarking docs. Produced a comprehensive report with architecture diagrams, scaling timelines, Grafana dashboards, and raw data tables. Presented findings to both Confluent engineering and Optum upper leadership. Results directly informed the decision to offer WarpStream as a production product at Optum.
 
 **Organizational Initiative Leadership (ongoing)**
 Consistent first-responder when company-wide mandates land before any golden path exists. Role in each: absorb the directive from leadership, decompose into tightly-scoped Features and User Stories (1-2 story points each for parallelization and scope control), and run focused engineering calls across the team and adjacent Kafka Platform groups to resolve blockers with SME-level insight. Demonstrated problem solving, analytical skills, communication, coordination, and collaboration across product, security, compliance, and engineering stakeholders at every level of the organization.

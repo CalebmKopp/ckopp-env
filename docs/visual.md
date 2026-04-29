@@ -68,7 +68,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 ---
 
-#### Featured Project: WarpStream Cluster Provisioning Platform (Q4 2024 - Q1 2025)
+#### Featured Project: WarpStream Cluster Provisioning Platform (Q4 2025 - Q1 2026)
 
 > **Impact:** ~80% cost reduction projected &nbsp;|&nbsp; Net-new Go operator authored &nbsp;|&nbsp; 8-week delivery &nbsp;|&nbsp; Full stack: infra to operator to observability
 

@@ -21,6 +21,7 @@ The product is one of the highest-regarded developer experience offerings at Opt
 ### Key Value Created
 - **On-prem to cloud migration and GCP advocacy (SE role, 2021-2022):** See detailed narrative below. This work directly led to my promotion to Senior.
 - **WarpStream delivery (Q4 2024 - Q1 2025):** See detailed narrative below. Projected ~80% annual Kafka infrastructure cost reduction.
+- **WarpStream performance testing (Mar 2025):** See detailed narrative below. Solo-owned head-to-head benchmarking; results directly informed the decision to offer WarpStream as a production product at Optum.
 - **Platform scale:** 1,000+ nodes, 750+ clusters, five-nines reliability, zero customer data loss across the platform's history.
 - **Organizational first-responder:** Consistently first to absorb company-wide mandates before golden paths exist: Chainguard hardened image adoption, cloud vulnerability remediation (hundreds of findings in days), Cloud Native 2029 migration, Grafana consolidation, Vault and break-glass CLI.
 - **Confluent Schema Registry as a Service:** Certificate/ACL-governed schema management and data governance on top of provisioned Kafka clusters.
@@ -34,6 +35,9 @@ The KaaS platform initially only offered Kafka clusters in Optum's own datacente
 
 #### WarpStream Delivery (Senior role, Q4 2024 - Q1 2025)
 Co-led an 8-week sprint delivering full-stack WarpStream-based cluster provisioning. Built a net-new Go operator (WarpStream DME), authored all Terraform cloud infrastructure from scratch (GCS, VPC, DNS, IAM), integrated into the self-service portal, and delivered full observability. Shipped to Optum's two largest GCP Kafka customers as beta. WarpStream's diskless, Cloud Storage-backed architecture eliminates local disk I/O from the streaming data path, projected to reduce annual Kafka infrastructure costs by approximately 80%. This was the platform's most impactful cost-reduction initiative and demonstrated the team's ability to deliver net-new infrastructure products end-to-end in compressed timelines.
+
+#### WarpStream vs Apache Kafka Performance Testing (Senior role, Mar 2025)
+Solely owned the design and execution of a head-to-head performance comparison between WarpStream and Apache Kafka in GCP, coordinating on dual timelines with Confluent (external vendor) and Optum leadership. Stood up a bespoke WarpStream environment from scratch in GKE, navigating corporate image pull restrictions (cannot pull public images; mirrored and scanned through internal registries). First iteration of the test plan (producer-only, sequential runs) produced results that both Confluent and Optum questioned as unexpected; took another week to completely redesign the methodology: added consumer workloads, end-to-end latency tests, continuous 30-minute runs with 10-minute interval metrics, and updated properties per WarpStream benchmarking docs. Designed three test scenarios: moderate concurrent load (5 producers/10 consumers), heavy concurrent load (10 producers/20 consumers pushing autoscaling from 3 to 7 agents), and end-to-end latency. Configured equivalent infrastructure, standardized producer/consumer properties, ran structured 30-minute tests with metrics at 10-minute intervals, and produced a comprehensive report with architecture diagrams, scaling timelines, Grafana dashboards, and raw data tables. Presented findings to both Confluent engineering and Optum upper leadership. Results directly informed the decision to offer WarpStream as a production product at Optum. This story is a strong "SWAT team / unstructured problem" narrative: solo assignment, no playbook, no precedent, figured out corporate infra constraints, failed on first attempt and iterated, coordinated with an external vendor, designed methodology from scratch, delivered business-critical results.
 
 ### Technical Identity
 - **Primary languages:** Go, TypeScript, Python, Java, Bash
@@ -272,3 +276,4 @@ Always start at Large margins (15mm/20mm). Apply these steps in order, regenerat
 1. If lists changed, ensure generated scripts/manifests are syntactically valid.
 2. If workflows changed, verify YAML syntax and trigger scope.
 3. Confirm no accidental renames or output path changes.
+
