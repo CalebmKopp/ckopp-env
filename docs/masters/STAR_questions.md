@@ -1,3 +1,12 @@
+---
+pdf_options:
+  margin:
+    top: 15mm
+    bottom: 15mm
+    left: 20mm
+    right: 20mm
+---
+
 # STAR Interview Questions/Answers
 
 ## 1. Solving unstructured problems across various enterprise infrastructure automation needs is required. Describe a time when you were given a vague problem with minimal direction and had to build a solution from scratch
