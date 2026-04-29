@@ -1,4 +1,4 @@
-**---
+---
 pdf_options:
   margin:
     top: 15mm
