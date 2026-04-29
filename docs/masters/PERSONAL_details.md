@@ -1,3 +1,12 @@
+---
+pdf_options:
+  margin:
+    top: 15mm
+    bottom: 15mm
+    left: 20mm
+    right: 20mm
+---
+
 # Personal Details
 
 This file contains personal identity, experience narratives, technical profile, and career context used by Copilot when generating tailored resumes, cover letters, and interview prep materials. Update this file with your own details.
