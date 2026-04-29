@@ -47,7 +47,7 @@ Senior Software Engineer with 5+ years building near-real-time, high-volume data
 
 - Extend the Prometheus/Grafana observability stack with PromQL queries and Go monitoring controllers. Own CI/CD pipelines using GitHub Actions, Docker, JFrog Artifactory, and Vault secret injection.
 
-- Co-led an 8-week sprint delivering WarpStream cluster provisioning end to end: net-new Go operator, all Terraform from scratch (GCS, VPC, DNS, IAM), and observability integration. Projected ~80% cost reduction.
+- Co-led an 8-week sprint delivering Warpstream cluster provisioning end to end: net-new Go operator, all Terraform from scratch (GCS, VPC, DNS, IAM), and observability integration. Projected ~80% cost reduction.
 
 ##### Software Engineer - Optum, UnitedHealth Group
 *Jun 2020 - Aug 2022* &nbsp;|&nbsp; Saint Paul, MN

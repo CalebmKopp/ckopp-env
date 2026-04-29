@@ -33,7 +33,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Own and maintain CI/CD pipeline configuration for platform services using GitHub Actions, Docker-based build pipelines, JFrog Artifactory, and HashiCorp Vault secret injection; enforce DevOps best practices across the team for container image management, deployment automation, and environment promotion workflows.
 
-- Contribute deep SME expertise to infrastructure-as-code provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on GCP and Azure using Terraform; co-designed all Terraform for an innovative WarpStream Clusters-as-a-Service product from scratch.
+- Contribute deep SME expertise to infrastructure-as-code provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on GCP and Azure using Terraform; co-designed all Terraform for an innovative Warpstream Clusters-as-a-Service product from scratch.
 
 - Drove continuous improvement in platform safety and quality by leading Chainguard hardened image adoption early, rebuilding the platform's Docker container supply chain and encryption baseline before a formal golden path existed. Triaged and resolved hundreds of cloud security findings and network misconfigurations in days, unblocking the broader platform organization.
 

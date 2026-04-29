@@ -35,7 +35,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Author and maintain backend services and RESTful API contracts in Go powering a Kafka-as-a-Service platform: 1,000+ production nodes, 750+ clusters, five-nines reliability, zero customer data loss. Implement validation, error handling, and resiliency patterns across multi-tenant services carrying regulated healthcare data (PHI/PII) with end-to-end SSL/TLS transport and GCP KMS encryption at rest.
 
-- Co-led an 8-week sprint delivering full-stack WarpStream cluster provisioning end to end: personally wrote the net-new Go backend service, Terraform cloud infrastructure, observability integration, and portal UI updates. Took work from requirement to production with minimal oversight. Shipped to Optum's two largest GCP customers, reducing annual infrastructure costs by approximately 80%.
+- Co-led an 8-week sprint delivering full-stack Warpstream cluster provisioning end to end: personally wrote the net-new Go backend service, Terraform cloud infrastructure, observability integration, and portal UI updates. Took work from requirement to production with minimal oversight. Shipped to Optum's two largest GCP customers, reducing annual infrastructure costs by approximately 80%.
 
 - Implement observability features in Go and PromQL across the Prometheus/Thanos/Grafana stack, including structured logging, metrics dashboards, and PagerDuty/ServiceNow alert routing. Own CI/CD pipeline configuration using GitHub Actions and Docker-based builds. Write and enforce automated tests across the codebase.
 

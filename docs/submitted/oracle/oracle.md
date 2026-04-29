@@ -15,7 +15,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 #### Skills
 
-- **Distributed Systems & Streaming:** Apache Kafka, WarpStream, Confluent Schema Registry, stateful distributed platforms, high-throughput data pipelines, stream processing, replication, fault tolerance, rolling upgrades
+- **Distributed Systems & Streaming:** Apache Kafka, Warpstream, Confluent Schema Registry, stateful distributed platforms, high-throughput data pipelines, stream processing, replication, fault tolerance, rolling upgrades
 - **Infrastructure & Automation:** Terraform, Kubernetes (CRDs, custom operators), Helm, Docker, GCP, Azure, GKE, infrastructure as code, configuration management
 - **Observability & Operations:** Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow, capacity planning, SLO/SLA, incident response, runbooks
 - **Security & Compliance:** mTLS, PKI, certificate authority management, HashiCorp Vault, IAM, GCP KMS, encryption at rest, PHI/PII compliance, disaster recovery
@@ -39,7 +39,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Extend Prometheus/Thanos/Grafana observability with PromQL queries, Go monitoring controllers, and Terraform-managed dashboards with PagerDuty/ServiceNow alert routing. Establish capacity models and scaling strategies. Author runbooks and alert playbooks for incident response.
 
-- Co-led WarpStream cluster provisioning end to end in 8 weeks: net-new Go operator, all Terraform infrastructure from scratch (GCS, VPC, DNS, IAM), full observability integration; shipped to Optum's two largest GCP customers with projected ~80% annual cost reduction.
+- Co-led Warpstream cluster provisioning end to end in 8 weeks: net-new Go operator, all Terraform infrastructure from scratch (GCS, VPC, DNS, IAM), full observability integration; shipped to Optum's two largest GCP customers with projected ~80% annual cost reduction.
 
 - Captain a team of 6 as lead engineer. Serve as escalation point for complex incidents across the 1,000+ node fleet. Eliminate operational toil through Python and Bash automation. Mentor engineers on distributed systems, Go, and operator patterns. Serve on-call across the full production fleet.
 
