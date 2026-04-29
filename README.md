@@ -53,30 +53,34 @@ If `make` is not recognized, run `./hack/fresh_install.sh` directly (or install 
 
 ```
 ckopp-env/
-├── .github/workflows/       # CI/CD pipelines
-│   ├── docs-to-pdf.yml      # Markdown resume -> PDF GitHub Release
-│   ├── bundle-to-release.yml # Brewfile + VSCode list -> GitHub Release
-│   └── zizmor.yml            # GitHub Actions security scanning
-├── docs/                     # All resume content
-│   ├── visual.md             # Visual/rich resume (tables, formatting)
-│   ├── masters/              # Source-of-truth resume variants
-│   │   ├── ats.md            # ATS-optimized (plain text friendly)
-│   │   └── linkedin.md       # LinkedIn profile content
-│   ├── submitted/            # Company-specific submitted resumes & cover letters
-│   ├── prospectives/         # Draft resumes for prospective applications
-│   └── pdf/                  # Generated PDFs (gitignored, built locally or via CI)
-├── hack/                     # Shell scripts backing the Makefile
-│   ├── fresh_install.sh      # Full machine bootstrap (macOS)
-│   ├── generate_install_lists.sh  # Dump current brew/vscode state (macOS)
-│   ├── generate_pdfs.sh      # Markdown -> PDF conversion (Bash)
-│   ├── win_generate_pdfs.ps1 # Markdown -> PDF conversion (PowerShell/Windows)
-│   ├── win_fresh_install.ps1 # VSCode extension install (Windows)
+├── .github/
+│   ├── copilot-instructions.md  # Copilot context: formatting rules, workflows, conventions
+│   └── workflows/               # CI/CD pipelines
+│       ├── docs-to-pdf.yml      # Markdown resume -> PDF GitHub Release
+│       ├── bundle-to-release.yml # Brewfile + VSCode list -> GitHub Release
+│       └── zizmor.yml            # GitHub Actions security scanning
+├── docs/                         # All resume content
+│   ├── visual.md                 # Visual/rich resume (tables, formatting)
+│   ├── masters/                  # Source-of-truth documents
+│   │   ├── PERSONAL_details.md   # Personal identity, narratives, technical profile (Copilot context)
+│   │   ├── STAR_questions.md     # STAR-format interview answers
+│   │   ├── ats.md                # ATS-optimized master resume
+│   │   └── linkedin.md           # LinkedIn profile content
+│   ├── submitted/                # Company-specific submitted resumes & cover letters
+│   ├── prospectives/             # Draft resumes for prospective applications
+│   └── pdf/                      # Generated PDFs (gitignored, built locally or via CI)
+├── hack/                         # Shell scripts backing the Makefile
+│   ├── fresh_install.sh          # Full machine bootstrap (macOS)
+│   ├── generate_install_lists.sh # Dump current brew/vscode state (macOS)
+│   ├── generate_pdfs.sh          # Markdown -> PDF conversion (Bash)
+│   ├── win_generate_pdfs.ps1     # Markdown -> PDF conversion (PowerShell/Windows)
+│   ├── win_fresh_install.ps1     # VSCode extension install (Windows)
 │   └── win_generate_install_lists.ps1  # Regenerate VSCode extension lists (Windows)
-├── lists/                    # Declarative install manifests
-│   ├── Brewfile              # Homebrew bundle (taps, formulae, casks, vscode extensions)
-│   ├── vsc_install_list.sh   # VSCode extension install script (Bash)
-│   └── vsc_install_list.ps1  # VSCode extension install script (PowerShell/Windows)
-├── Makefile                  # Automation entry point
+├── lists/                        # Declarative install manifests
+│   ├── Brewfile                  # Homebrew bundle (taps, formulae, casks, vscode extensions)
+│   ├── vsc_install_list.sh       # VSCode extension install script (Bash)
+│   └── vsc_install_list.ps1      # VSCode extension install script (PowerShell/Windows)
+├── Makefile                      # Automation entry point
 └── README.md
 ```
 
@@ -118,7 +122,7 @@ Resumes are written in Markdown with YAML frontmatter controlling PDF layout (ma
 
 | Directory | Purpose |
 |---|---|
-| `docs/masters/` | Source-of-truth resumes. `ats.md` is keyword-dense, plain-text friendly for applicant tracking systems. `linkedin.md` is structured for LinkedIn profile copy-paste. |
+| `docs/masters/` | Source-of-truth documents. `PERSONAL_details.md` holds your identity, narratives, and technical profile for Copilot context. `STAR_questions.md` holds STAR-format interview answers. `ats.md` is keyword-dense, plain-text friendly for applicant tracking systems. `linkedin.md` is structured for LinkedIn profile copy-paste. |
 | `docs/visual.md` | Richly formatted resume with tables, HTML entities, and horizontal rules -- designed for human readers and PDF output. |
 | `docs/submitted/` | Tailored resumes and cover letters for specific companies you've applied to. |
 | `docs/prospectives/` | Draft resumes for companies you're considering applying to. |
@@ -232,17 +236,21 @@ make winsync
 
 1. **Fork** this repo on GitHub
 2. **Clone** your fork locally
-3. **Replace the resume content** in `docs/` with your own markdown resumes
-4. **Replace the Brewfile** -- either edit `lists/Brewfile` directly, or:
+3. **Fill in your personal context** -- this is how Copilot learns who you are:
+   - **`docs/masters/PERSONAL_details.md`** -- Replace with your own identity, experience narratives, technical profile, certifications, and career context. Brain-dump everything: who you are, what you work on, key projects, quantified achievements, technical skills, leadership style. The more detail you provide, the better Copilot can tailor resumes and cover letters for you.
+   - **`docs/masters/STAR_questions.md`** -- Write your own STAR-format interview answers. Use the existing structure (Situation/Task/Action/Result) as a template and fill in your career stories.
+4. **Build your master resume** -- Generate and iterate on `docs/masters/ats.md` using your PERSONAL_details.md as source material. This becomes a large (but not overfitted) context block that Copilot draws from when generating tailored resumes. Expand it as you think of more experience, projects, and skills.
+5. **Replace the Brewfile** -- either edit `lists/Brewfile` directly, or:
    - Install your tools via `brew install`, `brew install --cask`, etc.
    - Run `make sync` to regenerate the Brewfile from your machine
-5. **Set up the `RESUME_PAT` secret** in your fork's GitHub Settings > Secrets if you want the CI/CD release workflows to work
-6. **Update the badge URLs** in this README to point to your fork
-7. Commit, push, and your workflows will handle the rest
+6. **Set up the `RESUME_PAT` secret** in your fork's GitHub Settings > Secrets if you want the CI/CD release workflows to work
+7. **Update the badge URLs** in this README to point to your fork
+8. Commit, push, and your workflows will handle the rest
 
 ### Tips for Colleagues
 
 - **Rename the PDF output:** The script `hack/generate_pdfs.sh` hardcodes the output filename as `caleb-kopp-resume-{name}.pdf`. Change `caleb-kopp` to your own name in that script so your PDFs are named correctly.
+- The copilot instructions (`.github/copilot-instructions.md`) contain formatting rules, workflows, and conventions that are reusable as-is. Your personal details live separately in `docs/masters/PERSONAL_details.md`.
 - You can delete the `docs/submitted/` and `docs/prospectives/` directories and start fresh
 - Keep your `ats.md` as the plain-text master and derive tailored versions from it
 - Use `docs/masters/linkedin.md` as a structured reference for updating your LinkedIn profile
