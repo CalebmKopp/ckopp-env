@@ -62,7 +62,7 @@ Cover letters use no heading levels at all - just bold name, plain text, and par
 - **Master ATS:** plain ` | ` (space-pipe-space, zero HTML entities)
 - **Submitted/prospective resumes and cover letters:** `&nbsp;|&nbsp;` (single nbsp each side)
 
-Master files use `# Caleb Kopp`. Submitted/prospective resumes use `### Caleb Kopp - Senior Software Engineer`. Cover letters use `**Caleb Kopp**` (bold, no heading).
+Master files use `# <YOURNAME>`. Submitted/prospective resumes use `### <YOURNAME> - <TITLE>`. Cover letters use `**<YOURNAME>**` (bold, no heading).
 
 ### Resume Section Order
 Canonical order: **Name > Summary > Skills > Experience > Projects > Education**.
@@ -109,8 +109,8 @@ When tailoring, skills categories are renamed, reordered, and pruned to mirror t
 
 #### Header Block
 ```
-**Caleb Kopp**
-Saint Paul, MN &nbsp;|&nbsp; [contact info]
+**<YOURNAME>**
+[Location] &nbsp;|&nbsp; [contact info]
 
 [Month DD, YYYY]
 
@@ -137,23 +137,43 @@ Always the same two lines, no variation:
 ```
 Thank you for your time and consideration.
 
-Caleb Kopp
+<YOURNAME>
 ```
+
+### Gap Analysis
+When a job description is provided, the first step before generating any tailored documents is to assess fit and identify honest skill gaps. Present this assessment to the user before proceeding with resume/cover letter generation.
+
+#### Fit Assessment
+Briefly outline:
+- **Strong matches:** Areas where actual experience maps directly to JD requirements.
+- **Honest gaps:** Areas where the JD requires depth the user does not yet have.
+- **Overall take:** Whether this looks like a strong, reasonable, or stretch fit, and why.
+
+#### Gap Identification
+Append new gaps to docs/writings/to-learn.md under a heading named for the role (e.g., `## Gaps - Company Role Title`). Gaps should be specific and actionable, not generic. Categories to evaluate:
+- Technologies or products called out in the JD that have not been used in production (or have only been touched at the infrastructure/Terraform level without deep API or internals knowledge).
+- Theoretical CS or distributed systems concepts the JD implies (consistency models, consensus protocols, DS&A interview prep) where knowledge is operational/intuitive rather than formal.
+- Languages listed on the resume but not used as a primary daily language.
+- Database/storage depth beyond what has been used in production.
+- Any other area where honest self-assessment reveals a gap worth studying.
+
+Do not fabricate gaps. Only flag areas where the user's own description of their experience (in PERSONAL_details.md and STAR_questions.md) indicates the gap is real. If the user provides additional context about what they do and do not know about a topic, incorporate that nuance.
 
 ### Resume Tailoring Workflow
 
 #### End-to-End Flow
 1. User provides the full text of a job description.
-2. Read docs/masters/ats.md and docs/masters/linkedin.md as source material.
-3. Generate a tailored resume markdown file applying the content rules below.
-4. Write the file to docs/prospectives/ (or docs/submitted/ if applying).
-5. Run `make docs FILE=<path>` to produce the PDF, where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/*newresume*`).
-6. Check the PDF page count. If it exceeds one page, apply the One-Page Compression Priority in order, regenerate, and recheck until it fits.
+2. Read docs/masters/ats.md, docs/masters/PERSONAL_details.md, and docs/masters/linkedin.md as source material.
+3. Perform the Gap Analysis (see above): assess fit, identify gaps, present to the user, and append gaps to docs/writings/to-learn.md.
+4. Generate a tailored resume markdown file applying the content rules below.
+5. Write the file to docs/prospectives/ (or docs/submitted/ if applying).
+6. Run `make docs FILE=<path>` to produce the PDF, where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/*newresume*`).
+7. Check the PDF page count. If it exceeds one page, apply the One-Page Compression Priority in order, regenerate, and recheck until it fits.
 
 #### Content Rules
 When generating the tailored resume from masters:
 1. Shift heading hierarchy down two levels (h1->h3, h2->h4, h3->h5).
-2. Embed title in name heading: `### Caleb Kopp - Senior Software Engineer`.
+2. Embed title in name heading: `### <YOURNAME> - <TITLE>`.
 3. Drop Summary unless the JD emphasizes a holistic profile.
 4. Rename, reorder, and prune Skills categories to mirror the job posting. Front-load the most relevant terms within each category.
 5. Reword bullets for culture fit - echo the JD's language and priorities while preserving factual accuracy.
@@ -180,7 +200,7 @@ Always start at Large margins (15mm/20mm). Apply these steps in order, regenerat
 ### PDF Generation and Naming
 - Local PDF output path is docs/pdf/.
 - File naming convention is hardcoded in scripts/workflows as:
-	- `caleb-kopp-resume-<name>.pdf`
+	- `<firstname>-<lastname>-resume-<name>.pdf`
 - CI currently converts only top-level docs/*.md files.
 	- Files under docs/masters/, docs/submitted/, and docs/prospectives/ are local-build only.
 

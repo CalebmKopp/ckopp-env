@@ -34,7 +34,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Serve as one of the primary technical owners of a federated network of custom Kubernetes operators written in Go forming a two-tier distributed control plane for automated deployment and configuration of streaming infrastructure across 500+ clusters in multi-tenant, multi-cloud environments handling high-throughput, low-latency data ingestion at production scale.
 
-- Lead engineer and product owner of the platform's self-service micro-frontend (TypeScript, React.js, NextJS, Redux/Context API/Recoil) embedded in Optum's enterprise developer portal; leverage Context API for global state from higher-order portal components and migrated application state management from Redux to Recoil. Captain a team of 6 engineers writing user stories, conducting code reviews, and shipping features against product and compliance requirements.
+- Lead engineer and product owner of the platform's self-service micro-frontend (TypeScript, React.js, NextJS, Redux/Context API/Recoil) embedded in Optum's enterprise developer portal; leverage Context API for global state from higher-order portal components; migrated application state management from Redux to Recoil. Captain a team of 6 engineers writing user stories, conducting code reviews, and shipping features against product and compliance requirements.
 
 - Co-led end-to-end delivery of Warpstream cluster provisioning in 8 weeks: built a net-new Go operator, authored all Terraform cloud infrastructure from scratch (GCP Cloud Storage, VPC, DNS, IAM), integrated full observability, and shipped to two of Optum's largest GCP customers with projected ~80% annual infrastructure cost reduction.
 
