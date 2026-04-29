@@ -19,7 +19,7 @@ Platform Engineer | Kafka-as-a-Service | Kubernetes | Go | Terraform | Full-Stac
 
 ## About
 
-I build platforms where streaming infrastructure disappears behind a self-service button. I'm one of the deepest technical owners of our Kafka platform; custom k8s operators, Terraformed GCP, and a NextJS frontend serving thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. Shipped WarpStream @ Optum for ~80% infra cost reduction. Always willing to work with anyone to make technology work better for everyone!
+I build platforms where streaming infrastructure disappears behind a self-service button. I'm one of the deepest technical owners of our Kafka platform; custom k8s operators, Terraformed GCP, and a NextJS frontend serving thousands of clients. 1,000+ nodes, 750+ clusters, five nines, zero data loss. Shipped Warpstream @ Optum for ~80% infra cost reduction. Always willing to work with anyone to make technology work better for everyone!
 
 ---
 
@@ -38,7 +38,7 @@ One of the deepest technical owners of Optum's Kafka-as-a-Service platform: 750+
 
 KRM/PRM Technical Lead: SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infra deployment across GCP and Azure. 500+ clusters in multi-tenant, multi-cloud environments.
 
-WarpStream Delivery Lead: Co-led WarpStream cluster provisioning - PRM agents, KRM operator extensions, a net-new Go operator from upstream Helm charts, all Terraform infra from scratch (GCS, VPC, DNS, IAM). Shipped to two largest GCP customers; projected ~80% annual cost reduction.
+Warpstream Delivery Lead: Co-led Warpstream cluster provisioning - PRM agents, KRM operator extensions, a net-new Go operator from upstream Helm charts, all Terraform infra from scratch (GCS, VPC, DNS, IAM). Shipped to two largest GCP customers; projected ~80% annual cost reduction.
 
 Frontend Product Lead: Lead engineer and product owner of the Kafka on Cloud micro-frontend (TypeScript, React, NextJS) in HCP Console. Captain a team of 6; write stories and conduct code reviews.
 
@@ -62,7 +62,7 @@ SRE & Mentorship: Zero customer data loss. On-call across 1,000+ node fleet. Men
 | **1** | **Kubernetes** | Foundation of the entire platform; highest signal for senior platform eng |
 | **2** | **Apache Kafka** | Core domain expertise; defines the product |
 | **3** | **Go (Programming Language)** | Primary implementation language for all operators |
-| **4** | **Terraform** | IaC backbone; WarpStream infra built from scratch |
+| **4** | **Terraform** | IaC backbone; Warpstream infra built from scratch |
 | **5** | **Google Cloud Platform (GCP)** | Concrete cloud platform; high recruiter search volume |
 | 6 | Helm | Upstream chart syncing, authoring from scratch, Helm-to-operator translation |
 | 7 | Distributed Systems | Senior-level architectural scope |

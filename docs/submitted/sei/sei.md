@@ -35,7 +35,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 - Drive continued migration of customers from on prem and legacy infrastructure to GCP cloud native deployments, building on the cloud advocacy work below. Google Cloud Certified Digital Leader with formal training in digital transformation strategy, monolith to microservice decomposition, and GCP hosting models (GKE, Anthos, Compute Engine, App Engine, Cloud Run). Own the self service portal experience that accelerated adoption as Kafka streams moved to GCP and dependent services followed.
 
-- Co-design all Terraform cloud infrastructure (GCS, VPC, DNS, IAM) and deliver net new Kubernetes based microservices; most recently shipped WarpStream cluster provisioning end to end in 8 weeks to two of Optum's largest customers with projected ~80% annual cost reduction.
+- Co-design all Terraform cloud infrastructure (GCS, VPC, DNS, IAM) and deliver net new Kubernetes based microservices; most recently shipped Warpstream cluster provisioning end to end in 8 weeks to two of Optum's largest customers with projected ~80% annual cost reduction.
 
 - Own CI/CD pipelines via GitHub Actions and Docker. Extend Grafana observability with automated alerting and Terraform managed dashboards. Serve on call across a 1,000+ node Kafka fleet with zero customer data loss.
 

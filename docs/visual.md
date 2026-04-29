@@ -16,7 +16,7 @@ Saint Paul, MN &nbsp;&nbsp;|&nbsp;&nbsp; 507-299-0445 &nbsp;&nbsp;|&nbsp;&nbsp; 
 
 ## Summary
 
-I build platforms where streaming infrastructure disappears behind a self-service button. At Optum, the technology arm of UnitedHealth Group, I'm one of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system (PRM/KRM), Terraformed GCP cloud infrastructure, and a NextJS micro-frontend embedded in HCP Console. 1,000+ nodes, 750+ high-throughput clusters, five nines, zero data loss. Through resilient data pipelines, clean self-service UI, or robust SRE - I'm always seeking a challenge. Most recently I co-led the full-stack delivery of WarpStream-based cluster provisioning, projected to reduce annual Kafka infrastructure costs by approximately 80% for our largest GCP customers. Always willing to work with anyone to make technology work better for everyone!
+I build platforms where streaming infrastructure disappears behind a self-service button. At Optum, the technology arm of UnitedHealth Group, I'm one of the deepest technical owners of a Kafka-as-a-Service platform built on custom Kubernetes operators in Go, a CRD-driven internal provisioning system (PRM/KRM), Terraformed GCP cloud infrastructure, and a NextJS micro-frontend embedded in HCP Console. 1,000+ nodes, 750+ high-throughput clusters, five nines, zero data loss. Through resilient data pipelines, clean self-service UI, or robust SRE - I'm always seeking a challenge. Most recently I co-led the full-stack delivery of Warpstream-based cluster provisioning, projected to reduce annual Kafka infrastructure costs by approximately 80% for our largest GCP customers. Always willing to work with anyone to make technology work better for everyone!
 
 ---
 
@@ -26,7 +26,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 |---|---|
 | **Languages & Runtimes** | Golang, Python, Bash, scripting, TypeScript, JavaScript, Java |
 | **Infrastructure & Orchestration** | Kubernetes (CRDs, custom operator frameworks), Helm, Terraform, infrastructure as code, GitHub Actions, Azure DevOps, CI/CD, Google Cloud Platform, Azure, GKE, Docker, VPC, DNS, automated deployment, configuration management, cloud infrastructure, DevOps |
-| **Data & Streaming** | Apache Kafka, WarpStream, Confluent, Confluent Schema Registry, Elasticsearch, ELK, stream processing, data ingestion, data orchestration, data engineering |
+| **Data & Streaming** | Apache Kafka, Warpstream, Confluent, Confluent Schema Registry, Elasticsearch, ELK, stream processing, data ingestion, data orchestration, data engineering |
 | **AI & Data Science** | Natural language processing, NLP, sentiment analysis, machine learning, data visualization, social media analytics, text classification |
 | **Observability** | Prometheus, Thanos, Grafana, PromQL, PagerDuty, ServiceNow, cloud monitoring |
 | **Security & Auth** | mTLS / PKI, encryption, network security, HashiCorp Vault, Chainguard hardened images, IAM, GCP KMS, data compliance, PHI/PII, disaster recovery |
@@ -52,7 +52,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 - **Self-Service Frontend and Team Leadership:** Serve as lead engineer and product owner of the Kafka Clusters on the Cloud self-service micro-frontend (TypeScript, React, NextJS) embedded in HCP Console, meeting UX, accessibility, and security standards of the central developer portal team; captain a team of **6 engineers**, write user stories, conduct code reviews, and ship features against product, security, and compliance requirements. Produce technical documentation for onboarding engineers and platform partners.
 
-- **Terraform and Cloud Infrastructure Engineering:** Contribute deep SME expertise to infrastructure-as-code and cloud infrastructure provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on Google Cloud Platform and Azure; co-design and deliver all Terraform backing the net-new WarpStream Clusters-as-a-Service product including Cloud Storage bucket provisioning and cloud deployment automation.
+- **Terraform and Cloud Infrastructure Engineering:** Contribute deep SME expertise to infrastructure-as-code and cloud infrastructure provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on Google Cloud Platform and Azure; co-design and deliver all Terraform backing the net-new Warpstream Clusters-as-a-Service product including Cloud Storage bucket provisioning and cloud deployment automation.
 
 - **Observability and Cloud Monitoring:** Extend the Prometheus/Thanos/Grafana observability stack, writing PromQL queries, updating Go monitoring controllers for new offerings, and delivering Terraform-managed Grafana dashboards surfaced to both on-call engineers and customers with PagerDuty and ServiceNow alert routing for customer-facing SLAs. Author runbooks and alert playbooks for platform-specific alerts and customer engagement procedures during war rooms and incident response.
 
@@ -68,14 +68,14 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 
 ---
 
-#### Featured Project: WarpStream Cluster Provisioning Platform (Q4 2024 - Q1 2025)
+#### Featured Project: Warpstream Cluster Provisioning Platform (Q4 2025 - Q1 2026)
 
 > **Impact:** ~80% cost reduction projected &nbsp;|&nbsp; Net-new Go operator authored &nbsp;|&nbsp; 8-week delivery &nbsp;|&nbsp; Full stack: infra to operator to observability
 
-- Co-led an 8-week sprint to deliver end-to-end WarpStream-based Kafka cluster provisioning across the full stack: PRM agent changes, KRM operator extensions for net-new resource kinds, and a net-new **WarpStream DME operator** (Go) that generates all required Kubernetes resources and connects them into Cloud Storage buckets, WarpStream API registrations, and agent configs.
-- Co-designed and authored all Terraform cloud infrastructure for the WarpStream Clusters-as-a-Service cloud deployment from scratch, including GCP Cloud Storage provisioning, VPC configuration, DNS, and IAM.
-- Delivered WarpStream cloud monitoring integration, extending Go monitoring controllers and PromQL dashboards and onboarding into existing PagerDuty/ServiceNow alert routing.
-- Shipped to **two of Optum's largest Apache Kafka on GCP customers** as beta; WarpStream's diskless, Cloud Storage-based architecture eliminates local disk I/O from the stream processing data path, projected to reduce their annual Kafka infrastructure spend by approximately **80%**.
+- Co-led an 8-week sprint to deliver end-to-end Warpstream-based Kafka cluster provisioning across the full stack: PRM agent changes, KRM operator extensions for net-new resource kinds, and a net-new **Warpstream DME operator** (Go) that generates all required Kubernetes resources and connects them into Cloud Storage buckets, Warpstream API registrations, and agent configs.
+- Co-designed and authored all Terraform cloud infrastructure for the Warpstream Clusters-as-a-Service cloud deployment from scratch, including GCP Cloud Storage provisioning, VPC configuration, DNS, and IAM.
+- Delivered Warpstream cloud monitoring integration, extending Go monitoring controllers and PromQL dashboards and onboarding into existing PagerDuty/ServiceNow alert routing.
+- Shipped to **two of Optum's largest Apache Kafka on GCP customers** as beta; Warpstream's diskless, Cloud Storage-based architecture eliminates local disk I/O from the stream processing data path, projected to reduce their annual Kafka infrastructure spend by approximately **80%**.
 
 ---
 
