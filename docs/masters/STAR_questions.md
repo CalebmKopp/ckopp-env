@@ -9,48 +9,48 @@ pdf_options:
 
 # STAR Interview Questions/Answers
 
-## 1. Solving unstructured problems across various enterprise infrastructure automation needs is required. Describe a time when you were given a vague problem with minimal direction and had to build a solution from scratch
+## 1. Tell us about a time you iterated on your own work to raise the bar. Describe a situation where you held yourself to a higher standard, rethought your approach, and delivered something you were proud of
 
 **Warpstream vs Apache Kafka Performance Testing (Mar 2025)**
 
 - The situation was that Optum was evaluating Warpstream as a new product offering alongside traditional Apache Kafka in GCP. No testing framework or benchmarks existed that our company could whole heartedly trust at face value. I was coordinating on dual timelines with Confluent (external vendor) and Optum leadership, both wanting results quickly.
 - My task became standing up a bespoke Warpstream environment in GKE (navigating corporate image pull restrictions), designing a fair head to head methodology, executing tests, and producing a report for both Confluent engineering and Optum leadership. I was the sole person assigned.
 - The actions I took were:
-  - Producing my first test plan (producer only, sequential runs) and presenting results which both sides questioned as unexpected.
-  - Taking in their feedback, I spent another week completely redesigning the methodology.
+  - Producing my first test plan (producer only, sequential runs) and presenting results which both sides questioned as unexpected. I recognized the initial approach did not meet the standard this decision deserved.
+  - Rather than defending that methodology, I took in feedback from both sides and spent another week completely redesigning the approach from scratch.
   - Added consumer workloads (10 and 20 consumers), end to end latency tests, continuous 30 minute runs with 10 minute interval metrics, and updated properties per Warpstream benchmarking docs.
-- As a result, the second report was considered comprehensive and credible.
+- As a result, the second report was considered comprehensive and credible; the willingness to start over and get it right was what made the data trustworthy.
   - Warpstream showed competitive concurrent throughput, autoscaling worked as anticipated for business cost needs, and it had a clear and expected latency tradeoff inherent to Cloud Storage backed architecture.
-  - This was presented to Confluent and Optum leadership, and directly informed the decision to offer Warpstream as a Service here at Optum.
+  - This was presented to Confluent and Optum leadership, and directly informed the decision to offer Warpstream as a Service here at Optum. The data empowered leadership to make a high-confidence product decision rather than relying on vendor claims alone.
 
 ---
 
-## 2. Can you walk me through a backend service or platform system you built for infrastructure? What did you personally design and code?
+## 2. Walk us through a product you built end to end, from user experience through infrastructure. What did you personally design and code?
 
 **Warpstream DME Operator (Q4 2025 - Q1 2026)**
 
 - The situation was that Optum's two largest GCP Kafka customers had significant infrastructure spend driven by local disk I/O on stateful broker nodes in the cloud. Warpstream offered a diskless, Cloud Storage backed architecture that could reduce that cost, but no integration existed with our platform. The team needed to deliver a net new product offering across the full stack in a compressed timeline.
-- My task became championing an 8 week sprint to deliver end to end Warpstream cluster provisioning, from cloud infrastructure and Kubernetes operators through observability and the self-service portal.
+- My task became championing an 8 week sprint to deliver end to end Warpstream cluster provisioning, bridging the gap between the user-facing self-service portal and high-scale data infrastructure through every layer of the stack.
 - The actions I took spanned every layer of the platform stack:
   - At the interaction layer, I built the self-service portal UI/UX for Warpstream cluster management, integrated with our internal company CLI, and co-authored all Terraform modules from scratch (VPC, DNS, IAM, Cloud Storage) so customers could provision clusters through any of the three interfaces.
   - At the API layer, I integrated Warpstream into PRM so provisioning requests flow through typed API contracts with business validation before reaching infrastructure.
   - At the KRM operator layer, I extended the framework with net new Go resource kinds to represent Warpstream clusters in our two tier control plane, provision GCS buckets, register clusters with the Warpstream API, and generate a final CRD passed down to GKE.
   - At the final layer, I personally wrote a net new Go operator from scratch that reconciles that CRD into all GKE specific resources: StatefulSets, Services, ConfigMaps, HPAs, and Warpstream agent configurations.
   - Built the monitoring integration across all layers with Prometheus metrics, Grafana dashboards, and PagerDuty/ServiceNow alert routing.
-- As a result, we shipped to two of Optum's largest Kafka customers as beta. Projected approximately 80% annual infrastructure cost reduction. Delivered a net new cloud product end to end in 8 weeks.
+- As a result, we shipped to two of Optum's largest Kafka customers as beta. Projected approximately 80% annual infrastructure cost reduction. Delivered a net new cloud product end to end in 8 weeks, empowering teams to provision production-grade streaming infrastructure through an intuitive self-service experience backed by mission-critical automation.
 
 ---
 
 ## 3. What kind of systems have you built using Go, and how recently have you worked with it in production?
 
-- From Q4 of last year until now, I wrote the previously mentioned net new Go operator from scratch (Warpstream DME) to manage and reconcile Warpstream Kafka Clusters. It generates all Kubernetes resources, connects to GCS, Warpstream API/Control Plane, and sets up monitoring sidecars.
+- From Q4 of last year until now, I wrote the previously mentioned net new Go operator from scratch (Warpstream DME) to manage and reconcile Warpstream Kafka Clusters. It generates all Kubernetes resources, connects to GCS, Warpstream API/Control Plane, and sets up monitoring sidecars. The goal was a system reliable enough that customers never have to think about the infrastructure underneath.
 - Since 2021 I have been the primary technical owner of our federated network of Kubernetes operators in Go forming a two tier control plane. Upper layer interfaces with external APIs, cloud provisioning, billing. Lower layer generates concrete Kubernetes resources.
 
 ---
 
 ## 4. Have you built anything on top of Kubernetes like controllers, operators, or platform tooling?
 
-- Yes I have. The prior mentioned custom Kubernetes operators, as well as scripts for our customers and our engineers to quickly triage issues with Kafka resources and take common actions like approving nuanced specs from customers, generating permissions for cross-team data access, and all the tooling around our metrics and observability stack.
+- Yes I have. The prior mentioned custom Kubernetes operators, as well as developer experience tooling for our customers and engineers: scripts to quickly triage issues with Kafka resources, take common actions like approving nuanced specs from customers, generate permissions for cross-team data access, and all the tooling around our metrics and observability stack. The through line is making complex infrastructure invisible so teams can focus on building their products.
 
 ---
 
@@ -83,5 +83,5 @@ For workflow orchestration:
 For distributed systems:
 - One example would be how our KRM operator layer and PRM agent layer share an Elasticsearch cluster as single source of truth.
 - Every state change is written to ES such that when an operator restarts, it reconciles from stored state. If PRM goes down (which is not managed by our team), KRM continues to work as a customer control interface without affecting our vital business functions (VBF).
-- Beyond this, our operators themselves live in our on-prem environment since they need to talk to PRM, reconcile with downstream GKE clusters, then talk to our GKE prod customer environments where StatefulSets and Services are created. This was a challenge to setup architecturally due to needing to integrate with standard infrastructure platform features of our company, while also being able to manage and reconcile a lot of GKE resources at scale.
+- Beyond this, our operators themselves live in our on-prem environment since they need to talk to PRM, reconcile with downstream GKE clusters, then talk to our GKE prod customer environments where StatefulSets and Services are created. This was a challenge to setup architecturally due to needing to integrate with standard infrastructure platform features of our company, while also being able to manage and reconcile a lot of GKE resources at scale. Reliability at this layer is non-negotiable; it underpins every customer's data pipeline.
 **
