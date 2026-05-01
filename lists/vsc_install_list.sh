@@ -13,7 +13,6 @@ code --install-extension ecmel.vscode-html-css
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension foxundermoon.shell-format
-code --install-extension github.copilot-chat
 code --install-extension github.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension grapecity.gc-excelviewer

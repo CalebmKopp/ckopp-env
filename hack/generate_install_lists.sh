@@ -20,9 +20,9 @@ code --list-extensions | while read -r ext; do
     echo "code --install-extension $ext" >> ./lists/vsc_install_list.ps1
 done
 
-# If Brewfile exists, remove it
+# If Brewfile exists, rename it to Brewfile.old
 if [ -f "./lists/Brewfile" ] ; then
-    rm "./lists/Brewfile"
+    mv "./lists/Brewfile" "./lists/Brewfile.old"
 fi
 
 # Go to ./lists directory
@@ -32,3 +32,16 @@ cd ./lists || exit
 brew update
 brew upgrade
 brew bundle dump
+
+# If a valid new Brewfile was generated, remove the old one
+if [ -s "./Brewfile" ] ; then
+    rm -f "./Brewfile.old"
+else
+    echo "ERROR: Brewfile generation failed or produced an empty file."
+    # Restore the old Brewfile if it exists
+    if [ -f "./Brewfile.old" ] ; then
+        mv "./Brewfile.old" "./Brewfile"
+        echo "Restored original Brewfile."
+    fi
+    exit 1
+fi
