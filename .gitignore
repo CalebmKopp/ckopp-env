@@ -123,3 +123,4 @@ dmypy.json
 # Local PDF builds
 docs/pdf/*
 !docs/pdf/.gitkeep
+!docs/prospectives/.gitkeep
