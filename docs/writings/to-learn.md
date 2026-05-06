@@ -159,5 +159,25 @@
 - Stream processing frameworks comparison: Kafka Streams vs Flink vs Spark Structured Streaming
 - Bento stream processing: rebuilding OSNI with Bento (input tweets, output Warpstream, read buckets in a UI, filter by company for sentiment tracking)
 
+### Gaps - Staff Go Engineer (CNCF K8s Developer Tools via Realm)
+
+#### Open Source / CNCF Contribution
+- Contributing to public CNCF projects: governance, SIGs, KEPs, review process, DCO sign-off (partially covered under Solo.io gaps)
+- Building in public: balancing velocity with review thoroughness, working with external contributors
+- Public API design for OSS projects: backward compatibility, deprecation policies, semantic versioning
+- Community engagement: conference talks, blog posts, meetup participation, Discord/Slack community moderation
+
+#### External SaaS Multi-Tenancy
+- Multi-tenant Kubernetes SaaS for external customers vs internal enterprise platform
+- Tenant isolation patterns: namespace-per-tenant, cluster-per-tenant, virtual clusters (vcluster)
+- SaaS billing, onboarding, and self-service for untrusted external users
+- Public API design: versioning, rate limiting, authentication for external consumers
+- SLA contracts and incident management for external customers
+
+#### AWS (see also BeyondTrust gaps)
+- EKS specifics vs GKE: networking, IAM integration, add-ons, managed node groups
+- AWS IAM: policies, roles, OIDC federation for Kubernetes service accounts (IRSA)
+- AWS networking: VPC, security groups, PrivateLink, Transit Gateway
+
 ### Other
 - Web scraping (Selenium, etc)

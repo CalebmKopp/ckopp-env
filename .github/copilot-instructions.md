@@ -51,7 +51,7 @@ Three margin tiers exist (small, medium, large). Only `pdf_options.margin` is se
 ### Heading Hierarchy
 Master resumes (visual.md, ats.md) use h1 for the name and h2 for section titles.
 Submitted/prospective resumes shift the entire hierarchy down two levels:
-- h3: Name - Title
+- h3: Name - Current Title (always the actual current job title, never the target role title)
 - h4: Section titles (Skills, Experience, Projects, Education)
 - h5: Job title - Company
 
@@ -62,7 +62,7 @@ Cover letters use no heading levels at all - just bold name, plain text, and par
 - **Master ATS:** plain ` | ` (space-pipe-space, zero HTML entities)
 - **Submitted/prospective resumes and cover letters:** `&nbsp;|&nbsp;` (single nbsp each side)
 
-Master files use `# <YOURNAME>`. Submitted/prospective resumes use `### <YOURNAME> - <TITLE>`. Cover letters use `**<YOURNAME>**` (bold, no heading).
+Master files use `# <YOURNAME>`. Submitted/prospective resumes use `### <YOURNAME> - <CURRENT_TITLE>` (always the actual current job title, never the target role title). Cover letters use `**<YOURNAME>**` (bold, no heading).
 
 ### Resume Section Order
 Canonical order: **Name > Summary > Skills > Experience > Projects > Education**.
@@ -173,7 +173,7 @@ Do not fabricate gaps. Only flag areas where the user's own description of their
 #### Content Rules
 When generating the tailored resume from masters:
 1. Shift heading hierarchy down two levels (h1->h3, h2->h4, h3->h5).
-2. Embed title in name heading: `### <YOURNAME> - <TITLE>`.
+2. Embed current title in name heading: `### <YOURNAME> - <CURRENT_TITLE>`. Always use the actual current job title (e.g., "Senior Software Engineer"), never the target role title. The resume bullets and cover letter demonstrate readiness for the target level.
 3. Drop Summary unless the JD emphasizes a holistic profile.
 4. Rename, reorder, and prune Skills categories to mirror the job posting. Front-load the most relevant terms within each category.
 5. Reword bullets for culture fit - echo the JD's language and priorities while preserving factual accuracy.
