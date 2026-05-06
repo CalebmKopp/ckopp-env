@@ -118,6 +118,23 @@
 - Consistent hashing, virtual nodes, ring-based partitioning
 - Exactly-once delivery guarantees vs at-least-once vs at-most-once: formal definitions and implementation patterns
 - Vector clocks, logical timestamps, causal ordering
+
+### Gaps - Target Sr. Cloud Data Engineer
+
+#### BigQuery
+- BigQuery fundamentals: datasets, tables, views, materialized views, partitioned/clustered tables
+- Scheduled queries: creating, monitoring, troubleshooting failed scheduled query jobs
+- Recurring summary tables: patterns for building and maintaining rollup/aggregation tables
+- Data transfers: BigQuery Data Transfer Service, scheduled transfers, monitoring transfer runs
+- BigQuery SQL: differences from standard SQL (STRUCT, ARRAY, UNNEST, approximate aggregation functions)
+- Cost management: on-demand vs capacity pricing, slot reservations, query optimization for cost
+- BigQuery IAM: dataset-level, table-level, and row-level access controls; authorized views
+
+#### Batch ETL and Data Transformation
+- ETL vs ELT patterns: when to transform before vs after loading into BigQuery
+- Data ingestion into Cloud Storage and BigQuery: batch loading, streaming inserts, Storage Write API
+- Data pipeline orchestration for batch workloads (vs streaming-only experience with Kafka)
+- Schema management in analytics contexts: schema evolution, backward compatibility in BigQuery
 - Linearizability vs sequential consistency vs eventual consistency: formal definitions
 - ETL vs ELT patterns in data streaming: formal definitions and tradeoffs
 
