@@ -252,3 +252,9 @@
 - Distributed transaction patterns: saga pattern (choreography vs orchestration), compensating transactions
 - Service mesh for inter-service communication: sidecar proxy, circuit breaking, retries, timeouts
 - Observability in microservices: distributed tracing (OpenTelemetry), centralized logging, service dependency maps
+- Non-functional requirements as architecture drivers: how scalability, availability, latency, security, and compliance shape design decisions; trade-off documentation and stakeholder communication
+
+#### Architecture Solutioning and Communication (interview prep)
+- Structured architecture walkthrough: top-down (business problem, constraints, key decisions, components, data flow, trade-offs) vs bottom-up; practice narrating your biggest system clearly
+- Live solutioning exercises: extracting requirements from vague prompts, asking clarifying questions, sketching components on a whiteboard, identifying integration points, calling out trade-offs proactively
+- SONIFI-specific architecture study: interactive TV platform on ECS Fargate, on-prem headend servers at each hotel/hospital site, cloud control plane, multi-datacenter topology, patient engagement product
