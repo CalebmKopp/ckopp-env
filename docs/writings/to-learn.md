@@ -218,6 +218,7 @@
 - AWS CloudFormation: template structure, stacks, change sets, drift detection (vs Terraform which you know deeply)
 - AWS networking: VPC, security groups, NACLs, PrivateLink, Transit Gateway, hybrid on-prem connectivity (Direct Connect, VPN)
 - AWS messaging: SQS, SNS, EventBridge - how they compare to Kafka for different use cases
+- AWS IAM in depth: policies, roles, resource-based vs identity-based, cross-account access patterns
 
 #### HL7 and Healthcare Interoperability
 - HL7v2 message format: segments (MSH, PID, OBR, OBX), delimiters, message types (ADT, ORM, ORU)
@@ -225,9 +226,29 @@
 - ADT (Admit-Discharge-Transfer) feeds: how patient status flows from EHR to downstream systems
 - EHR integration patterns: Epic, Cerner/Oracle Health, MEDITECH - how systems exchange patient data
 - Healthcare data standards: HIPAA, HITRUST, HL7 security considerations
+- HL7 transport: MLLP (Minimal Lower Layer Protocol), TCP sockets, how HL7 messages flow between systems
 
 #### On-Prem and Hybrid Architecture
 - On-prem to cloud communication patterns: VPN tunnels, message queues bridging on-prem and cloud, edge computing
 - IoT/embedded device communication: MQTT, CoAP, device management at scale
 - Hardware-software integration patterns: how software systems communicate with physical devices (TVs, room controls, sensors)
 - RTLS (Real-Time Location Services): how location data flows in hospital environments
+- Edge computing in hospitality: on-prem servers at each hotel site that communicate with cloud control plane
+
+#### Hospitality and Media Domain
+- PMS (Property Management Systems) integration: how hotel check-in/check-out events drive downstream systems; HTNG/HSIA standards
+- POS (Point of Sale) system integration: room charge posting, billing workflows
+- Room control systems: 3rd party on-prem and cloud integrations for lighting, HVAC, curtains, TV; protocols (RS-232, IP-based, REST APIs)
+- VOD (Video on Demand) and digital media delivery: content management, DRM, RF vs IP distribution to in-room devices
+- Interactive TV platforms: guest-facing applications, content delivery, personalization, multi-tenant content management
+- Custom hardware vendor relationships: how software architects coordinate with hardware partners on firmware, APIs, and integration specs
+
+#### Monolith to Microservices Patterns (interview prep)
+- Strangler Fig pattern: incrementally replacing monolith components with microservices behind a facade
+- API gateway and BFF (Backend for Frontend) patterns for routing during migration
+- Service decomposition strategies: domain-driven design bounded contexts, database-per-service, shared database anti-pattern
+- Data migration during decomposition: event sourcing, CQRS, dual-write pitfalls, change data capture
+- Deployment strategies for zero-downtime migration: blue-green, canary, feature flags, rolling deployments
+- Distributed transaction patterns: saga pattern (choreography vs orchestration), compensating transactions
+- Service mesh for inter-service communication: sidecar proxy, circuit breaking, retries, timeouts
+- Observability in microservices: distributed tracing (OpenTelemetry), centralized logging, service dependency maps
