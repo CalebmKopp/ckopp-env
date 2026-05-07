@@ -209,3 +209,25 @@
 
 ### Other
 - Web scraping (Selenium, etc)
+
+### Gaps - SONIFI Health Solutions Architect
+
+#### AWS (building on existing AWS gaps)
+- ECS vs EKS: task definitions, Fargate launch type, service auto-scaling, ALB target groups, ECS service discovery
+- ECS on Fargate specifically: SONIFI migrated their interactive TV system to ECS on Fargate
+- AWS CloudFormation: template structure, stacks, change sets, drift detection (vs Terraform which you know deeply)
+- AWS networking: VPC, security groups, NACLs, PrivateLink, Transit Gateway, hybrid on-prem connectivity (Direct Connect, VPN)
+- AWS messaging: SQS, SNS, EventBridge - how they compare to Kafka for different use cases
+
+#### HL7 and Healthcare Interoperability
+- HL7v2 message format: segments (MSH, PID, OBR, OBX), delimiters, message types (ADT, ORM, ORU)
+- HL7 FHIR (newer REST-based standard): resources, bundles, SMART on FHIR
+- ADT (Admit-Discharge-Transfer) feeds: how patient status flows from EHR to downstream systems
+- EHR integration patterns: Epic, Cerner/Oracle Health, MEDITECH - how systems exchange patient data
+- Healthcare data standards: HIPAA, HITRUST, HL7 security considerations
+
+#### On-Prem and Hybrid Architecture
+- On-prem to cloud communication patterns: VPN tunnels, message queues bridging on-prem and cloud, edge computing
+- IoT/embedded device communication: MQTT, CoAP, device management at scale
+- Hardware-software integration patterns: how software systems communicate with physical devices (TVs, room controls, sensors)
+- RTLS (Real-Time Location Services): how location data flows in hospital environments
