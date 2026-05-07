@@ -23,6 +23,7 @@ When generating tailored resumes or cover letters, read PERSONAL_details.md and 
 - Prefer make targets over calling scripts directly.
 	- Use `make fresh`, `make sync`, `make docs`, and `make docs FILE=<path>` where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/nintendo`).
 - Keep changes minimal and scoped to the requested task.
+- When specific interviewer names or LinkedIn profiles are provided, do not attempt to fetch or scrape LinkedIn profiles yourself (bot filters will block it). Instead, proceed with generating documents using whatever context is available, then prompt the user to paste LinkedIn profile content for any named interviewers so you can incorporate their background into prep materials.
 - Do not rewrite large resume sections unless requested.
 - Preserve established wording and quantified claims unless asked to update them.
 
