@@ -40,12 +40,12 @@ When generating tailored resumes or cover letters, read PERSONAL_details.md and 
 - Keep role-specific tailoring targeted to the company/job without changing core chronology.
 
 ### Margins (pdf_options)
-Three margin tiers exist (small, medium, large). Only `pdf_options.margin` is set; no other pdf_options are used. Always start with Large. Step down only when content exceeds one page.
+Three margin tiers exist (small, medium, large). Only `pdf_options.margin` is set; no other pdf_options are used. Always start with Medium. Step down only when content exceeds one page.
 
 | Tier | top/bottom | left/right | When to use |
 |---|---|---|---|
-| Large | 15mm | 20mm | Default starting point for all resumes and cover letters |
-| Medium | 10mm | 15mm | First step down when Large does not fit one page |
+| Large | 15mm | 20mm | Reserved for masters or when extra whitespace is desired |
+| Medium | 10mm | 15mm | Default starting point for all submitted/prospective resumes and cover letters |
 | Small | 6mm | 12mm | Last resort when Medium still exceeds one page |
 
 ### Heading Hierarchy
@@ -187,15 +187,14 @@ When generating the tailored resume from masters:
 13. Compress Education to a single inline line.
 
 #### One-Page Compression Priority
-Always start at Large margins (15mm/20mm). Apply these steps in order, regenerating and rechecking after each:
-1. Reduce margins from Large to Medium (10mm/15mm).
-2. If a cover letter is also being generated, drop Summary section. If no cover letter, keep Summary and continue to step 3.
-3. Drop Intern + Sogeti roles.
-4. Compress SE role bullets.
-5. Fold Warpstream into a single bullet.
-6. Drop Org Initiative Leadership section.
-7. Drop Projects section (move IEEE to Education line).
-8. Reduce margins from Medium to Small (6mm/12mm) (last resort).
+Always start at Medium margins (10mm/15mm). Apply these steps in order, regenerating and rechecking after each:
+1. If a cover letter is also being generated, drop Summary section. If no cover letter, keep Summary and continue to step 2.
+2. Drop Intern + Sogeti roles.
+3. Compress SE role bullets.
+4. Fold Warpstream into a single bullet.
+5. Drop Org Initiative Leadership section.
+6. Drop Projects section (move IEEE to Education line).
+7. Reduce margins from Medium to Small (6mm/12mm) (last resort).
 
 ### PDF Generation and Naming
 - Local PDF output path is docs/pdf/.

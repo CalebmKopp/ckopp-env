@@ -179,5 +179,33 @@
 - AWS IAM: policies, roles, OIDC federation for Kubernetes service accounts (IRSA)
 - AWS networking: VPC, security groups, PrivateLink, Transit Gateway
 
+### Gaps - Wells Fargo Full Stack Engineer (via Judge Group)
+
+#### Apache Spark / Spark Flow (critical)
+- Spark architecture: driver, executors, cluster managers (YARN, Kubernetes, standalone)
+- RDDs, DataFrames, Datasets: when to use each, lazy evaluation, transformations vs actions
+- Spark SQL: structured data processing, catalyst optimizer, predicate pushdown
+- PySpark: Python API for Spark, UDFs, pandas UDFs, integration with Python data ecosystem
+- Spark Flow: SSIS-to-Spark migration patterns, ETL pipeline modernization
+- Spark on Kubernetes: spark-submit, spark-operator, dynamic resource allocation
+- Data lake ingestion patterns: file handling (Parquet, ORC, Delta Lake), partitioning strategies, access management
+
+#### ETL Tools and Patterns
+- SSIS (SQL Server Integration Services): architecture, data flow tasks, control flow, package deployment
+- ETL vs ELT patterns: batch processing vs streaming, when to use each
+- Data lake architecture: landing zones, bronze/silver/gold layers, data quality frameworks
+- File format comparison: Parquet, Avro, ORC, Delta Lake, Iceberg
+
+#### .NET / C#
+- C# language fundamentals: async/await, LINQ, dependency injection, generics, records
+- ASP.NET Core: Web API, middleware, routing, authentication, Entity Framework Core
+- .NET ecosystem: NuGet, dotnet CLI, project structure, containerized .NET services
+- FastAPI (Python): request/response models, dependency injection, async endpoints, OpenAPI generation
+
+#### Angular
+- Angular fundamentals: components, modules, services, dependency injection, RxJS
+- Angular vs React: architectural differences, when to use each
+- Angular CLI, testing with Jasmine/Karma, NgRx state management
+
 ### Other
 - Web scraping (Selenium, etc)

@@ -89,3 +89,7 @@ These are areas where the resume lists experience but actual depth is limited, o
 - **Kafka Internals:** Deep operational knowledge (compaction, restarts, partitions, lag, certs) but less depth on controller internals, KRaft consensus, replication protocol mechanics, exactly-once semantics, and consumer rebalancing protocols.
 - **Stream Processing Patterns:** Operates Kafka at scale but limited hands-on with Kafka Streams, ksqlDB, Flink, CDC/Debezium, or windowing patterns beyond basic consumer group consumption.
 - **Confluent Platform Products:** Licenses Confluent Schema Registry and Warpstream from Confluent, but self-hosts both with entirely custom Helm charts, Terraform, certificate automation, and (for Warpstream) a custom Go operator. Confluent provides the license keys, not the deployment tooling. Has coordinated with Confluent engineering on Warpstream benchmarking. The core KaaS platform is built on open-source Apache Kafka with custom operators, not on Confluent's commercial platform. Has not used ksqlDB, Kafka Connect at depth, Confluent Cloud, or CFK. CFK is a competing product to the custom platform Caleb built, not something he has deployed.
+
+## Compensation Expectations
+- Offers currently being entertained: $180K-$212K total compensation (full-time equivalent).
+- Contract/W2 hourly equivalent: $98-$115/hr W2.
