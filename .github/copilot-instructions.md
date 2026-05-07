@@ -107,6 +107,9 @@ When tailoring, skills categories are renamed, reordered, and pruned to mirror t
 
 ### Cover Letter Structure
 
+#### Company Research (Required)
+Before writing any cover letter, research the target company's mission, vision, and values from their website (About, Mission, Values, Culture pages). Incorporate specific language and themes from these into the Mission hook (paragraph 1) and Culture fit (paragraph 5/6). Do not fabricate company values; use only what is publicly stated. This research step is not required for resumes.
+
 #### Header Block
 ```
 **<YOURNAME>**
