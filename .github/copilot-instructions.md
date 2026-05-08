@@ -170,8 +170,8 @@ Do not fabricate gaps. Only flag areas where the user's own description of their
 2. Read docs/masters/ats.md, docs/masters/PERSONAL_details.md, and docs/masters/linkedin.md as source material.
 3. Perform the Gap Analysis (see above): assess fit, identify gaps, present to the user, and append gaps to docs/writings/to-learn.md.
 4. Generate a tailored resume markdown file applying the content rules below.
-5. Write the file to docs/prospectives/ (or docs/submitted/ if applying).
-6. Run `make docs FILE=<path>` to produce the PDF, where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/*newresume*`).
+5. Write the file to docs/prospectives/ (or docs/submitted/ if applying). Prospective files go directly in docs/prospectives/ as flat files (e.g., `docs/prospectives/hedgefund.md`). Only docs/submitted/ uses per-company subdirectories.
+6. Run `make docs FILE=<path>` to produce the PDF, where `<path>` is relative to `docs/` (e.g., `make docs FILE=prospectives/hedgefund`).
 7. Check the PDF page count. If it exceeds one page, apply the One-Page Compression Priority in order, regenerate, and recheck until it fits.
 
 #### Content Rules
