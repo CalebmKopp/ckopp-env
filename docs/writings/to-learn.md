@@ -210,6 +210,29 @@
 ### Other
 - Web scraping (Selenium, etc)
 
+### Gaps - Senior Kafka Platform Engineer (Hedge Fund via Selby Jennings)
+
+#### Kafka Ecosystem Tools (beyond core operations)
+- Kafka Connect in depth: connector architecture, source vs sink, SMTs, distributed vs standalone mode, offset management, scaling connectors
+- Debezium CDC: connector configuration, schema handling, snapshot modes, tombstone events, outbox pattern
+- MirrorMaker 2 (refresh): have production experience but it has been a while; cross-cluster replication, offset sync, consumer group migration
+- Cruise Control (refresh): have production experience but it has been a while; automated rebalancing, anomaly detection, goals and capacity estimation
+
+#### SASL Authentication Mechanisms
+- SASL/SCRAM: SCRAM-SHA-256/512, credential management, ZooKeeper/KRaft-based credential storage
+- SASL/OAuth (OAuthBearer): token-based auth for Kafka, OIDC integration, token refresh, server-side validation
+- Comparison with mTLS: when to use SASL vs mTLS vs both, ACL integration differences
+
+#### Multi-Region and Disaster Recovery (refresh, not a true gap)
+- Currently run active-active Kafka with Apache Beam between clusters; refresh on the specifics of failover procedures and offset management
+- Cluster Linking (Confluent): mirror topics, consumer offset sync, failover patterns (have not used Confluent's Cluster Linking specifically)
+- Multi-AZ vs multi-region: refresh on tradeoffs in latency, cost, and complexity at the architectural level
+
+#### Financial Services Context
+- Regulatory requirements for financial data: data retention, audit trails, immutability requirements
+- Low-latency messaging patterns in financial services: market data distribution, order flow
+- Compliance automation for financial platforms: SOX, SEC regulations, data lineage
+
 ### Gaps - SONIFI Health Solutions Architect
 
 #### AWS (building on existing AWS gaps)
@@ -258,3 +281,48 @@
 - Structured architecture walkthrough: top-down (business problem, constraints, key decisions, components, data flow, trade-offs) vs bottom-up; practice narrating your biggest system clearly
 - Live solutioning exercises: extracting requirements from vague prompts, asking clarifying questions, sketching components on a whiteboard, identifying integration points, calling out trade-offs proactively
 - SONIFI-specific architecture study: interactive TV platform on ECS Fargate, on-prem headend servers at each hotel/hospital site, cloud control plane, multi-datacenter topology, patient engagement product
+
+### Gaps - Akuity Senior Backend Engineer (Go/K8s)
+
+#### Argo CD and Kargo
+- Argo CD architecture: application controller, repo server, API server, Redis cache, ApplicationSet controller
+- Argo CD ApplicationSets: generators (git, cluster, matrix, merge), progressive syncs, pull request generators
+- Kargo: freight, stages, promotions, verification; how Kargo orchestrates artifact promotion across environments
+- GitOps delivery workflows: declarative desired state, drift detection, reconciliation loops, sync waves and hooks
+- Multi-tenant Argo CD: AppProject isolation, RBAC policies, SSO integration, cluster secrets management
+
+#### EKS (vs GKE)
+- EKS networking: VPC CNI, pod networking, security groups for pods, AWS Load Balancer Controller
+- EKS IAM: IRSA (IAM Roles for Service Accounts), pod identity, OIDC federation
+- EKS add-ons: CoreDNS, kube-proxy, VPC CNI as managed add-ons; vs GKE's integrated approach
+- EKS multi-region patterns: cluster federation, GitOps-driven multi-cluster management at scale
+
+#### PostgreSQL (production usage)
+- PostgreSQL fundamentals: connection pooling (PgBouncer), vacuuming, WAL, replication (streaming, logical)
+- PostgreSQL performance: EXPLAIN ANALYZE, index types (B-tree, GIN, GiST), query optimization
+- PostgreSQL in Kubernetes: operators (CloudNativePG, Zalando), high availability patterns, backup/restore
+
+### Gaps - Buf Software Engineer (Bufstream)
+
+#### Building Kafka-Compatible Systems (vs operating Kafka)
+- Kafka protocol internals: request/response lifecycle, API keys, protocol versioning, fetch/produce at the wire level
+- Implementing Kafka protocol compatibility: topic management, consumer group coordination, offset management from the broker side
+- Object-storage-based streaming: append semantics on top of S3/GCS, tiered storage, compaction in object storage
+- Exactly-once semantics implementation: idempotent producers, transactional markers, log segment management from the implementor perspective
+
+#### High-Performance Go
+- Go performance optimization: escape analysis, reducing allocations, sync.Pool, unsafe pointer patterns
+- Go profiling and benchmarking: pprof, trace tool, benchmark tests, CPU/memory/goroutine profiling
+- Go concurrency patterns at scale: work stealing, lock-free data structures, channel vs mutex performance tradeoffs
+- Go compiler internals: inlining heuristics, devirtualization, compiler directives (//go:noescape, //go:nosplit)
+
+#### Advanced Testing Techniques
+- Deterministic simulation testing (DST): exploring state space of distributed systems, simulating failures
+- Jepsen-style correctness testing: linearizability checking, fault injection, network partition simulation
+- Property-based testing in Go: rapid library, generating random inputs to explore edge cases
+- Fuzzing in Go: native go test fuzzing, corpus management, coverage-guided mutation
+
+#### Protobuf and Schema Systems
+- Protobuf internals: wire format, encoding/decoding, field presence, oneof semantics, extension points
+- Schema-aware data pipelines: broker-side schema validation, schema evolution enforcement, compatibility checking
+- Protobuf vs Avro vs JSON Schema: trade-offs in streaming contexts, schema resolution strategies
