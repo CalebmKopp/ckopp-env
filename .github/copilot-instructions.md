@@ -26,6 +26,7 @@ When generating tailored resumes or cover letters, read PERSONAL_details.md and 
 - When specific interviewer names or LinkedIn profiles are provided, do not attempt to fetch or scrape LinkedIn profiles yourself (bot filters will block it). Instead, proceed with generating documents using whatever context is available, then prompt the user to paste LinkedIn profile content for any named interviewers so you can incorporate their background into prep materials.
 - Do not rewrite large resume sections unless requested.
 - Preserve established wording and quantified claims unless asked to update them.
+- Avoid hyphenated compound words whenever possible. Prefer open compounds (e.g., "on premises" not "on-prem", "full stack" not "full-stack", "zero downtime" not "zero-downtime"). Exceptions: proper nouns and established technical terms where the hyphen is part of the name (e.g., MirrorMaker 2 is fine, active/active uses a slash not a hyphen).
 
 ### Source of Truth
 - Resume content: docs/ (top-level plus masters/, submitted/, prospectives/).
