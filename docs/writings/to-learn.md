@@ -210,6 +210,18 @@
 ### Other
 - Web scraping (Selenium, etc)
 
+### Gaps - Platform Architect (Inspire Medical Systems)
+
+#### Azure Security Tooling
+- Microsoft Defender for Cloud: CSPM, workload protection plans, secure score, recommendations, regulatory compliance dashboards
+- Privileged Identity Management (PIM): just-in-time access, access reviews, role activation, Azure AD integration
+- Azure workload security: container security, SQL security, storage security, network security groups at depth
+- Azure database security: SQL Server and managed database firewall rules, auditing, TDE, Always Encrypted, dynamic data masking
+
+#### Medical Device Industry Context
+- FDA regulatory context for medical device companies: QSR, design controls, how IT infrastructure supports regulated product development
+- HIPAA vs FDA compliance: similarities and differences from healthcare data compliance at Optum
+
 ### Gaps - Senior Kafka Platform Engineer (Hedge Fund via Selby Jennings)
 
 #### Kafka Ecosystem Tools (beyond core operations)
