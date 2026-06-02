@@ -202,6 +202,9 @@ Always start at Small margins (6mm/12mm). Apply these steps in order if content 
 - CI currently converts only top-level docs/*.md files.
 	- Files under docs/masters/, docs/submitted/, and docs/prospectives/ are local-build only.
 
+### PDF Delivery
+When generating resumes or cover letters in a Claude Code chat session, always send the generated PDF to Caleb in the chat after generation using the SendUserFile tool.
+
 ### Known Resume Constraints
 - All resumes for roles should fit on one page. If content exceeds one page, apply the compression tactics in the specified order. The Masters can exceed one page, but all submitted/prospective resumes should be one page.
 - When page count matters, prefer reliable local verification methods over Spotlight metadata.
