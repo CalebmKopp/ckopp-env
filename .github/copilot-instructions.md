@@ -40,13 +40,13 @@ When generating tailored resumes or cover letters, read PERSONAL_details.md and 
 - Keep role-specific tailoring targeted to the company/job without changing core chronology.
 
 ### Margins (pdf_options)
-Three margin tiers exist (small, medium, large). Only `pdf_options.margin` is set; no other pdf_options are used. Always start with Large. Step down only when content exceeds one page.
+Three margin tiers exist (small, medium, large). Only `pdf_options.margin` is set; no other pdf_options are used. Always start with Small. Step up only when content fits comfortably with room to spare.
 
 | Tier | top/bottom | left/right | When to use |
 |---|---|---|---|
-| Large | 15mm | 20mm | Default starting point for all resumes and cover letters |
-| Medium | 10mm | 15mm | First step down when Large does not fit one page |
-| Small | 6mm | 12mm | Last resort when Medium still exceeds one page |
+| Small | 6mm | 12mm | Default starting point for all resumes and cover letters |
+| Medium | 10mm | 15mm | Step up when Small leaves significant whitespace |
+| Large | 15mm | 20mm | Step up when Medium still leaves significant whitespace |
 
 ### Heading Hierarchy
 Master resumes (visual.md, ats.md) use h1 for the name and h2 for section titles.
@@ -187,15 +187,13 @@ When generating the tailored resume from masters:
 13. Compress Education to a single inline line.
 
 #### One-Page Compression Priority
-Always start at Large margins (15mm/20mm). Apply these steps in order, regenerating and rechecking after each:
-1. Reduce margins from Large to Medium (10mm/15mm).
-2. If a cover letter is also being generated, drop Summary section. If no cover letter, keep Summary and continue to step 3.
-3. Drop Intern + Sogeti roles.
-4. Compress SE role bullets.
-5. Fold Warpstream into a single bullet.
-6. Drop Org Initiative Leadership section.
-7. Drop Projects section (move IEEE to Education line).
-8. Reduce margins from Medium to Small (6mm/12mm) (last resort).
+Always start at Small margins (6mm/12mm). Apply these steps in order if content still exceeds one page, regenerating and rechecking after each:
+1. If a cover letter is also being generated, drop Summary section. If no cover letter, keep Summary and continue to step 2.
+2. Drop Intern + Sogeti roles.
+3. Compress SE role bullets.
+4. Fold Warpstream into a single bullet.
+5. Drop Org Initiative Leadership section.
+6. Drop Projects section (move IEEE to Education line).
 
 ### PDF Generation and Naming
 - Local PDF output path is docs/pdf/.
@@ -204,10 +202,13 @@ Always start at Large margins (15mm/20mm). Apply these steps in order, regenerat
 - CI currently converts only top-level docs/*.md files.
 	- Files under docs/masters/, docs/submitted/, and docs/prospectives/ are local-build only.
 
+### PDF Delivery
+When generating resumes or cover letters in a Claude Code chat session, always send the generated PDF to Caleb in the chat after generation using the SendUserFile tool.
+
 ### Known Resume Constraints
 - All resumes for roles should fit on one page. If content exceeds one page, apply the compression tactics in the specified order. The Masters can exceed one page, but all submitted/prospective resumes should be one page.
 - When page count matters, prefer reliable local verification methods over Spotlight metadata.
-- Page count verification: after generating a PDF, run `strings <pdf> | grep '/Type /Page'`. Each `/Type /Page` line (excluding `/Type /Pages`) represents one page. This is fast and reliable for the simple PDFs md-to-pdf produces. Use `grep -c` for a numeric count.
+- Page count verification: after generating a PDF, run `strings <pdf> | grep '/Type /Page'` and count only lines that are exactly `/Type /Page` (not `/Type /Pages`). The `/Type /Pages` entry is the page tree root and does not represent a page. Do not use `grep -c` as it will overcount by 1. Inspect the raw output lines instead.
 
 ### Validation Checklist
 1. If docs changed, run the relevant docs build command.
