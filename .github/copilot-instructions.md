@@ -205,7 +205,7 @@ Always start at Small margins (6mm/12mm). Apply these steps in order if content 
 ### Known Resume Constraints
 - All resumes for roles should fit on one page. If content exceeds one page, apply the compression tactics in the specified order. The Masters can exceed one page, but all submitted/prospective resumes should be one page.
 - When page count matters, prefer reliable local verification methods over Spotlight metadata.
-- Page count verification: after generating a PDF, run `strings <pdf> | grep '/Type /Page'`. Each `/Type /Page` line (excluding `/Type /Pages`) represents one page. This is fast and reliable for the simple PDFs md-to-pdf produces. Use `grep -c` for a numeric count.
+- Page count verification: after generating a PDF, run `strings <pdf> | grep '/Type /Page'` and count only lines that are exactly `/Type /Page` (not `/Type /Pages`). The `/Type /Pages` entry is the page tree root and does not represent a page. Do not use `grep -c` as it will overcount by 1. Inspect the raw output lines instead.
 
 ### Validation Checklist
 1. If docs changed, run the relevant docs build command.
