@@ -46,9 +46,9 @@ Optum, UnitedHealth Group | Saint Paul, MN | Sep 2022 - Present
 
 **Kafka and Infrastructure Platform, HCP Console**
 
-- **Kubernetes Resource Manager (KRM) SME:** Serve as one of the primary technical owners and deepest SMEs of KRM, a federated network of Kubernetes operators written in Go forming a two-tier control plane for automated deployment and configuration of streaming infrastructure at production scale. The upper control layer connects to and interfaces with external APIs, CSP provisioning hooks, and Optum-internal resource registration and billing services. A secondary operator layer, running in a separate Kubernetes cluster, generates and owns all concrete Kubernetes resources and links them back to the meta-resources established above. The PRM agent layer and KRM operators share a common Elasticsearch cluster as a single source of truth, ensuring full state recovery and resource utilization visibility if either system becomes unavailable. The platform manages 500+ individual Kafka clusters across multi-tenant, multi-cloud environments, handling high-throughput, low-latency data ingestion workloads at enterprise production scale.
+- **Kubernetes Resource Manager (KRM) SME:** Serve as one of the primary technical owners and deepest SMEs of KRM, a federated network of Kubernetes operators written in Go forming a two-tier control plane for automated deployment and configuration of streaming infrastructure at production scale. The upper control layer connects to and interfaces with external APIs, CSP provisioning hooks, and Optum-internal resource registration and billing services. A secondary operator layer, running in a separate Kubernetes cluster, generates and owns all concrete Kubernetes resources and links them back to the meta-resources established above. The PRM agent layer and KRM operators share a common Elasticsearch cluster as a single source of truth, ensuring full state recovery and resource utilization visibility if either system becomes unavailable. The platform manages 500+ individual Kafka clusters across multi-tenant GCP environments, handling high-throughput, low-latency data ingestion workloads at enterprise production scale.
 
-- **Platform Resource Manager (PRM):** Contribute to the PRM agent layer, an internal self-service developer platform and framework analogous to Spotify Backstage, through which all data orchestration and provisioning workflows are expressed as typed API contracts (Kinds and Objects) that decouple the product experience from operator implementation details. Enable self-service cloud deployment of streaming infrastructure across Google Cloud Platform and Azure.
+- **Platform Resource Manager (PRM):** Contribute to the PRM agent layer, an internal self-service developer platform and framework analogous to Spotify Backstage, through which all data orchestration and provisioning workflows are expressed as typed API contracts (Kinds and Objects) that decouple the product experience from operator implementation details. Enable self-service cloud deployment of streaming infrastructure across Google Cloud Platform.
 
 - **Confluent Schema Registry as a Service:** Connect producers and consumers to managed Confluent Schema Registry endpoints, providing certificate/ACL governed schema management, compatibility enforcement, and data governance capabilities on top of the Kafka clusters the platform provisions.
 
@@ -58,7 +58,7 @@ Optum, UnitedHealth Group | Saint Paul, MN | Sep 2022 - Present
 
 - **Self-Service Frontend and Team Leadership:** Serve as lead engineer and product owner of the Kafka Clusters on the Cloud self-service micro-frontend (TypeScript, React, NextJS) embedded in HCP Console, meeting UX, accessibility, and security standards of the central developer portal team; captain a team of 6 engineers, write user stories, conduct code reviews, and ship features against product, security, and compliance requirements. Produce technical documentation for onboarding engineers and platform partners.
 
-- **Terraform and Cloud Infrastructure Engineering:** Contribute deep SME expertise to infrastructure-as-code and cloud infrastructure provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on Google Cloud Platform and Azure; co-design and deliver all Terraform backing the net-new Warpstream Clusters-as-a-Service product including Cloud Storage bucket provisioning and cloud deployment automation.
+- **Terraform and Cloud Infrastructure Engineering:** Contribute deep SME expertise to infrastructure-as-code and cloud infrastructure provisioning across GKE, VPC, DNS, IAM, Vault policies, Artifact Registry, and CI/CD pipelines on Google Cloud Platform; co-design and deliver all Terraform backing the net-new Warpstream Clusters-as-a-Service product including Cloud Storage bucket provisioning and cloud deployment automation.
 
 - **Observability and Cloud Monitoring:** Extend the Prometheus/Thanos/Grafana observability stack, writing PromQL queries, updating Go monitoring controllers for new offerings, and delivering Terraform-managed Grafana dashboards surfaced to both on-call engineers and customers with PagerDuty and ServiceNow alert routing for customer-facing SLAs. Author runbooks and alert playbooks for platform-specific alerts and customer engagement procedures during war rooms and incident response.
 
@@ -91,7 +91,7 @@ Consistent first-responder when company-wide mandates land before any golden pat
 
 - **Cloud vulnerability remediation:** Triaged and resolved hundreds of cloud infrastructure security findings and network security misconfigurations in days when the internal security team hard-launched a new detection system, unblocking the broader Kafka Platform.
 
-- **UHG Cloud Native 2029 migration:** Drove accelerated cloud deployment and migration of customers off on-prem shared multi-tenant Kafka clusters toward Google Cloud Platform and Azure cloud-native deployments.
+- **UHG Cloud Native 2029 migration:** Drove accelerated cloud deployment and migration of customers off on-prem shared multi-tenant Kafka clusters toward Google Cloud Platform cloud-native deployments.
 
 - **Optum Grafana consolidation:** Led platform-side transition from self-hosted Grafana pods to Optum's centralized internal cloud monitoring offering, migrating dashboards, alert routing, and data source configs.
 
@@ -104,7 +104,7 @@ Optum, UnitedHealth Group | Saint Paul, MN | Jun 2020 - Aug 2022
 
 **Kafka as a Service Platform (Jan 2021 - Aug 2022)**
 
-- Contributed to provisioning pipelines and day-to-day operations supporting thousands of Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform and Azure.
+- Contributed to provisioning pipelines and day-to-day operations supporting thousands of Kafka as a Service clients across multi-tenant and single-tenant stream processing deployments on Google Cloud Platform.
 
 - Implemented novel features in custom Kubernetes operator frameworks in Go for automated deployment and configuration of Kafka resources at production scale; participated in early architecture discussions for KRM during its design phase.
 

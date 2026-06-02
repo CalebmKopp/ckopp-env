@@ -36,7 +36,7 @@ I build platforms where streaming infrastructure disappears behind a self-servic
 ```
 One of the deepest technical owners of Optum's Kafka-as-a-Service platform: 750+ high-throughput clusters, 1,000+ nodes, five nines reliability.
 
-KRM/PRM Technical Lead: SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infra deployment across GCP and Azure. 500+ clusters in multi-tenant, multi-cloud environments.
+KRM/PRM Technical Lead: SME of custom Kubernetes operators (Go) forming a two-tier control plane for automated streaming infra deployment across GCP. 500+ clusters in multi-tenant environments.
 
 Warpstream Delivery Lead: Co-led Warpstream cluster provisioning - PRM agents, KRM operator extensions, a net-new Go operator from upstream Helm charts, all Terraform infra from scratch (GCS, VPC, DNS, IAM). Shipped to two largest GCP customers; projected ~80% annual cost reduction.
 
@@ -89,7 +89,7 @@ SRE & Mentorship: Zero customer data loss. On-call across 1,000+ node fleet. Men
 #### Description (1904 / 2000 chars)
 
 ```
-Kafka Platform (Jan 2021 - Aug 2022): Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP and Azure.
+Kafka Platform (Jan 2021 - Aug 2022): Built and operated provisioning pipelines supporting thousands of Kafka-as-a-Service clients across multi-tenant and single-tenant streaming deployments on GCP.
 
 Developed features in custom Kubernetes operators (Go) for automated Kafka resource deployment at production scale; shaped early architecture decisions for KRM during its design phase.
 

@@ -179,6 +179,33 @@
 - AWS IAM: policies, roles, OIDC federation for Kubernetes service accounts (IRSA)
 - AWS networking: VPC, security groups, PrivateLink, Transit Gateway
 
+### Gaps - limitless. Staff Cloud Infrastructure Engineer
+
+#### Rust
+- Rust ownership model, borrowing, lifetimes: foundational language concepts not yet built
+- Async Rust: tokio runtime, async/await, channels, select!
+- Rust for systems/infra work: writing CLI tools, network services, Kubernetes controllers in Rust
+- Error handling patterns: anyhow, thiserror, Result propagation
+- Rust build tooling: Cargo, workspaces, feature flags, cross-compilation
+
+#### BYOC (Bring Your Own Cloud) Deployment Patterns
+- BYOC architecture: deploying vendor control plane into customer-owned cloud accounts
+- Tenant isolation in BYOC: IAM boundary design, network segregation, secrets scoping per tenant
+- Agent-based BYOC: outbound-only agent pattern vs inbound connectivity; credential/token models
+- Upgrade and lifecycle management for BYOC deployments: rolling upgrades with no customer downtime
+- Customer onboarding for BYOC: Terraform modules, Helm charts, or CLI tooling designed for external operators
+
+#### Bare Metal Infrastructure
+- Bare metal provisioning: PXE boot, iPXE, IPMI, Redfish API; network boot vs image-based deployment
+- Cluster lifecycle on bare metal: node discovery, OS provisioning, Kubernetes bootstrapping (Talos, RKE2, kubeadm)
+- Hardware-level observability: SMART, IPMI sensors, out-of-band management integration with monitoring stacks
+- Storage on bare metal: Ceph, Rook-Ceph, local PV provisioning vs network-attached storage
+
+#### AWS (additional - see also BeyondTrust and Staff Go Engineer gaps)
+- EKS specifics: managed node groups, Karpenter autoscaler, EKS add-ons, IRSA (IAM Roles for Service Accounts)
+- AWS networking deep dive: PrivateLink for BYOC, Transit Gateway for multi-account architectures
+- Multi-account AWS patterns: AWS Organizations, SCPs, landing zones for SaaS isolation
+
 ### Gaps - Aloe Identity Founding Infrastructure Engineer
 
 #### Identity and Access Management Domain
