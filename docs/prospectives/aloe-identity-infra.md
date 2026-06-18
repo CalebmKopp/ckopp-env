@@ -7,7 +7,7 @@ pdf_options:
     right: 12mm
 ---
 
-### Caleb Kopp - Senior Software Engineer
+### Caleb Kopp - Lead Software Engineer
 
 Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com &nbsp;|&nbsp; linkedin.com/in/calebmkopp
 
@@ -26,20 +26,22 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 #### Experience
 
-##### Senior Software Engineer - Optum, UnitedHealth Group
+##### Lead Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
-- Primary technical owner of KRM, a federated network of custom Go Kubernetes operators forming a two-tier control plane managing 750+ clusters across multi-tenant GCP environments at five-nines reliability with zero customer data loss; co-author all Terraform across GKE, VPC, DNS, IAM, and CI/CD pipelines.
-- Co-led 8-week sprint taking Warpstream cluster provisioning from whiteboard to production: net-new Go operator, all Terraform from scratch (GCS, VPC, DNS, IAM), self-service API integration, full observability; shipped to two of Optum's largest GCP customers, projected to reduce annual infrastructure costs by approximately 80%.
-- Maintain the platform's certificate authority: generate, distribute, and rotate thousands of mTLS client certificates; manage VPC-scoped network security and DNS for broker endpoints across all cloud environments; enforce encryption at rest via GCP KMS for PHI/PII data streams.
-- Own CI/CD pipeline configuration using GitHub Actions, Docker-based build pipelines, JFrog Artifactory, and HashiCorp Vault secret injection; enforce best practices for container image management and deployment automation.
-- Extend the Prometheus/Grafana/Elasticsearch observability stack with Go monitoring controllers and PromQL dashboards; author runbooks and alert playbooks; serve on-call across 1,000+ nodes.
-- Serve as lead engineer and product owner of the Kafka Clusters self-service web application (TypeScript, React, NextJS); captain a team of 6 engineers, write user stories, conduct code reviews, and ship features.
+- Primary technical owner of KRM, a federated network of custom Go Kubernetes operators forming a two-tier control plane that automates deployment and lifecycle management of 750+ Kafka clusters across multi-tenant GCP environments at five-nines reliability with zero customer data loss; co-author all Terraform across GKE, VPC, DNS, IAM, and CI/CD pipelines.
+- Co-led 8-week sprint taking Warpstream cluster provisioning from whiteboard to production: wrote a net-new Go operator from scratch, authored all Terraform infrastructure (GCS buckets, VPC networking, DNS records, IAM policies), integrated into the self-service API, and delivered full observability; shipped to two of Optum's largest GCP customers, projected to reduce annual infrastructure costs by approximately 80%.
+- Maintain the platform's certificate authority: generate, distribute, and rotate thousands of mTLS client certificates across all cloud environments; manage VPC-scoped network security and DNS for broker endpoints; enforce encryption at rest via GCP KMS for regulated PHI/PII data streams in compliance with healthcare data governance requirements.
+- Own CI/CD pipeline configuration using GitHub Actions, Docker-based build pipelines, JFrog Artifactory, and HashiCorp Vault secret injection; support and advance development environments to reduce friction when shipping to production; enforce best practices for container image management, Chainguard hardened base images, and deployment automation.
+- Extend the Prometheus/Grafana/Elasticsearch observability stack with custom Go monitoring controllers and PromQL dashboards surfaced to both engineers and customers; author runbooks and alert playbooks; troubleshoot production issues spanning applications, databases, networks, and proxies; serve on-call across a fleet of 1,000+ nodes.
+- Captain a team of 6 engineers as lead engineer and product owner of the Kafka Clusters self-service web application (TypeScript, React, NextJS) embedded in Optum's enterprise developer portal; write user stories, conduct code reviews, mentor junior engineers, and coordinate across product, security, and compliance stakeholders.
+- Solely owned the design and execution of a head-to-head Warpstream vs Apache Kafka performance benchmark in GCP: stood up a bespoke test environment from scratch in GKE, iterated on methodology after initial results were questioned, and produced a comprehensive report with architecture diagrams and Grafana dashboards that directly informed the decision to offer Warpstream as a production product.
 
 ##### Software Engineer - Optum, UnitedHealth Group
 *Jun 2020 - Aug 2022* &nbsp;|&nbsp; Saint Paul, MN
 
-- Contributed to Go Kubernetes operator frameworks; discovered undocumented Azure API rate limits through hands-on network investigation, producing cost analysis that drove the platform's migration to GCP, saving the company millions in infrastructure spend.
+- Contributed to Go Kubernetes operator frameworks and provisioning pipelines; discovered undocumented Azure API rate limits through hands-on network traffic investigation, producing a cost analysis that drove the platform's migration to GCP and saved the company millions in infrastructure spend.
+- Built a full-stack web application (React, TypeScript, Express, MSSQL) replacing spreadsheet-based datacenter inventory management; adopted by the team.
 
 ---
 
