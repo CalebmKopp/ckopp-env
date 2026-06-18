@@ -206,5 +206,21 @@
 - AWS networking deep dive: PrivateLink for BYOC, Transit Gateway for multi-account architectures
 - Multi-account AWS patterns: AWS Organizations, SCPs, landing zones for SaaS isolation
 
+### Gaps - Aloe Identity Founding Infrastructure Engineer
+
+#### Identity and Access Management Domain
+- OIDC and OAuth2 flows: authorization code, PKCE, client credentials, token exchange, refresh token rotation
+- SAML 2.0: SP-initiated vs IdP-initiated SSO, assertion parsing, metadata exchange
+- SCIM: user/group provisioning protocol, schema, bulk operations, filtering
+- Identity provider architecture: directory services, federation, multi-tenancy, session management
+- Passwordless auth patterns: WebAuthn/FIDO2, passkeys, magic links
+- Okta/Auth0 product landscape: understanding competitor patterns to build against
+
+#### Startup / Greenfield Infrastructure
+- Standing up production infrastructure from zero: sequencing decisions (networking, DNS, secrets, compute, observability)
+- Cost-conscious infrastructure design at seed stage vs enterprise scale
+- SOC 2 compliance from day one: audit logging, access controls, evidence collection
+- Infrastructure decisions with no existing playbook or team norms
+
 ### Other
 - Web scraping (Selenium, etc)
