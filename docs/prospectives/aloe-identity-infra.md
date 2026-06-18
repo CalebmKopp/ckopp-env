@@ -7,7 +7,7 @@ pdf_options:
     right: 12mm
 ---
 
-### Caleb Kopp - Lead Software Engineer
+### Caleb Kopp - Senior Software Engineer
 
 Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com &nbsp;|&nbsp; linkedin.com/in/calebmkopp
 
@@ -26,7 +26,7 @@ Saint Paul, MN &nbsp;|&nbsp; 507-299-0445 &nbsp;|&nbsp; caleb.m.kopp@outlook.com
 
 #### Experience
 
-##### Lead Software Engineer - Optum, UnitedHealth Group
+##### Senior Software Engineer - Optum, UnitedHealth Group
 *Sep 2022 - Present* &nbsp;|&nbsp; Saint Paul, MN
 
 - Primary technical owner of KRM, a federated network of custom Go Kubernetes operators forming a two-tier control plane that automates deployment and lifecycle management of 750+ Kafka clusters across multi-tenant GCP environments at five-nines reliability with zero customer data loss; co-author all Terraform across GKE, VPC, DNS, IAM, and CI/CD pipelines.
