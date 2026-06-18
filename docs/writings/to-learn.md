@@ -206,6 +206,29 @@
 - AWS networking deep dive: PrivateLink for BYOC, Transit Gateway for multi-account architectures
 - Multi-account AWS patterns: AWS Organizations, SCPs, landing zones for SaaS isolation
 
+### Gaps - Apple Staff SW Engineer Applied AI (200630749) / DevOps Engineer Agents (200631016)
+
+#### LLM APIs and Applied AI
+- Building production solutions on LLM APIs: OpenAI, Anthropic, Gemini, Mistral, Llama integration patterns
+- Custom fine-tuned models: Defog, Nous Research; when to fine-tune vs prompt-engineer vs RAG
+- Prompt optimization and evaluation: systematic eval frameworks, A/B testing prompts, regression detection
+- Model pipeline and registry tools: MLflow, Weights & Biases, model versioning, artifact management
+- Model drift detection and automated monitoring: data drift vs concept drift, alerting on accuracy degradation
+- RAG at production scale beyond AI Dojo CSV project: vector DB selection (pgvector, Weaviate, Pinecone), chunking strategies, hybrid search, retrieval evaluation
+
+#### MCP Servers and AI Agent Infrastructure
+- MCP (Model Context Protocol): server implementation, tool registration, resource exposure, transport protocols (stdio, SSE, streamable HTTP)
+- MCP server deployment and scaling: containerized MCP servers, load balancing, connection management
+- Agent orchestration patterns: LangChain, LangGraph, AutoGen, CrewAI; production vs prototyping tradeoffs
+- Agent observability: tracing token flows, tool invocations, hallucination detection, evals as CI
+
+#### ETL and Data Warehousing
+- ETL pipeline construction: Snowflake, dbt, Airflow; batch vs streaming ingestion patterns
+- PostgreSQL: production experience beyond MSSQL (query optimization, indexing, EXPLAIN plans)
+- SQL at depth for analytics workloads: window functions, CTEs, materialized views
+
+#### Deployment Tooling
+- Ansible: playbook authoring, roles, inventory management, idempotent configuration (JDs list alongside Docker/Jenkins)
 ### Gaps - Aloe Identity Founding Infrastructure Engineer
 
 #### Identity and Access Management Domain
