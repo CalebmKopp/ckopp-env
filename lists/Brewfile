@@ -2,91 +2,168 @@ tap "adoptopenjdk/openjdk"
 tap "bwya77/tap"
 tap "confluentinc/tap"
 tap "databricks/tap"
+tap "derailed/k9s", trusted: { formulae: ["k9s"] }
 tap "goreleaser/tap"
 tap "hashicorp/tap"
 tap "homebrew/core"
+tap "macpaw/taps"
 tap "optum-eeps/prm-homebrew", "https://github.com/optum-eeps/prm-homebrew.git"
 tap "oven-sh/bun"
 tap "powershell/tap"
 tap "romkatv/powerlevel10k"
 tap "tilt-dev/tap"
+# Simple, modern, secure file encryption
+brew "age"
+# Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# General-purpose data compression with high compression ratio
 brew "xz"
+# Microsoft Azure CLI 2.0
 brew "azure-cli"
+# Programmable completion for Bash 3.2
 brew "bash-completion"
+# C library implementing the SSH2 protocol
 brew "libssh2"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Core application library for C
 brew "glib"
+# Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# GIF image/animation creator/editor
 brew "gifsicle"
+# Distributed revision control system
 brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Alternative to top/htop
 brew "glances"
+# GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Language server for the Go language
 brew "gopls"
+# Terminal based graphical activity monitor inspired by gtop and vtop
 brew "gotop"
+# Kubernetes package manager
 brew "helm"
+# Add GitHub support to git on the command-line
 brew "hub"
+# Manage your Java environment
 brew "jenv"
+# Command-line interface for JFrog products
 brew "jfrog-cli"
+# New file format for still image compression
 brew "jpeg-xl"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
+# Development kit for the Java programming language
 brew "openjdk"
+# Open-source distributed event streaming platform
 brew "kafka"
+# Easy way to access the system keyring service from python
 brew "keyring"
+# Run local Kubernetes cluster in Docker
 brew "kind"
+# Network authentication protocol
 brew "krb5"
+# SDK for building Kubernetes APIs using CRDs
 brew "kubebuilder"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Library for JPEG-2000 image manipulation
 brew "openjpeg"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
+# Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
 brew "marp-cli"
+# Replacement for ls, cp and other commands for object storage
 brew "minio-mc"
+# SMTP client that can be used as an SMTP plugin for Mutt
 brew "msmtp"
+# Manage multiple Node.js versions
 brew "nvm"
+# Development kit for the Java programming language
 brew "openjdk@11"
+# Development kit for the Java programming language
 brew "openjdk@17"
+# Open Visual Inference And Optimization toolkit for AI inference
 brew "openvino"
+# Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Alternative to docker-compose using podman
 brew "podman-compose"
+# Python package management tool
 brew "poetry"
+# Modern API client that lives in your terminal
 brew "posting"
+# Theme for zsh
 brew "powerlevel10k"
+# Command-line shell and scripting language
 brew "powershell"
+# Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Editor of encrypted files
 brew "sops"
+# Non-interactive SSH password auth
 brew "sshpass"
+# Tool Command Language
 brew "tcl-tk"
+# User interface to the TELNET protocol
 brew "telnet"
+# OCR (Optical Character Recognition) engine
 brew "tesseract"
+# Programmatically correct mistyped console commands
 brew "thefuck"
+# Define your dev environment as code. For microservice apps on Kubernetes
 brew "tilt"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Compress/expand executable files
 brew "upx"
+# Terminal-based Tetris clone
 brew "vitetris"
+# Executes a program periodically, showing output fullscreen
 brew "watch"
+# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Tracks most-used directories to make cd smarter
 brew "z"
+# Compression and file packaging/archive utility
 brew "zip"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Additional completion definitions for zsh
 brew "zsh-completions"
-brew "confluentinc/tap/cli"
-brew "databricks/tap/databricks"
-brew "hashicorp/tap/vault"
-brew "optum-eeps/prm-homebrew/hcpctl"
-brew "oven-sh/bun/bun"
+# CLI for Confluent Cloud and Confluent Platform
+brew "confluentinc/tap/cli", trusted: true
+# Vault
+brew "hashicorp/tap/vault", trusted: true
 vscode "4ops.terraform"
 vscode "aaron-bond.better-comments"
 vscode "albert.tabout"
@@ -153,5 +230,8 @@ vscode "yzhang.markdown-all-in-one"
 vscode "zhuangtongfa.material-theme"
 go "github.com/google/go-containerregistry/cmd/gcrane"
 go "golang.org/x/tools/gopls"
+go "golang.org/x/vuln/cmd/govulncheck"
 go "github.com/uhg-internal/hcc-dp-lethe"
 go "honnef.co/go/tools/cmd/staticcheck"
+uv "kcs"
+npm "corepack"
