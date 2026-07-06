@@ -1,17 +1,16 @@
-tap "adoptopenjdk/openjdk"
-tap "bwya77/tap"
+tap "adoptopenjdk/openjdk", trusted: true
+tap "bwya77/tap", trusted: true
 tap "confluentinc/tap"
-tap "databricks/tap"
+tap "databricks/tap", trusted: true
 tap "derailed/k9s", trusted: { formulae: ["k9s"] }
-tap "goreleaser/tap"
+tap "goreleaser/tap", trusted: true
 tap "hashicorp/tap"
 tap "homebrew/core"
-tap "macpaw/taps"
-tap "optum-eeps/prm-homebrew", "https://github.com/optum-eeps/prm-homebrew.git"
-tap "oven-sh/bun"
-tap "powershell/tap"
-tap "romkatv/powerlevel10k"
-tap "tilt-dev/tap"
+tap "macpaw/taps", trusted: true
+tap "oven-sh/bun", trusted: true
+tap "powershell/tap", trusted: true
+tap "romkatv/powerlevel10k", trusted: true
+tap "tilt-dev/tap", trusted: true
 # Simple, modern, secure file encryption
 brew "age"
 # Codec library for encoding and decoding AV1 video streams
@@ -142,6 +141,8 @@ brew "tilt"
 brew "tree"
 # Compress/expand executable files
 brew "upx"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Terminal-based Tetris clone
 brew "vitetris"
 # Executes a program periodically, showing output fullscreen
@@ -164,6 +165,14 @@ brew "zsh-completions"
 brew "confluentinc/tap/cli", trusted: true
 # Vault
 brew "hashicorp/tap/vault", trusted: true
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Open-source code editor
+cask "visual-studio-code"
 vscode "4ops.terraform"
 vscode "aaron-bond.better-comments"
 vscode "albert.tabout"
@@ -198,6 +207,7 @@ vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
@@ -231,7 +241,4 @@ vscode "zhuangtongfa.material-theme"
 go "github.com/google/go-containerregistry/cmd/gcrane"
 go "golang.org/x/tools/gopls"
 go "golang.org/x/vuln/cmd/govulncheck"
-go "github.com/uhg-internal/hcc-dp-lethe"
 go "honnef.co/go/tools/cmd/staticcheck"
-uv "kcs"
-npm "corepack"
