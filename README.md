@@ -241,19 +241,19 @@ make winsync
    - **`docs/masters/STAR_questions.md`** -- Write your own STAR-format interview answers. Use the existing structure (Situation/Task/Action/Result) as a template and fill in your career stories.
 4. **Build your master resume** -- Generate and iterate on `docs/masters/ats.md` using your PERSONAL_details.md as source material. This becomes a large (but not overfitted) context block that Copilot draws from when generating tailored resumes. Expand it as you think of more experience, projects, and skills.
 5. **Build out your Linkedin Profile** -- Use `docs/masters/linkedin.md` as a structured reference for updating your LinkedIn profile; job descriptions can only be 2000 characters or so, and your headline ideally works best if it's short enough that people can scroll down and read the whole thing without expanding the box.
-6. **Set up the `RESUME_PAT` secret** in your fork's GitHub Settings > Secrets if you want the CI/CD release workflows to work
+6. **Rename the PDF output** -- The script `hack/generate_pdfs.sh` hardcodes the output filename as `caleb-kopp-resume-{name}.pdf`. Change `caleb-kopp` to your own name in that script so your PDFs are named correctly.
+7. **Set up the `RESUME_PAT` secret** in your fork's GitHub Settings > Secrets if you want the CI/CD release workflows to work
 
 - Then, for the brew/vscode extension sync
 
-7. **Replace the Brewfile** -- either edit `lists/Brewfile` directly, or:
-   - Install your tools via `brew install`, `brew install --cask`, etc.
-   - Run `make sync` to regenerate the Brewfile from your machine
-8. **Update the badge URLs** in this README to point to your fork
-9. Commit, push, and your workflows will handle the rest
+1. **Replace the Brewfile**
+   - Edit `lists/Brewfile` directly with the contents of your `brew bundle dump`
+   - Run `brew bundle dump --force` while in the `lists/` directory, to force overwrite the current package list with your own
+   - Run `make sync` while sitting in the repo root directory to regenerate the Brewfile from your machine, which deletes the old one
+2. **Update the badge URLs** in this README to point to your fork
+3. Commit, push, and your the workflows should handle the rest
 
 ### Tips for Colleagues
-
-- **Rename the PDF output:** The script `hack/generate_pdfs.sh` hardcodes the output filename as `caleb-kopp-resume-{name}.pdf`. Change `caleb-kopp` to your own name in that script so your PDFs are named correctly.
 - The copilot instructions (`.github/copilot-instructions.md`) contain formatting rules, workflows, and conventions that are reusable as-is. Your personal details live separately in `docs/masters/PERSONAL_details.md`.
 - You can delete the `docs/submitted/` and `docs/prospectives/` directories and start fresh
 - Keep your `ats.md` as the plain-text master and derive tailored versions from it
