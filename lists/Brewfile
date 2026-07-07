@@ -134,6 +134,8 @@ brew "python@3.10"
 brew "sops"
 # Non-interactive SSH password auth
 brew "sshpass"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # Tool Command Language
 brew "tcl-tk"
 # User interface to the TELNET protocol
