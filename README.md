@@ -234,6 +234,7 @@ make winsync
 
 ## Forking This Repo for Your Own Use
 
+### Resume Generation
 1. **Fill in your personal context** -- this is how Copilot learns who you are:
    - **`docs/masters/PERSONAL_details.md`** -- Replace with your own identity, experience narratives, technical profile, certifications, and career context. Brain-dump everything: who you are, what you work on, key projects, quantified achievements, technical skills, leadership style. The more detail you provide, the better Copilot can tailor resumes and cover letters for you.
    - **`docs/masters/STAR_questions.md`** -- Write your own STAR-format interview answers. Use the existing structure (Situation/Task/Action/Result) as a template and fill in your career stories.
@@ -249,8 +250,7 @@ make winsync
   - Read the `.github/copilot-instructions.md`, Read your `PERSONAL_details.md`, read your `ats.md` master file, generate additions to your `to-learn.md`, generate a resume in `docs/prospectives`, and re-iterate and re-generate that PDF into `docs/pdf/*` until it's 1 page long only
   - All of these steps can be changed by tinkering with `copilot-instructions.md` if you want to save more tokens, or just one shot a resume then run the PDF gen/tweaking the size down yourself
 
-- Then, for the brew/vscode extension sync
-
+### Tracking Brew & vscode installations
 1. **Replace the Brewfile**
    - Edit `lists/Brewfile` directly with the contents of your `brew bundle dump`
    - Run `brew bundle dump --force` while in the `lists/` directory, to force overwrite the current package list with your own
