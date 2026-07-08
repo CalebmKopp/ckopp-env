@@ -1,4 +1,4 @@
-# ckopp-env
+# rkopp-env
 
 A portable toolkit for **macOS machine setup** and **resume automation**. Fork it, swap in your own Brewfile and resume docs, and you get reproducible dev environments plus a markdown-to-PDF resume pipeline with CI/CD.
 
