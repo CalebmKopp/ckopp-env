@@ -229,6 +229,7 @@
 
 #### Deployment Tooling
 - Ansible: playbook authoring, roles, inventory management, idempotent configuration (JDs list alongside Docker/Jenkins)
+
 ### Gaps - Aloe Identity Founding Infrastructure Engineer
 
 #### Identity and Access Management Domain
@@ -244,6 +245,24 @@
 - Cost-conscious infrastructure design at seed stage vs enterprise scale
 - SOC 2 compliance from day one: audit logging, access controls, evidence collection
 - Infrastructure decisions with no existing playbook or team norms
+
+### Gaps - Beast Industries Senior Backend Engineer
+
+#### Consumer Product Backend at Scale
+- Consumer-facing API design patterns: rate limiting, pagination, caching, API versioning for public/mobile clients
+- Membership/subscription systems: billing, entitlements, access control, payment provider integration (Stripe, etc.)
+- Consumer data protection: GDPR, CCPA, PCI-DSS for payment data, user data retention policies
+- Database selection and optimization for consumer workloads: PostgreSQL, DynamoDB, Redis caching layers
+
+#### AI-Native Development
+- AI coding agents as daily workflow: Cursor, GitHub Copilot, Claude Code as default development tools
+- AI integration in backend systems: LLM-powered features, content moderation, recommendation systems
+- Evaluating where AI "earns its place" in production systems vs where traditional approaches are better
+
+#### Zero-to-One Greenfield Architecture
+- Designing backend systems with no legacy constraints: technology selection, service boundaries, data model design from scratch
+- Scaling from zero to 100M+ users: capacity planning, horizontal scaling patterns, CDN/edge considerations
+- Event-driven architecture at consumer scale: event sourcing, CQRS, eventual consistency patterns for user-facing features
 
 ### Other
 - Web scraping (Selenium, etc)
