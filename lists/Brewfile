@@ -107,14 +107,10 @@ brew "libtool"
 brew "lima"
 # Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
 brew "marp-cli"
-# Replacement for ls, cp and other commands for object storage
-brew "minio-mc"
 # SMTP client that can be used as an SMTP plugin for Mutt
 brew "msmtp"
 # Manage multiple Node.js versions
 brew "nvm"
-# Development kit for the Java programming language
-brew "openjdk@11"
 # Development kit for the Java programming language
 brew "openjdk@17"
 # Open Visual Inference And Optimization toolkit for AI inference
