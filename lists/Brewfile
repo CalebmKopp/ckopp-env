@@ -42,6 +42,8 @@ brew "eza"
 brew "fastfetch"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Lightweight scripting language for querying databases
+brew "flux"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -130,6 +132,8 @@ brew "powershell"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Editor of encrypted files
 brew "sops"
 # Non-interactive SSH password auth
@@ -172,10 +176,14 @@ brew "zsh"
 brew "zsh-completions"
 # CLI for Confluent Cloud and Confluent Platform
 brew "confluentinc/tap/cli", trusted: true
+# Terraform
+brew "hashicorp/tap/terraform", trusted: true
 # Vault
 brew "hashicorp/tap/vault", trusted: true
 # WarpStream Kafka-compatible agent
 brew "warpstreamlabs/tap/warpstream", trusted: true
+# All-in-one installer for the tools you need to manage your Chef infrastructure
+cask "chef-workstation"
 # Clipboard extension app
 cask "clipy"
 # Desktop client for GitHub repositories
@@ -184,6 +192,8 @@ cask "github"
 cask "iterm2"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
+# Simple application that will prevent iTunes or Apple Music from launching
+cask "notunes"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -192,6 +202,8 @@ cask "rectangle"
 cask "scroll-reverser"
 # Open-source code editor
 cask "visual-studio-code"
+# Web browser
+cask "waterfox"
 vscode "4ops.terraform"
 vscode "aaron-bond.better-comments"
 vscode "albert.tabout"
