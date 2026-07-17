@@ -6,6 +6,7 @@ tap "derailed/k9s", trusted: { formulae: ["k9s"] }
 tap "goreleaser/tap", trusted: true
 tap "hashicorp/tap"
 tap "homebrew/core"
+tap "libkrun/krun", trusted: true
 tap "macpaw/taps", trusted: true
 tap "oven-sh/bun", trusted: true
 tap "powershell/tap", trusted: true
@@ -36,6 +37,8 @@ brew "bento"
 brew "bottom"
 # Core application library for C
 brew "glib"
+# Platform keystore credential helper for Docker
+brew "docker-credential-helper"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -100,6 +103,8 @@ brew "openjpeg"
 brew "libheif"
 # Generic library support script
 brew "libtool"
+# Linux virtual machines
+brew "lima"
 # Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
 brew "marp-cli"
 # Replacement for ls, cp and other commands for object storage
@@ -118,6 +123,8 @@ brew "openvino"
 brew "pipx"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Tool for managing OCI containers and pods
+brew "podman"
 # Alternative to docker-compose using podman
 brew "podman-compose"
 # Python package management tool
@@ -132,8 +139,12 @@ brew "powershell"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Unified tool to manage your Rancher server
+brew "rancher-cli"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
+# SOcket CAT: netcat on steroids
+brew "socat"
 # Editor of encrypted files
 brew "sops"
 # Non-interactive SSH password auth
@@ -180,6 +191,10 @@ brew "confluentinc/tap/cli", trusted: true
 brew "hashicorp/tap/terraform", trusted: true
 # Vault
 brew "hashicorp/tap/vault", trusted: true
+# CLI tool to start Linux KVM or macOS HVF VMs using the libkrun
+brew "libkrun/krun/krunkit"
+# Manage lightweight VMs created from OCI images
+brew "libkrun/krun/krunvm"
 # WarpStream Kafka-compatible agent
 brew "warpstreamlabs/tap/warpstream", trusted: true
 # All-in-one installer for the tools you need to manage your Chef infrastructure
@@ -194,12 +209,19 @@ cask "iterm2"
 cask "keepingyouawake"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
+# Browse, manage, inspect containers and images
+cask "podman-desktop"
+# Kubernetes and container management on the desktop
+cask "rancher"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+# Development environment
+cask "vagrant"
+cask "vagrant-manager"
 # Open-source code editor
 cask "visual-studio-code"
 # Web browser
